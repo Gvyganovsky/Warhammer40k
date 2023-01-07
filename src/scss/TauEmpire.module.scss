@@ -9,10 +9,12 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .Combat_Unit {
-    max-width: 400px;
+    width: 310px;
     height: 70px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -23,15 +25,22 @@ a {
     margin: 5px;
 }
 
-.Combat_Unit_img {
+.TauXV95GhostkeelBattlesuit_img {
     width: 200px;
     height: 210px;
     margin: -38px 0px 0px -20px;
 }
 
+.FireWarriors_img {
+    width: 200px;
+    height: 210px;
+    margin: -20px 0px -33px -20px;
+}
+
 .Combat_Unit_text {
     font-size: 16px;
     font-family: 'Alegreya', serif;
-    padding: 5px 5px 0px 0px;
+    width: 100px;
+    align-self: center;
 }
 

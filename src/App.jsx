@@ -10,6 +10,7 @@ import { Orks } from './Fractions/Orks/Orks';
 import { Necrons } from './Fractions/Necrons/Nercons';
 
 import { TauXV95GhostkeelBattlesuit } from './Fractions/TauEmpire/TauEmpireArmy/Tau XV95 Ghostkeel Battlesuit';
+import { FireWarriors } from './Fractions/TauEmpire/TauEmpireArmy/Fire Warriors';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route path='Necrons' element={<Necrons />} />
 
         <Route path='TauXV95GhostkeelBattlesuit' element={<TauXV95GhostkeelBattlesuit />} />
+        <Route path='FireWarriors' element={<FireWarriors />} />
 
 
 
