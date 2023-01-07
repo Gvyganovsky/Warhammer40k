@@ -20,36 +20,95 @@ const TauXV95GhostkeelBattlesuit = () => {
       <section className={style.content}>
         <img src={Tau_XV95_Ghostkeel_Battlesuit} alt="TauXV95GhostkeelBattlesuit" className="style.combat_unit_img" />
         <div className={style.combat_unit_param}>
-          <img src={M} alt="M" className={style.param_img} />
-          <div className={style.param_number}>12</div>
+          <div className={style.combat_unit_param_three}>
+            <div className={style.combat_unit_param_block}>
+              <img src={M} alt="M" className={style.param_img} />
+              <div className={style.param_number}>12</div>
+            </div>
 
-          <img src={WS} alt="WS" className={style.param_img} />
-          <div className={style.param_number}>5+</div>
+            <div className={style.combat_unit_param_block}>
+              <img src={WS} alt="WS" className={style.param_img} />
+              <div className={style.param_number}>5+</div>
+            </div>
 
-          <img src={BS} alt="BS" className={style.param_img} />
-          <div className={style.param_number}>4+</div>
+            <div className={style.combat_unit_param_block}>
+              <img src={BS} alt="BS" className={style.param_img} />
+              <div className={style.param_number}>4+</div>
+            </div>
+          </div>
 
-          <img src={S} alt="S" className={style.param_img} />
-          <div className={style.param_number}>6</div>
+          <div className={style.combat_unit_param_three}>
+            <div className={style.combat_unit_param_block}>
+              <img src={S} alt="S" className={style.param_img} />
+              <div className={style.param_number}>6</div>
+            </div>
 
-          <img src={T} alt="T" className={style.param_img} />
-          <div className={style.param_number}>6</div>
+            <div className={style.combat_unit_param_block}>
+              <img src={T} alt="T" className={style.param_img} />
+              <div className={style.param_number}>6</div>
+            </div>
 
-          <img src={W} alt="W" className={style.param_img} />
-          <div className={style.param_number}>10</div>
+            <div className={style.combat_unit_param_block}>
+              <img src={W} alt="W" className={style.param_img} />
+              <div className={style.param_number}>10</div>
+            </div>
+          </div>
 
-          <img src={A} alt="A" className={style.param_img} />
-          <div className={style.param_number}>3</div>
+          <div className={style.combat_unit_param_three}>
+            <div className={style.combat_unit_param_block}>
+              <img src={A} alt="A" className={style.param_img} />
+              <div className={style.param_number}>3</div>
+            </div>
 
-          <img src={Ld} alt="Ld" className={style.param_img} />
-          <div className={style.param_number}>8</div>
+            <div className={style.combat_unit_param_block}>
+              <img src={Ld} alt="Ld" className={style.param_img} />
+              <div className={style.param_number}>8</div>
+            </div>
 
-          <img src={Sv} alt="Sv" className={style.param_img} />
-          <div className={style.param_number}>3+</div>
+            <div className={style.combat_unit_param_block}>
+              <img src={Sv} alt="Sv" className={style.param_img} />
+              <div className={style.param_number}>3+</div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section className={style.content}>
+        <div className={style.line}></div>
+        <div className={style.damage_content}>
+          <div className={style.damage_block}>
+            <img src={W} alt="W" className={style.param_img} />
+            <div className={style.damage_nubmer}>6-10+</div>
+            <div className={style.damage_nubmer}>3-5</div>
+            <div className={style.damage_nubmer}>1-2</div>
+          </div>
+
+          <div className={style.damage_block}>
+            <img src={M} alt="M" className={style.param_img} />
+            <div className={style.damage_nubmer}>12"</div>
+            <div className={style.damage_nubmer}>8"</div>
+            <div className={style.damage_nubmer}>4"</div>
+          </div>
+
+          <div className={style.damage_block}>
+            <img src={BS} alt="BS" className={style.param_img} />
+            <div className={style.damage_nubmer}>4+</div>
+            <div className={style.damage_nubmer}>5+</div>
+            <div className={style.damage_nubmer}>5+</div>
+          </div>
+
+          <div className={style.damage_block}>
+            <img src={A} alt="A" className={style.param_img} />
+            <div className={style.damage_nubmer}>3</div>
+            <div className={style.damage_nubmer}>2</div>
+            <div className={style.damage_nubmer}>1</div>
+          </div>
+        </div>
+      </section>
+
+      <section className={style.content}>
+        <div className={style.line}></div>
+        <div className={style.content_title}>Оружие</div>
         <div className={style.weapon}>
           <div className={style.gun_title}>Burst cannon</div>
 
@@ -227,6 +286,8 @@ const TauXV95GhostkeelBattlesuit = () => {
       </section>
 
       <section className={style.content}>
+        <div className={style.line}></div>
+        <div className={style.content_title}>Способности</div>
         <div className={style.abilities}>
           <div className={style.abilities_title}>
             Набор электрошокеров Ghostkeel
