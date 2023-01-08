@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../../../scss/CombatUnit.module.scss";
-import CrisisBattlesuit from "../../../assets/TauEmpire/Crisis Battlesuits.jpg";
+import CrisisBattlesuit from "../../../assets/TauEmpire/Crisis Battlesuits.png";
 
 import M from "../../../assets/icons/M.png";
 import WS from "../../../assets/icons/WS.png";

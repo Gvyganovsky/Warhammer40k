@@ -2,7 +2,8 @@ import React from "react";
 import style from "../../scss/TauEmpire.module.scss";
 import Tau_XV95_Ghostkeel_Battlesuit from "../../assets/TauEmpire/Tau XV95 Ghostkeel Battlesuit.png";
 import FireWarrior from "../../assets/TauEmpire/Fire Warriors.png";
-import CrisisBattlesuits from "../../assets/TauEmpire/Crisis Battlesuits.jpg";
+import CrisisBattlesuits from "../../assets/TauEmpire/Crisis Battlesuits.png";
+import Etheral from "../../assets/TauEmpire/Etheral.jpg";
 
 const TauEmpire = () => {
   return (
@@ -34,7 +35,14 @@ const TauEmpire = () => {
         </div>
       </a>
 
-
+      <a href="/Etheral">
+        <div className={style.Combat_Unit}>
+          <img src={Etheral} alt="Etheral" className={style.Etheral_img} />
+          <div className={style.Combat_Unit_text}>
+            Etheral
+          </div>
+        </div>
+      </a>
     </section>
   )
 }
