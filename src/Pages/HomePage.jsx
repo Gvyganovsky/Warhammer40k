@@ -9,7 +9,6 @@ const HomePage = () => {
     return (
         <div>
             <section className={styles.content}>
-
                 <a href="./TauEmpire">
                     <div className={styles.block_conent}>
                         <img src={TauEmpireImg} alt="TauEmpire" className={styles.content_img} />

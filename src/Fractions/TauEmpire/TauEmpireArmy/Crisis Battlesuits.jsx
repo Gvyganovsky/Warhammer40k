@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../../../scss/CombatUnit.module.scss";
-import FireWarrior from "../../../assets/TauEmpire/Fire Warriors.png";
+import CrisisBattlesuit from "../../../assets/TauEmpire/Crisis Battlesuits.jpg";
 
 import M from "../../../assets/icons/M.png";
 import WS from "../../../assets/icons/WS.png";
@@ -14,16 +14,16 @@ import Sv from "../../../assets/icons/Sv.png";
 
 import range from "../../../assets/icons/range.png";
 
-const FireWarriors = () => {
+const CrisisBattlesuits = () => {
   return (
     <div>
       <section className={style.content}>
-        <img src={FireWarrior} alt="FireWarriors" className={style.combat_unit_img} />
+        <img src={CrisisBattlesuit} alt="CrisisBattlesuits" className={style.combat_unit_img} />
         <div className={style.combat_unit_param}>
           <div className={style.combat_unit_param_three}>
             <div className={style.combat_unit_param_block}>
               <img src={M} alt="M" className={style.param_img} />
-              <div className={style.param_number}>6"</div>
+              <div className={style.param_number}>10</div>
             </div>
 
             <div className={style.combat_unit_param_block}>
@@ -40,34 +40,34 @@ const FireWarriors = () => {
           <div className={style.combat_unit_param_three}>
             <div className={style.combat_unit_param_block}>
               <img src={S} alt="S" className={style.param_img} />
-              <div className={style.param_number}>3</div>
+              <div className={style.param_number}>5</div>
             </div>
 
             <div className={style.combat_unit_param_block}>
               <img src={T} alt="T" className={style.param_img} />
-              <div className={style.param_number}>3</div>
+              <div className={style.param_number}>5</div>
             </div>
 
             <div className={style.combat_unit_param_block}>
               <img src={W} alt="W" className={style.param_img} />
-              <div className={style.param_number}>1</div>
+              <div className={style.param_number}>4</div>
             </div>
           </div>
 
           <div className={style.combat_unit_param_three}>
             <div className={style.combat_unit_param_block}>
               <img src={A} alt="A" className={style.param_img} />
-              <div className={style.param_number}>1</div>
+              <div className={style.param_number}>3</div>
             </div>
 
             <div className={style.combat_unit_param_block}>
               <img src={Ld} alt="Ld" className={style.param_img} />
-              <div className={style.param_number}>6</div>
+              <div className={style.param_number}>8</div>
             </div>
 
             <div className={style.combat_unit_param_block}>
               <img src={Sv} alt="Sv" className={style.param_img} />
-              <div className={style.param_number}>4+</div>
+              <div className={style.param_number}>3+</div>
             </div>
           </div>
         </div>
@@ -77,31 +77,148 @@ const FireWarriors = () => {
         <div className={style.line}></div>
         <div className={style.content_title}>Оружие</div>
         <div className={style.weapon}>
-          <div className={style.gun_title}>Marker light</div>
+          <div className={style.gun_title}>Airbursting fragmentation projector</div>
 
           <div className={style.weapon_content}>
             <img src={range} alt="range" className={style.param_img} />
-            <div className={style.gun_number}>36"</div>
+            <div className={style.gun_number}>24"</div>
           </div>
 
           <div className={style.weapon_content}>
-            <div className={style.gun_number}>Heavy</div>
-            <div className={style.gun_number}>1"</div>
+            <div className={style.gun_number}>Assault</div>
+            <div className={style.gun_number}>D6"</div>
           </div>
 
           <div className={style.weapon_content}>
             <img src={S} alt="S" className={style.param_img} />
-            <div className={style.gun_number}>-</div>
+            <div className={style.gun_number}>4</div>
           </div>
 
           <div className={style.weapon_content}>
             <div className={style.gun_number}>AP</div>
-            <div className={style.gun_number}>-</div>
+            <div className={style.gun_number}>-1</div>
           </div>
 
           <div className={style.weapon_content}>
             <div className={style.gun_number}>D</div>
-            <div className={style.gun_number}>-</div>
+            <div className={style.gun_number}>1
+            </div>
+          </div>
+        </div>
+
+        <div className={style.weapon}>
+          <div className={style.gun_title}>Burst cannon</div>
+
+          <div className={style.weapon_content}>
+            <img src={range} alt="range" className={style.param_img} />
+            <div className={style.gun_number}>18"</div>
+          </div>
+
+          <div className={style.weapon_content}>
+            <div className={style.gun_number}>Assault</div>
+            <div className={style.gun_number}>6</div>
+          </div>
+
+          <div className={style.weapon_content}>
+            <img src={S} alt="S" className={style.param_img} />
+            <div className={style.gun_number}>5</div>
+          </div>
+
+          <div className={style.weapon_content}>
+            <div className={style.gun_number}>AP</div>
+            <div className={style.gun_number}>0</div>
+          </div>
+
+          <div className={style.weapon_content}>
+            <div className={style.gun_number}>D</div>
+            <div className={style.gun_number}>1</div>
+          </div>
+        </div>
+
+        <div className={style.weapon}>
+          <div className={style.gun_title}>Cyclic ion blaster S</div>
+
+          <div className={style.weapon_content}>
+            <img src={range} alt="range" className={style.param_img} />
+            <div className={style.gun_number}>18"</div>
+          </div>
+
+          <div className={style.weapon_content}>
+            <div className={style.gun_number}>Assault</div>
+            <div className={style.gun_number}>3</div>
+          </div>
+
+          <div className={style.weapon_content}>
+            <img src={S} alt="S" className={style.param_img} />
+            <div className={style.gun_number}>7</div>
+          </div>
+
+          <div className={style.weapon_content}>
+            <div className={style.gun_number}>AP</div>
+            <div className={style.gun_number}>-2</div>
+          </div>
+
+          <div className={style.weapon_content}>
+            <div className={style.gun_number}>D</div>
+            <div className={style.gun_number}>1</div>
+          </div>
+        </div>
+
+        <div className={style.weapon}>
+          <div className={style.gun_title}>Cyclic ion blaster O</div>
+
+          <div className={style.weapon_content}>
+            <img src={range} alt="range" className={style.param_img} />
+            <div className={style.gun_number}>18"</div>
+          </div>
+
+          <div className={style.weapon_content}>
+            <div className={style.gun_number}>Assault</div>
+            <div className={style.gun_number}>3</div>
+          </div>
+
+          <div className={style.weapon_content}>
+            <img src={S} alt="S" className={style.param_img} />
+            <div className={style.gun_number}>8</div>
+          </div>
+
+          <div className={style.weapon_content}>
+            <div className={style.gun_number}>AP</div>
+            <div className={style.gun_number}>-2</div>
+          </div>
+
+          <div className={style.weapon_content}>
+            <div className={style.gun_number}>D</div>
+            <div className={style.gun_number}>2</div>
+          </div>
+        </div>
+
+        <div className={style.weapon}>
+          <div className={style.gun_title}>Fusion blaster</div>
+
+          <div className={style.weapon_content}>
+            <img src={range} alt="range" className={style.param_img} />
+            <div className={style.gun_number}>18"</div>
+          </div>
+
+          <div className={style.weapon_content}>
+            <div className={style.gun_number}>Assault</div>
+            <div className={style.gun_number}>1</div>
+          </div>
+
+          <div className={style.weapon_content}>
+            <img src={S} alt="S" className={style.param_img} />
+            <div className={style.gun_number}>8</div>
+          </div>
+
+          <div className={style.weapon_content}>
+            <div className={style.gun_number}>AP</div>
+            <div className={style.gun_number}>-4</div>
+          </div>
+
+          <div className={style.weapon_content}>
+            <div className={style.gun_number}>D</div>
+            <div className={style.gun_number}>D6</div>
           </div>
         </div>
 
@@ -110,7 +227,7 @@ const FireWarriors = () => {
 
           <div className={style.weapon_content}>
             <img src={range} alt="range" className={style.param_img} />
-            <div className={style.gun_number}>36"</div>
+            <div className={style.gun_number}>30"</div>
           </div>
 
           <div className={style.weapon_content}>
@@ -125,75 +242,17 @@ const FireWarriors = () => {
 
           <div className={style.weapon_content}>
             <div className={style.gun_number}>AP</div>
-            <div className={style.gun_number}>-1</div>
+            <div className={style.gun_number}>-2</div>
           </div>
 
           <div className={style.weapon_content}>
             <div className={style.gun_number}>D</div>
-            <div className={style.gun_number}>D3</div>
-          </div>
-        </div>
-
-        <div className={style.weapon}>
-          <div className={style.gun_title}>Pulse carbine</div>
-
-          <div className={style.weapon_content}>
-            <img src={range} alt="range" className={style.param_img} />
-            <div className={style.gun_number}>18"</div>
-          </div>
-
-          <div className={style.weapon_content}>
-            <div className={style.gun_number}>Assault</div>
             <div className={style.gun_number}>2</div>
           </div>
-
-          <div className={style.weapon_content}>
-            <img src={S} alt="S" className={style.param_img} />
-            <div className={style.gun_number}>5</div>
-          </div>
-
-          <div className={style.weapon_content}>
-            <div className={style.gun_number}>AP</div>
-            <div className={style.gun_number}>0</div>
-          </div>
-
-          <div className={style.weapon_content}>
-            <div className={style.gun_number}>D</div>
-            <div className={style.gun_number}>1</div>
-          </div>
         </div>
 
         <div className={style.weapon}>
-          <div className={style.gun_title}>Pulse pistol</div>
-
-          <div className={style.weapon_content}>
-            <img src={range} alt="range" className={style.param_img} />
-            <div className={style.gun_number}>12"</div>
-          </div>
-
-          <div className={style.weapon_content}>
-            <div className={style.gun_number}>Pistol</div>
-            <div className={style.gun_number}>1</div>
-          </div>
-
-          <div className={style.weapon_content}>
-            <img src={S} alt="S" className={style.param_img} />
-            <div className={style.gun_number}>5</div>
-          </div>
-
-          <div className={style.weapon_content}>
-            <div className={style.gun_number}>AP</div>
-            <div className={style.gun_number}>0</div>
-          </div>
-
-          <div className={style.weapon_content}>
-            <div className={style.gun_number}>D</div>
-            <div className={style.gun_number}>1</div>
-          </div>
-        </div>
-
-        <div className={style.weapon}>
-          <div className={style.gun_title}>Smart missile system</div>
+          <div className={style.gun_title}>Plasma rifle</div>
 
           <div className={style.weapon_content}>
             <img src={range} alt="range" className={style.param_img} />
@@ -201,13 +260,42 @@ const FireWarriors = () => {
           </div>
 
           <div className={style.weapon_content}>
-            <div className={style.gun_number}>Heavy</div>
-            <div className={style.gun_number}>4</div>
+            <div className={style.gun_number}>Assault</div>
+            <div className={style.gun_number}>1</div>
           </div>
 
           <div className={style.weapon_content}>
             <img src={S} alt="S" className={style.param_img} />
-            <div className={style.gun_number}>5</div>
+            <div className={style.gun_number}>8</div>
+          </div>
+
+          <div className={style.weapon_content}>
+            <div className={style.gun_number}>AP</div>
+            <div className={style.gun_number}>-4</div>
+          </div>
+
+          <div className={style.weapon_content}>
+            <div className={style.gun_number}>D</div>
+            <div className={style.gun_number}>3</div>
+          </div>
+        </div>
+
+        <div className={style.weapon}>
+          <div className={style.gun_title}>T’au flamer</div>
+
+          <div className={style.weapon_content}>
+            <img src={range} alt="range" className={style.param_img} />
+            <div className={style.gun_number}>12"</div>
+          </div>
+
+          <div className={style.weapon_content}>
+            <div className={style.gun_number}>Assault</div>
+            <div className={style.gun_number}>D6+2</div>
+          </div>
+
+          <div className={style.weapon_content}>
+            <img src={S} alt="S" className={style.param_img} />
+            <div className={style.gun_number}>4</div>
           </div>
 
           <div className={style.weapon_content}>
@@ -220,38 +308,9 @@ const FireWarriors = () => {
             <div className={style.gun_number}>1</div>
           </div>
         </div>
-
-        <div className={style.weapon}>
-          <div className={style.gun_title}>Photon grenade</div>
-
-          <div className={style.weapon_content}>
-            <img src={range} alt="range" className={style.param_img} />
-            <div className={style.gun_number}>12"</div>
-          </div>
-
-          <div className={style.weapon_content}>
-            <div className={style.gun_number}>Gren</div>
-            <div className={style.gun_number}>D6</div>
-          </div>
-
-          <div className={style.weapon_content}>
-            <img src={S} alt="S" className={style.param_img} />
-            <div className={style.gun_number}>-</div>
-          </div>
-
-          <div className={style.weapon_content}>
-            <div className={style.gun_number}>AP</div>
-            <div className={style.gun_number}>-</div>
-          </div>
-
-          <div className={style.weapon_content}>
-            <div className={style.gun_number}>D</div>
-            <div className={style.gun_number}>-</div>
-          </div>
-        </div>
       </section>
     </div >
   )
 }
 
-export { FireWarriors }
+export { CrisisBattlesuits }
