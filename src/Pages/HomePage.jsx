@@ -1,9 +1,6 @@
 import React from "react";
-import { Outlet } from 'react-router-dom';
 import styles from '../scss/HomePage.module.scss';
 import TauEmpireImg from '../assets/TauEmpire.png';
-
-//adb devices
 
 const HomePage = () => {
     return (
@@ -32,7 +29,6 @@ const HomePage = () => {
                     <img src={TauEmpireImg} alt="TauEmpire" className={styles.content_img} />
                     <div className={styles.content_title}>Империя Тау</div>
                 </div>
-                < Outlet />
             </section>
         </div>
     )
