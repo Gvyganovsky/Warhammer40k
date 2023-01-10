@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@600&family=Open+Sans:wght@500;700&display=swap');
 
+:root {
+    --color-stratBattleTactic: #294a67;
+    --color-stratStrategicPloy: #246656;
+    --color-stratEpicDeed: #673d29;
+    --color-stratWargear: #626869;
+}
+
 .content {
     display: block;
     justify-content: center;
@@ -122,12 +129,12 @@
     margin-bottom: 10px;
 }
 
-.stratName_9k {
+.stratName_stratBattleTactic {
     color: white;
     margin: 0 5px;
     padding: 5px;
     border-radius: 3px;
-    background: linear-gradient(315deg, transparent 8px, #294a67 0);
+    background: linear-gradient(315deg, transparent 8px, var(--color-stratBattleTactic) 0);
     font-size: 15px;
     font-family: Minion-Pro, times new roman, sans-serif;
     font-weight: bold;
@@ -135,11 +142,80 @@
     justify-content: space-between;
 }
 
-.stratName_info {
-    border: solid #294a67;
+.stratName_info_stratBattleTactic {
+    border: solid var(--color-stratBattleTactic);
     margin: -15px 5px 0px 5px;
-    padding: 15px 5px ;
+    padding: 15px 5px;
     font-family: 'Alegreya', serif;
-    font-size: 24px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+.stratName_stratStrategicPloy {
+    color: white;
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 3px;
+    background: linear-gradient(315deg, transparent 8px, var(--color-stratStrategicPloy) 0);
+    font-size: 15px;
+    font-family: Minion-Pro, times new roman, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stratName_info_stratStrategicPloy {
+    border: solid var(--color-stratStrategicPloy);
+    margin: -15px 5px 0px 5px;
+    padding: 15px 5px;
+    font-family: 'Alegreya', serif;
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+.stratName_stratEpicDeed {
+    color: white;
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 3px;
+    background: linear-gradient(315deg, transparent 8px, var(--color-stratEpicDeed) 0);
+    font-size: 15px;
+    font-family: Minion-Pro, times new roman, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stratName_info_stratEpicDeed {
+    border: solid var(--color-stratEpicDeed);
+    margin: -15px 5px 0px 5px;
+    padding: 15px 5px;
+    font-family: 'Alegreya', serif;
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+.stratName_stratWargear {
+    color: white;
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 3px;
+    background: linear-gradient(315deg, transparent 8px, var(--color-stratEpicDeed) 0);
+    font-size: 15px;
+    font-family: Minion-Pro, times new roman, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stratName_info_stratWargear {
+    border: solid var(--color-stratEpicDeed);
+    margin: -15px 5px 0px 5px;
+    padding: 15px 5px;
+    font-family: 'Alegreya', serif;
+    font-size: 16px;
     text-align: justify;
 }

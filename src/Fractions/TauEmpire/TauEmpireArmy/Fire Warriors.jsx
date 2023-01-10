@@ -166,13 +166,13 @@ const FireWarriors = () => {
 
       <section className={style.content}>
         <div className={style.line}></div>
-        <div className={style.content_title}>Стратагемы</div>
+        <div className={style.content_title}>Стратегемы</div>
         <div className={style.strat}>
-          <div className={style.stratName_9k}>
+          <div className={style.stratName_stratBattleTactic}>
             <span>СОСРЕДОТОЧЕННЫЙ ОГОНЬ</span>
             <span>2 CP</span>
           </div>
-          <div className={style.stratName_info}>
+          <div className={style.stratName_info_stratBattleTactic}>
             Используйте эту стратегию на этапе стрельбы, когда вражеская модель теряет какие-либо
             ранения в результате атаки, произведенной моделью T'AU SEPT из вашей армии. До конца фазы,
             каждый раз, когда базовая модель T'AU SEPT из вашей армии совершает атаку против подразделения
@@ -181,11 +181,11 @@ const FireWarriors = () => {
         </div>
 
         <div className={style.strat}>
-          <div className={style.stratName_9k}>
+          <div className={style.stratName_stratBattleTactic}>
             <span>БЕЗЖАЛОСТНЫЙ ОБСТРЕЛ</span>
             <span>1 CP</span>
           </div>
-          <div className={style.stratName_info}>
+          <div className={style.stratName_info_stratBattleTactic}>
             Используйте эту стратегию на этапе стрельбы, когда для стрельбы
             выбирается подразделение УДАРНОЙ группы из вашей армии. До конца фазы:
             Вместо того, чтобы следовать обычным правилам для скорострельного оружия,
@@ -196,11 +196,11 @@ const FireWarriors = () => {
         </div>
 
         <div className={style.strat}>
-          <div className={style.stratName_9k}>
+          <div className={style.stratName_stratBattleTactic}>
             <span>ИМПУЛЬСНЫЙ НАТИСК</span>
             <span>1 CP</span>
           </div>
-          <div className={style.stratName_info}>
+          <div className={style.stratName_info_stratBattleTactic}>
             Используйте эту стратегию на этапе стрельбы, когда для стрельбы выбирается подразделение
             FIRE WARRIOR TEAM из вашей армии. До конца фазы, каждый раз, когда БАЗОВАЯ модель в этом
             подразделении совершает атаку импульсным оружием, неизмененный бросок удара из 6 автоматически
@@ -209,16 +209,121 @@ const FireWarriors = () => {
         </div>
 
         <div className={style.strat}>
-          <div className={style.stratName_9k}>
+          <div className={style.stratName_stratBattleTactic}>
             <span>ЗАЛП В УПОР</span>
             <span>1 CP</span>
           </div>
-          <div className={style.stratName_info}>
+          <div className={style.stratName_info_stratBattleTactic}>
             Используйте эту стратегию в начале вашей фазы стрельбы.
             Выберите одно подразделение FIRE WARRIOR TEAM из вашей армии,
             которое находится в пределах досягаемости любых вражеских подразделений.
             До конца фазы импульсные бластеры, импульсные карабины и импульсные винтовки,
             которыми оснащены модели в этом подразделении, имеют характеристику типа Pistol 2.
+          </div>
+        </div>
+
+
+        <div className={style.strat}>
+          <div className={style.stratName_stratStrategicPloy}>
+            <span>ОБОЙТИ С ФЛАНГА</span>
+            <span>1 CP</span>
+          </div>
+          <div className={style.stratName_info_stratStrategicPloy}>
+            Используйте эту стратегию в конце вашей фазы движения. Выберите один ДАЛЬНИЙ ОСНОВНОЙ
+            отряд или ВСПОМОГАТЕЛЬНЫЙ отряд Тау из вашей армии, который находится в пределах 9"
+            от любого края поля боя. Если в миссии, которую вы выполняете, используется
+            правило стратегических резервов, вы можете удалить это подразделение с поля боя и
+            поместить его в Стратегические резервы.
+          </div>
+        </div>
+
+        <div className={style.strat}>
+          <div className={style.stratName_stratStrategicPloy}>
+            <span>ОРБИТАЛЬНАЯ ЛИНИЯ СВЯЗИ</span>
+            <span>1 CP</span>
+          </div>
+          <div className={style.stratName_info_stratStrategicPloy}>
+            Используйте эту стратегию на этапе съемки. Выберите одного вражеского юнита.
+            До конца фазы, каждый раз, когда модель в подразделении SA'CEA из вашей армии
+            совершает дальнюю атаку против этого вражеского подразделения, цель не получает
+            преимуществ прикрытия от этой атаки.
+          </div>
+        </div>
+
+        <div className={style.strat}>
+          <div className={style.stratName_stratStrategicPloy}>
+            <span>СКООРДИНИРОВАННОЕ ВЗАИМОДЕЙСТВИЕ</span>
+            <span>1 CP</span>
+          </div>
+          <div className={style.stratName_info_stratStrategicPloy}>
+            Используйте эту стратегию на этапе стрельбы, прежде чем выбирать юнит для стрельбы.
+            Выберите одно вражеское подразделение и два подразделения 'SEPT' из вашей армии,
+            которые находятся в пределах 18 дюймов от этого вражеского подразделения и видны ему.
+            До конца фазы, каждый раз, когда модель в одном из этих подразделений 'SEPT' совершает атаку:
+            Эта атака может быть нацелена только на этот вражеский юнит и только в том случае, если это
+            подходящая цель. Улучшите характеристику бронепробиваемости этой атаки на 1.
+          </div>
+        </div>
+
+        <div className={style.strat}>
+          <div className={style.stratName_stratStrategicPloy}>
+            <span>НАЗНАЧЕННАЯ ЗАДАЧА</span>
+            <span>1 CP</span>
+          </div>
+          <div className={style.stratName_info_stratStrategicPloy}>
+            Используйте эту стратегию на этапе вашего командования. Выберите одно подразделение ИМПЕРИИ Тау
+            из вашей армии, которое не находится в пределах досягаемости вражеских подразделений и содержит
+            как модели дронов, так и модели без ключевого слова DRONE. Разделите этот блок на два блока, один
+            из которых содержит все модели дронов, а другой содержит все модели без ключевого слова DRONE.
+
+            Если какая-либо из этих моделей дронов состыкована с другой моделью, установите их в пределах 1"
+            от модели, с которой они состыкованы, прежде чем разделять устройство. Эти модели дронов больше
+            не состыкованы с этой моделью.
+          </div>
+        </div>
+
+
+        <div className={style.strat}>
+          <div className={style.stratName_stratEpicDeed}>
+            <span>ЭКСПЕРИМЕНТАЛЬНОЕ ОРУЖИЕ</span>
+            <span>2 CP</span>
+          </div>
+          <div className={style.stratName_info_stratEpicDeed}>
+            Используйте эту стратегию на этапе стрельбы, когда для стрельбы выбирается подразделение
+            БОРК'ан из вашей армии. Выберите одну модель в этом подразделении и одно оружие, которым
+            оснащена эта модель. До конца фазы, каждый раз, когда эта модель совершает атаку этим оружием,
+            неуязвимые спасброски не могут быть предприняты против этой атаки.
+          </div>
+        </div>
+
+        <div className={style.strat}>
+          <div className={style.stratName_stratEpicDeed}>
+            <span>ПРОТОКОЛЫ СПАСИТЕЛЯ</span>
+            <span>1 CP</span>
+          </div>
+          <div className={style.stratName_info_stratEpicDeed}>
+            Используйте эту стратегию на любой фазе, когда спасбросок не удался для модели в подразделении
+            'SEPT' из вашей армии. Выберите одну удобную модель дрона 'SEPT' в пределах 3 дюймов
+            от этого устройства или в пределах 6 дюймов от этого устройства, если оно содержит модель,
+            оснащенную контроллером дрона. Эта модель дрона уничтожена, и характеристика урона от этой
+            атаки изменена на 0.
+          </div>
+        </div>
+
+
+        <div className={style.strat}>
+          <div className={style.stratName_stratWargear}>
+            <span>ФОТОННЫЕ ГРАНАТЫ</span>
+            <span>1 CP</span>
+          </div>
+          <div className={style.stratName_info_stratWargear}>
+            Используйте эту стратегию на этапе атаки вашего противника, когда подразделение ФОТОННЫХ ГРАНАТ
+            из вашей армии выбрано в качестве цели для атаки, объявленной вражеским подразделением
+            (за исключением транспортных средств и монстров). До конца хода: Вычтите 2 из бросков
+            заряда этого устройства.
+            Каждый раз, когда модель в этом подразделении совершает атаку, вычтите 1 из броска удара этой атаки.
+            Модификатор броска заряда, полученный с помощью этой стратегии, не суммируется с каким-либо
+            другим отрицательным модификатором броска заряда единицы.
           </div>
         </div>
 
