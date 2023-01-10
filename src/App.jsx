@@ -33,14 +33,7 @@ const App = () => {
           <Route path='Etheral' element={<Etheral />} />
           <Route path='DS8TacticalSupportTurret' element={<DS8TacticalSupportTurret />} />
           <Route path='GunDrone' element={<GunDrone />} />
-
-
-
-
-
-
-
-
+          
           <Route path='*' element={<NotFoundPage />} />
         </Route>
       </Routes>

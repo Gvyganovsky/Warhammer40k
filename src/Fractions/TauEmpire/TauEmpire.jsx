@@ -5,6 +5,7 @@ import FireWarrior from "../../assets/TauEmpire/Fire Warriors.png";
 import CrisisBattlesuits from "../../assets/TauEmpire/Crisis Battlesuits.png";
 import Etheral from "../../assets/TauEmpire/Etheral.jpg";
 import DS8TacticalSupportTurret from "../../assets/TauEmpire/DS8 Tactical Support Turret.png";
+import GunDrone from "../../assets/TauEmpire/Gun Drone.jpg";
 
 const TauEmpire = () => {
   return (
@@ -47,9 +48,18 @@ const TauEmpire = () => {
 
       <a href="/DS8TacticalSupportTurret">
         <div className={style.Combat_Unit}>
-          <img src={DS8TacticalSupportTurret} alt="Etheral" className={style.DS8TacticalSupportTurret_img} />
+          <img src={DS8TacticalSupportTurret} alt="DS8TacticalSupportTurret" className={style.DS8TacticalSupportTurret_img} />
           <div className={style.Combat_Unit_text}>
             DS8 Tactical Support Turret
+          </div>
+        </div>
+      </a>
+
+      <a href="/GunDrone">
+        <div className={style.Combat_Unit}>
+          <img src={GunDrone} alt="GunDrone" className={style.GunDrone_img} />
+          <div className={style.Combat_Unit_text}>
+            Gun Drone
           </div>
         </div>
       </a>
