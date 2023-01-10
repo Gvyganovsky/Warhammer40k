@@ -115,5 +115,31 @@
 .damage_block {
     font-family: 'Alegreya', serif;
     font-size: 24px;
-    margin: 0px 10px;
+    margin: 0 10px;
+}
+
+.strat {
+    margin-bottom: 10px;
+}
+
+.stratName_9k {
+    color: white;
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 3px;
+    background: linear-gradient(315deg, transparent 8px, #294a67 0);
+    font-size: 15px;
+    font-family: Minion-Pro, times new roman, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stratName_info {
+    border: solid #294a67;
+    margin: -15px 5px 0px 5px;
+    padding: 15px 5px ;
+    font-family: 'Alegreya', serif;
+    font-size: 24px;
+    text-align: justify;
 }
