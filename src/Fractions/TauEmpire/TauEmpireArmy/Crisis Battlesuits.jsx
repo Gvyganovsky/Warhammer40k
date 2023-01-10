@@ -23,7 +23,7 @@ const CrisisBattlesuits = () => {
           <div className={style.combat_unit_param_three}>
             <div className={style.combat_unit_param_block}>
               <img src={M} alt="M" className={style.param_img} />
-              <div className={style.param_number}>10</div>
+              <div className={style.param_number}>8</div>
             </div>
 
             <div className={style.combat_unit_param_block}>
@@ -50,19 +50,19 @@ const CrisisBattlesuits = () => {
 
             <div className={style.combat_unit_param_block}>
               <img src={W} alt="W" className={style.param_img} />
-              <div className={style.param_number}>4</div>
+              <div className={style.param_number}>3</div>
             </div>
           </div>
 
           <div className={style.combat_unit_param_three}>
             <div className={style.combat_unit_param_block}>
               <img src={A} alt="A" className={style.param_img} />
-              <div className={style.param_number}>3</div>
+              <div className={style.param_number}>2</div>
             </div>
 
             <div className={style.combat_unit_param_block}>
               <img src={Ld} alt="Ld" className={style.param_img} />
-              <div className={style.param_number}>8</div>
+              <div className={style.param_number}>7</div>
             </div>
 
             <div className={style.combat_unit_param_block}>
@@ -309,7 +309,63 @@ const CrisisBattlesuits = () => {
           </div>
         </div>
       </section>
-    </div >
+
+      <section className={style.content}>
+        <div className={style.line}></div>
+        <div className={style.content_title}>Другое оружие</div>
+        <div className={style.weapon}>
+          <div className={style.gun_title}>Advanced targeting system</div>
+          <div className={style.weapon_info}>
+            Модель, оснащенная усовершенствованной системой наведения, увеличивает характеристику AP
+            всего своего оружия на 1 (например, AP, равный 0, становится -1, AP, равный -1, становится -2).
+          </div>
+        </div>
+
+        <div className={style.weapon}>
+          <div className={style.gun_title}>Counterfire defence system</div>
+          <div className={style.weapon_info}>
+            Модель, оснащенная системой защиты от ответного огня, повторяет неудачные броски при стрельбе Overwatch.
+          </div>
+        </div>
+      </section>
+
+      <section className={style.content}>
+        <div className={style.line}></div>
+        <div className={style.content_title}>Способности</div>
+        <div className={style.abilities}>
+          <div className={style.abilities_title}>
+            Ритуал скрепляющего ножа
+          </div>
+          <div className={style.abilities_text}>
+            Если вы бросаете 6 при прохождении теста на моральный дух для этого подразделения,
+            тест автоматически пройден.
+          </div>
+        </div>
+
+        <div className={style.abilities}>
+          <div className={style.abilities_title}>
+            Удар Манты
+          </div>
+          <div className={style.abilities_text}>
+            Во время развертывания вы можете разместить это подразделение и любые
+            сопровождающие его дроны в трюме Манты вместо того, чтобы размещать их на поле боя.
+            В конце любой из ваших фаз передвижения они могут использовать удар Манты,
+            чтобы вступить в бой – разместите их в любом месте поля боя,
+            которое находится более чем на 9 дюймов от любых вражеских моделей.
+          </div>
+        </div>
+
+        <div className={style.abilities}>
+          <div className={style.abilities_title}>
+            Боевой костюм XV8-02 Crisis Iridium
+          </div>
+          <div className={style.abilities_text}>
+            Модель, оснащенная боевым костюмом XV8-02 Crisis Iridium,
+            увеличивает его характеристики безопасности до 2+.
+          </div>
+        </div>
+      </section>
+    </div>
   )
 }
 

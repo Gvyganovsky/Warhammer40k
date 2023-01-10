@@ -4,6 +4,7 @@ import Tau_XV95_Ghostkeel_Battlesuit from "../../assets/TauEmpire/Tau XV95 Ghost
 import FireWarrior from "../../assets/TauEmpire/Fire Warriors.png";
 import CrisisBattlesuits from "../../assets/TauEmpire/Crisis Battlesuits.png";
 import Etheral from "../../assets/TauEmpire/Etheral.jpg";
+import DS8TacticalSupportTurret from "../../assets/TauEmpire/DS8 Tactical Support Turret.png";
 
 const TauEmpire = () => {
   return (
@@ -40,6 +41,15 @@ const TauEmpire = () => {
           <img src={Etheral} alt="Etheral" className={style.Etheral_img} />
           <div className={style.Combat_Unit_text}>
             Etheral
+          </div>
+        </div>
+      </a>
+
+      <a href="/DS8TacticalSupportTurret">
+        <div className={style.Combat_Unit}>
+          <img src={DS8TacticalSupportTurret} alt="Etheral" className={style.DS8TacticalSupportTurret_img} />
+          <div className={style.Combat_Unit_text}>
+            DS8 Tactical Support Turret
           </div>
         </div>
       </a>

@@ -15,6 +15,7 @@ import { TauXV95GhostkeelBattlesuit } from './Fractions/TauEmpire/TauEmpireArmy/
 import { FireWarriors } from './Fractions/TauEmpire/TauEmpireArmy/Fire Warriors';
 import { CrisisBattlesuits } from './Fractions/TauEmpire/TauEmpireArmy/Crisis Battlesuits';
 import { Etheral } from './Fractions/TauEmpire/TauEmpireArmy/Etheral';
+import { DS8TacticalSupportTurret } from './Fractions/TauEmpire/TauEmpireArmy/DS8 Tactical Support Turret';
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
         <Route path='FireWarriors' element={<FireWarriors />} />
         <Route path='CrisisBattlesuits' element={<CrisisBattlesuits />} />
         <Route path='Etheral' element={<Etheral />} />
+        <Route path='DS8TacticalSupportTurret' element={<DS8TacticalSupportTurret />} />
 
 
 
