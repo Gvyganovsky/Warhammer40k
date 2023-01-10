@@ -8,7 +8,7 @@ const LayOut = () => {
     return (
         <div>
             <header className={styles.header}>
-                <a href="/HomePage"><img src={home} alt="home" className={styles.home} /></a>
+                <a href="/"><img src={home} alt="home" className={styles.home} /></a>
                 <img src={logoImage} alt="logo" className={styles.logo} />
             </header>
 
