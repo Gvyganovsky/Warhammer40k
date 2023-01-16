@@ -105,6 +105,136 @@ const GunDrone = () => {
                     </div>
                 </div>
             </section>
+
+            <section className={style.content}>
+                <div className={style.line}></div>
+                <div className={style.content_title}>Способности</div>
+                <div className={style.abilities}>
+                    <div className={style.abilities_title}>
+                        Протокол идентификации угрозы
+                    </div>
+                    <div className={style.abilities_text}>
+                        Каждый раз, когда эта модель совершает дальнюю атаку, она может нацелиться
+                        только на ближайшего подходящего юнита.
+                    </div>
+                </div>
+
+                <div className={style.abilities}>
+                    <div className={style.abilities_title}>
+                        Ценная жертва
+                    </div>
+                    <div className={style.abilities_text}>
+                        Каждый раз, когда модель дрона в этом блоке уничтожается, она игнорируется
+                        с целью проверки боевого духа, если этот блок также содержит модели без
+                        ключевого слова DRONE.
+                    </div>
+                </div>
+
+                <div className={style.abilities}>
+                    <div className={style.abilities_title}>
+                        Искусственные помощники
+                    </div>
+                    <div className={style.abilities_text}>
+                        <div>Модели беспилотных летательных аппаратов игнорируются в целях:</div>
+                        <div>Берегитесь, сэр рул.</div>
+                        <div>Определение начальной прочности этого блока и того, находится ли этот
+                            блок ниже половины прочности.</div>
+                        <div>Определение характеристики прочности этого устройства, если оно также
+                            содержит модели без ключевого слова DRONE.</div>
+                    </div>
+                </div>
+
+                <div className={style.abilities}>
+                    <div className={style.abilities_title}>
+                        Ограниченные параметры
+                    </div>
+                    <div className={style.abilities_text}>
+                        Если это устройство содержит только модели дронов, это устройство не может
+                        выполнять действия (за исключением действия Fire Markerlights) и теряет
+                        способность Objective Secure, если она у него есть, и не может получить
+                        ее никакими средствами.
+                    </div>
+                </div>
+
+                <div className={style.abilities}>
+                    <div className={style.abilities_title}>
+                        Пристыкованный беспилотник
+                    </div>
+                    <div className={style.abilities_text}>
+                        <div>Eсли эта модель пристыкована к другой:</div>
+                        <div>Любое оружие, которым оснащена эта модель, считается снаряженным
+                            в соответствии с моделью, с которой оно состыковано вместо этого.</div>
+                        <div>Атаки не могут быть отнесены к этой модели, и она не считается
+                            моделью на поле боя ни для каких целей правил.</div>
+                        <div>Если модель, с которой он состыкован, уничтожена, эта модель
+                            дрона также уничтожается.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section className={style.content}>
+                <div className={style.line}></div>
+                <div className={style.content_title}>Стратегемы</div>
+                <div className={style.strat}>
+                    <div className={style.stratName_stratEpicDeed}>
+                        <span>ЭКСПЕРИМЕНТАЛЬНОЕ ОРУЖИЕ</span>
+                        <span>2 CP</span>
+                    </div>
+                    <div className={style.stratName_info_stratEpicDeed}>
+                        Используйте эту стратегию на этапе стрельбы, когда для стрельбы
+                        выбирается подразделение БОРК'ан из вашей армии. Выберите одну
+                        модель в этом подразделении и одно оружие, которым оснащена эта
+                        модель. До конца фазы, каждый раз, когда эта модель совершает
+                        атаку этим оружием, неуязвимые спасброски не могут быть предприняты
+                        против этой атаки.
+                    </div>
+                </div>
+
+
+                <div className={style.strat}>
+                    <div className={style.stratName_stratWargear}>
+                        <span>ПРОТОКОЛЫ СПАСИТЕЛЯ</span>
+                        <span>1 CP</span>
+                    </div>
+                    <div className={style.stratName_info_stratWargear}>
+                        Используйте эту стратегию на любой фазе, когда спасбросок не удался
+                        для модели в подразделении 'SEPT' из вашей армии. Выберите одну
+                        удобную модель дрона 'SEPT' в пределах 3 дюймов от этого устройства
+                        или в пределах 6 дюймов от этого устройства, если оно содержит модель,
+                        оснащенную контроллером дрона. Эта модель дрона уничтожена, и характеристика
+                        урона от этой атаки изменена на 0.
+                    </div>
+                </div>
+
+                <div className={style.strat}>
+                    <div className={style.stratName_stratStrategicPloy}>
+                        <span>ОРБИТАЛЬНАЯ ВОСХОДЯЩАЯ ЛИНИЯ СВЯЗИ</span>
+                        <span>1 CP</span>
+                    </div>
+                    <div className={style.stratName_info_stratStrategicPloy}>
+                        Используйте эту стратегию на этапе съемки. Выберите одного вражеского юнита.
+                        До конца фазы, каждый раз, когда модель в подразделении SA'CEA из вашей армии
+                        совершает дальнюю атаку против этого вражеского подразделения, цель не получает
+                        преимуществ прикрытия от этой атаки.
+                    </div>
+                </div>
+
+                <div className={style.strat}>
+                    <div className={style.stratName_stratStrategicPloy}>
+                        <span>СКООРДИНИРОВАННОЕ ВЗАИМОДЕЙСТВИЕ</span>
+                        <span>1 CP</span>
+                    </div>
+                    <div className={style.stratName_info_stratStrategicPloy}>
+                        Используйте эту стратегию на этапе стрельбы, прежде чем выбирать юнит для стрельбы.
+                        Выберите одно вражеское подразделение и два подразделения 'SEPT' из вашей армии,
+                        которые находятся в пределах 18 дюймов от этого вражеского подразделения и видны ему.
+                        До конца фазы, каждый раз, когда модель в одном из этих подразделений 'SEPT'
+                        совершает атаку:
+                        <div>Эта атака может быть нацелена только на этот вражеский юнит (и только в том случае, если это подходящая цель).</div>
+                        <div>Улучшите характеристику бронепробиваемости этой атаки на 1.</div>
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }
