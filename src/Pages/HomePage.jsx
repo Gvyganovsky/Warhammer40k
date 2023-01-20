@@ -5,6 +5,13 @@ import TauEmpireImg from '../assets/TauEmpire.png';
 const HomePage = () => {
     return (
         <section className={styles.content}>
+            <a href="./RegistrationPage">
+                <div className={styles.block_conent}>
+                    <img src={TauEmpireImg} alt="TauEmpire" className={styles.content_img} />
+                    <div className={styles.content_title}>Империя Тау</div>
+                </div>
+            </a>
+
             <a href="./TauEmpire">
                 <div className={styles.block_conent}>
                     <img src={TauEmpireImg} alt="TauEmpire" className={styles.content_img} />

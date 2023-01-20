@@ -5,6 +5,9 @@ import { HomePage } from './Pages/HomePage';
 import { LayOut } from './Pages/LayOut';
 import { NotFoundPage } from './Pages/NotFoundPage';
 
+import { RegistrationPage } from './Pages/RegistrationPage';
+import { LoginPage } from './Pages/LoginPage';
+
 import { TauEmpire } from './Fractions/TauEmpire/TauEmpire';
 import { Orks } from './Fractions/Orks/Orks';
 import { Necrons } from './Fractions/Necrons/Nercons';
@@ -18,26 +21,27 @@ import { GunDrone } from './Fractions/TauEmpire/TauEmpireArmy/Gun Drone';
 
 const App = () => {
   return (
-    <div>
-      <Routes>
-        <Route path='/' element={<LayOut />}>
-          <Route path='/' element={<HomePage />} />
+    <Routes>
+      <Route path='/' element={<LayOut />}>
+        <Route path='/' element={<HomePage />} />
 
-          <Route path='TauEmpire' element={<TauEmpire />} />
-          <Route path='Orks' element={<Orks />} />
-          <Route path='Necrons' element={<Necrons />} />
+        <Route path='RegistrationPage' element={<RegistrationPage />} />
+        <Route path='LoginPage' element={<LoginPage />} />
 
-          <Route path='TauXV95GhostkeelBattlesuit' element={<TauXV95GhostkeelBattlesuit />} />
-          <Route path='FireWarriors' element={<FireWarriors />} />
-          <Route path='CrisisBattlesuits' element={<CrisisBattlesuits />} />
-          <Route path='Etheral' element={<Etheral />} />
-          <Route path='DS8TacticalSupportTurret' element={<DS8TacticalSupportTurret />} />
-          <Route path='GunDrone' element={<GunDrone />} />
-          
-          <Route path='*' element={<NotFoundPage />} />
-        </Route>
-      </Routes>
-    </div>
+        <Route path='TauEmpire' element={<TauEmpire />} />
+        <Route path='Orks' element={<Orks />} />
+        <Route path='Necrons' element={<Necrons />} />
+
+        <Route path='TauXV95GhostkeelBattlesuit' element={<TauXV95GhostkeelBattlesuit />} />
+        <Route path='FireWarriors' element={<FireWarriors />} />
+        <Route path='CrisisBattlesuits' element={<CrisisBattlesuits />} />
+        <Route path='Etheral' element={<Etheral />} />
+        <Route path='DS8TacticalSupportTurret' element={<DS8TacticalSupportTurret />} />
+        <Route path='GunDrone' element={<GunDrone />} />
+
+        <Route path='*' element={<NotFoundPage />} />
+      </Route>
+    </Routes>
   )
 }
 
