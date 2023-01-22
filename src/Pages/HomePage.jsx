@@ -1,6 +1,6 @@
 import React from "react";
 import styles from '../scss/HomePage.module.scss';
-import TauEmpireImg from '../assets/TauEmpire.png';
+import TauEmpireImg from '../assets/logoFractions/TauEmpire.png';
 
 const HomePage = () => {
     return (
@@ -8,7 +8,7 @@ const HomePage = () => {
             <a href="./RegistrationPage">
                 <div className={styles.block_conent}>
                     <img src={TauEmpireImg} alt="TauEmpire" className={styles.content_img} />
-                    <div className={styles.content_title}>Империя Тау</div>
+                    <div className={styles.content_title}>Регистрация</div>
                 </div>
             </a>
 
@@ -22,18 +22,13 @@ const HomePage = () => {
             <a href="./Orks">
                 <div className={styles.block_conent} href="/TauEmpireArmy">
                     <img src={TauEmpireImg} alt="TauEmpire" className={styles.content_img} />
-                    <div className={styles.content_title}>Империя Тау</div>
+                    <div className={styles.content_title}>Орки</div>
                 </div>
             </a>
 
             <div className={styles.block_conent} href="/TauEmpire">
                 <img src={TauEmpireImg} alt="TauEmpire" className={styles.content_img} />
-                <div className={styles.content_title}>Империя Тау</div>
-            </div>
-
-            <div className={styles.block_conent} href="/TauEmpire">
-                <img src={TauEmpireImg} alt="TauEmpire" className={styles.content_img} />
-                <div className={styles.content_title}>Империя Тау</div>
+                <div className={styles.content_title}>Некроны</div>
             </div>
         </section>
     )

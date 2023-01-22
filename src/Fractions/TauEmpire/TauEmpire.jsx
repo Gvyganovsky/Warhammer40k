@@ -1,11 +1,11 @@
 import React from "react";
-import style from "../../scss/TauEmpire.module.scss";
+import style from "../../scss/Fractions.module.scss";
 import Tau_XV95_Ghostkeel_Battlesuit from "../../assets/TauEmpire/Tau XV95 Ghostkeel Battlesuit.png";
 import FireWarrior from "../../assets/TauEmpire/Fire Warriors.png";
 import CrisisBattlesuits from "../../assets/TauEmpire/Crisis Battlesuits.png";
 import Etheral from "../../assets/TauEmpire/Etheral.jpg";
 import DS8TacticalSupportTurret from "../../assets/TauEmpire/DS8 Tactical Support Turret.png";
-import GunDrone from "../../assets/TauEmpire/Gun Drone.jpg";
+import GunDrone from "../../assets/TauEmpire/Gun Drone.png";
 
 const TauEmpire = () => {
   return (

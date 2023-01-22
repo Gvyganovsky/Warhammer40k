@@ -21,7 +21,7 @@ const Registration = () => {
                 }));
                 navigate('/')
             })
-            .catch(console.error)
+            .catch(() => alert('Invalid user!'))
     }
 
     return (

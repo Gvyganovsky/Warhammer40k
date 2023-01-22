@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../../../scss/CombatUnit.module.scss";
-import GunDrones from "../../../assets/TauEmpire/Gun Drone.jpg";
+import GunDrones from "../../../assets/TauEmpire/Gun Drone.png";
 
 import M from "../../../assets/icons/M.png";
 import WS from "../../../assets/icons/WS.png";
