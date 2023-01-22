@@ -1,5 +1,5 @@
 import React from "react";
-import logoImage from '../assets/logo.png';
+import logoImage from '../assets/icons/logo.png';
 import styles from '../scss/HomePage.module.scss';
 import home from '../assets/icons/Home.png';
 import { Outlet } from 'react-router-dom';

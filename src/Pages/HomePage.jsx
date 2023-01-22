@@ -1,6 +1,7 @@
 import React from "react";
 import styles from '../scss/HomePage.module.scss';
 import TauEmpireImg from '../assets/logoFractions/TauEmpire.png';
+import AstraMilitarumImg from '../assets/logoFractions/AstraMilitarum.png';
 
 const HomePage = () => {
     return (
@@ -19,10 +20,10 @@ const HomePage = () => {
                 </div>
             </a>
 
-            <a href="./Orks">
+            <a href="./AstraMilitarum">
                 <div className={styles.block_conent} href="/TauEmpireArmy">
-                    <img src={TauEmpireImg} alt="TauEmpire" className={styles.content_img} />
-                    <div className={styles.content_title}>Орки</div>
+                    <img src={AstraMilitarumImg} alt="AstraMilitarum" className={styles.content_imgAstraMilitarumImg} />
+                    <div className={styles.content_title}>Им. Гвардия</div>
                 </div>
             </a>
 

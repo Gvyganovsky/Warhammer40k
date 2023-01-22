@@ -3,13 +3,14 @@ import React from "react";
 import { Routes, Route } from 'react-router-dom';
 import { HomePage } from './Pages/HomePage';
 import { LayOut } from './Pages/LayOut';
+import { Profile } from './Pages/Profile';
 import { NotFoundPage } from './Pages/NotFoundPage';
 
 import { RegistrationPage } from './Pages/RegistrationPage';
 import { LoginPage } from './Pages/LoginPage';
 
 import { TauEmpire } from './Fractions/TauEmpire/TauEmpire';
-import { Orks } from './Fractions/Orks/Orks';
+import { AstraMilitarum } from './Fractions/AstraMilitarum/AstraMilitarum';
 import { Necrons } from './Fractions/Necrons/Nercons';
 
 import { TauXV95GhostkeelBattlesuit } from './Fractions/TauEmpire/TauEmpireArmy/Tau XV95 Ghostkeel Battlesuit';
@@ -27,9 +28,10 @@ const App = () => {
 
         <Route path='RegistrationPage' element={<RegistrationPage />} />
         <Route path='LoginPage' element={<LoginPage />} />
+        <Route path='Profile' element={<Profile />} />
 
         <Route path='TauEmpire' element={<TauEmpire />} />
-        <Route path='Orks' element={<Orks />} />
+        <Route path='AstraMilitarum' element={<AstraMilitarum />} />
         <Route path='Necrons' element={<Necrons />} />
 
         <Route path='TauXV95GhostkeelBattlesuit' element={<TauXV95GhostkeelBattlesuit />} />

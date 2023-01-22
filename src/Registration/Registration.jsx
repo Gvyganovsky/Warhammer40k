@@ -19,7 +19,7 @@ const Registration = () => {
                     id: user.uid,
                     token: user.accessToken,
                 }));
-                navigate('/')
+                navigate('../Profile')
             })
             .catch(() => alert('Invalid user!'))
     }

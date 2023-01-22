@@ -1,6 +1,6 @@
 import React from "react";
 
-const Orks = () => {
+const AstraMilitarum = () => {
   return (
     <div>
       Orks
@@ -8,4 +8,4 @@ const Orks = () => {
   )
 }
 
-export { Orks }
+export { AstraMilitarum }
