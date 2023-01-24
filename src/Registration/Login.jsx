@@ -20,7 +20,7 @@ const Login = () => {
                 }));
                 navigate('../Profile')
             })
-            .catch(() => alert('Invalid user!'))
+            .catch(() => alert('Неверная почта или пароль!'))
     }
 
     return (
