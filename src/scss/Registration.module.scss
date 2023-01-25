@@ -22,7 +22,7 @@
     color: #4A4863;
     font-weight: bold;
     padding-bottom: 20px;
-    padding-left: 5px;
+    text-align: center;
 }
 
 .block_or {
@@ -70,4 +70,13 @@
 .or_text {
     font-family: 'Exo 2', sans-serif;
     font-size: 18px;
+}
+
+.title_log {
+    font-family: 'Exo 2', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin: 15px 0 63px 0;
 }
