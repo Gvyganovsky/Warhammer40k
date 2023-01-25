@@ -1,9 +1,16 @@
 import { Link } from "react-router-dom"
 import { Registration } from "../Registration/Registration"
 import styles from '../scss/Registration.module.scss';
+import { useAuth } from '../hooks/use-auth'
+import { useNavigate } from "react-router-dom";
 
 const RegistrationPage = () => {
-    return (
+    const { isAuth } = useAuth();
+    let navigate = useNavigate();
+
+    return isAuth ? (
+        navigate('../Profile')
+    ) : (
         <section className={styles.section_block}>
             <div className={styles.block_reg_log}>
                 <div className={styles.title_reg_log}>Регистрация</div>
