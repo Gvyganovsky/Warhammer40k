@@ -8,8 +8,12 @@ const LayOut = () => {
     return (
         <div>
             <header className={styles.header}>
-                <a href="/"><img src={home} alt="home" className={styles.home} /></a>
+                <div className={styles.block_burger}>
+                    <a href="/" className={styles.as}><img src={home} alt="home" className={styles.home} /></a>
+                </div>
+                <div className={styles.block_logo}>
                 <img src={logoImage} alt="logo" className={styles.logo} />
+                </div>
             </header>
 
             < Outlet />
