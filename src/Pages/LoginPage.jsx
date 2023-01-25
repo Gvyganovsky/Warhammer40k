@@ -7,7 +7,8 @@ const LoginPage = () => {
 
         <section className={styles.section_block}>
             <div className={styles.block_reg_log}>
-                <div className={styles.title_log}>Вход</div>
+                <div className={styles.title_reg_log}>Вход</div>
+                <div className={styles.text_reg_log}>Осталось только выполнить вход!</div>
                 <Login />
                 <div className={styles.block_or}>
                     <div className={styles.line}></div>
