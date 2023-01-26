@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"
+import { useEffect } from 'react'
+import { Link, useLocation } from "react-router-dom"
 import { Registration } from "../Registration/Registration"
 import styles from '../scss/Registration.module.scss';
 import { useAuth } from '../hooks/use-auth'
@@ -6,7 +7,13 @@ import { useNavigate } from "react-router-dom";
 
 const RegistrationPage = () => {
     const { isAuth } = useAuth();
-    let navigate = useNavigate();
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (isAuth) {
+            navigate("../Profile")
+        }
+    }, [])
 
     return isAuth ? (
         navigate('../Profile')
