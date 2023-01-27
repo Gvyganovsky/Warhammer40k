@@ -2,7 +2,6 @@ import { useAuth } from 'hooks/use-auth'
 import { useDispatch } from 'react-redux'
 import { removeUser } from 'store/slices/userSlice'
 import { useNavigate } from "react-router-dom";
-import { useEffect } from 'react'
 
 const Profile = () => {
     const { email } = useAuth();

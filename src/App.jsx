@@ -8,6 +8,7 @@ import { NotFoundPage } from './Pages/NotFoundPage';
 
 import { RegistrationPage } from './Pages/RegistrationPage';
 import { LoginPage } from './Pages/LoginPage';
+import { ForgotPasswordPage } from './Pages/ForgotPasswordPage';
 
 import { TauEmpire } from './Fractions/TauEmpire/TauEmpire';
 import { AstraMilitarum } from './Fractions/AstraMilitarum/AstraMilitarum';
@@ -29,6 +30,7 @@ const App = () => {
         <Route path='RegistrationPage' element={<RegistrationPage />} />
         <Route path='LoginPage' element={<LoginPage />} />
         <Route path='Profile' element={<Profile />} />
+        <Route path='ForgotPasswordPage' element={<ForgotPasswordPage />} />
 
         <Route path='TauEmpire' element={<TauEmpire />} />
         <Route path='AstraMilitarum' element={<AstraMilitarum />} />
