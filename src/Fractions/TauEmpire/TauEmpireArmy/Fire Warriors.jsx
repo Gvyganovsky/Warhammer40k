@@ -13,6 +13,7 @@ import Ld from "../../../assets/icons/Ld.png";
 import Sv from "../../../assets/icons/Sv.png";
 
 import range from "../../../assets/icons/range.png";
+import step from "../../../assets/icons/step.png";
 
 const FireWarriors = () => {
   return (
@@ -21,55 +22,55 @@ const FireWarriors = () => {
         <img src={FireWarrior} alt="FireWarriors" className={style.combat_unit_img} />
         <div className={style.combat_unit_param}>
 
-            <div className={style.combat_unit_param_block}>
-              <img src={M} alt="M" className={style.param_img} />
-              <div className={style.param_number}>6"</div>
-            </div>
+          <div className={style.combat_unit_param_block}>
+            <img src={M} alt="M" className={style.param_img} />
+            <div className={style.param_number}>6"</div>
+          </div>
 
-            <div className={style.combat_unit_param_block}>
-              <img src={WS} alt="WS" className={style.param_img} />
-              <div className={style.param_number}>5+</div>
-            </div>
+          <div className={style.combat_unit_param_block}>
+            <img src={WS} alt="WS" className={style.param_img} />
+            <div className={style.param_number}>5+</div>
+          </div>
 
-            <div className={style.combat_unit_param_block}>
-              <img src={BS} alt="BS" className={style.param_img} />
-              <div className={style.param_number}>4+</div>
-            </div>
-        
+          <div className={style.combat_unit_param_block}>
+            <img src={BS} alt="BS" className={style.param_img} />
+            <div className={style.param_number}>4+</div>
+          </div>
 
-          
-            <div className={style.combat_unit_param_block}>
-              <img src={S} alt="S" className={style.param_img} />
-              <div className={style.param_number}>3</div>
-            </div>
 
-            <div className={style.combat_unit_param_block}>
-              <img src={T} alt="T" className={style.param_img} />
-              <div className={style.param_number}>3</div>
-            </div>
 
-            <div className={style.combat_unit_param_block}>
-              <img src={W} alt="W" className={style.param_img} />
-              <div className={style.param_number}>1</div>
-            </div>
-         
+          <div className={style.combat_unit_param_block}>
+            <img src={S} alt="S" className={style.param_img} />
+            <div className={style.param_number}>3</div>
+          </div>
 
-         
-            <div className={style.combat_unit_param_block}>
-              <img src={A} alt="A" className={style.param_img} />
-              <div className={style.param_number}>1</div>
-            </div>
+          <div className={style.combat_unit_param_block}>
+            <img src={T} alt="T" className={style.param_img} />
+            <div className={style.param_number}>3</div>
+          </div>
 
-            <div className={style.combat_unit_param_block}>
-              <img src={Ld} alt="Ld" className={style.param_img} />
-              <div className={style.param_number}>7</div>
-            </div>
+          <div className={style.combat_unit_param_block}>
+            <img src={W} alt="W" className={style.param_img} />
+            <div className={style.param_number}>1</div>
+          </div>
 
-            <div className={style.combat_unit_param_block}>
-              <img src={Sv} alt="Sv" className={style.param_img} />
-              <div className={style.param_number}>4+</div>
-            </div>
-          
+
+
+          <div className={style.combat_unit_param_block}>
+            <img src={A} alt="A" className={style.param_img} />
+            <div className={style.param_number}>1</div>
+          </div>
+
+          <div className={style.combat_unit_param_block}>
+            <img src={Ld} alt="Ld" className={style.param_img} />
+            <div className={style.param_number}>7</div>
+          </div>
+
+          <div className={style.combat_unit_param_block}>
+            <img src={Sv} alt="Sv" className={style.param_img} />
+            <div className={style.param_number}>4+</div>
+          </div>
+
         </div>
       </section>
 
@@ -173,10 +174,9 @@ const FireWarriors = () => {
             <span>2 CP</span>
           </div>
           <div className={style.stratName_info_stratBattleTactic}>
-            Используйте эту стратегию на этапе стрельбы, когда вражеская модель теряет какие-либо
-            ранения в результате атаки, произведенной моделью T'AU SEPT из вашей армии. До конца фазы,
-            каждый раз, когда базовая модель T'AU SEPT из вашей армии совершает атаку против подразделения
-            этой вражеской модели, добавляйте 1 к броску ранений этой атаки.
+            Используйте эту стратегему на этапе стрельбы, когда вражеская модель получает урон
+            в результате атаки. До конца фазы, каждый раз, когда модель вашей армии совершает
+            атаку против подразделения этой вражеской модели, добавляйте 1 к броску урона этой атаки.
           </div>
         </div>
 
@@ -186,12 +186,11 @@ const FireWarriors = () => {
             <span>1 CP</span>
           </div>
           <div className={style.stratName_info_stratBattleTactic}>
-            Используйте эту стратегию на этапе стрельбы, когда для стрельбы
-            выбирается подразделение УДАРНОЙ группы из вашей армии. До конца фазы:
-            Вместо того, чтобы следовать обычным правилам для скорострельного оружия,
-            модели в этом подразделении, стреляющие из импульсных винтовок, совершают вдвое больше атак.
-            Каждый раз, когда БАЗОВАЯ модель в этом подразделении совершает атаку дальнего боя,
-            улучшайте характеристику бронепробиваемости этой атаки на 1.
+            Используйте эту стратегию на этапе стрельбы. До конца фазы:
+            Вместо того, чтобы следовать обычным правилам для Rapid Fire,
+            модели в этом подразделении, стреляющие из pulse rifles, совершают вдвое больше атак.
+            Каждый раз, когда модель в этом подразделении совершает атаку дальнего боя,
+            улучшайте характеристику AP этой атаки на 1.
           </div>
         </div>
 
@@ -201,10 +200,9 @@ const FireWarriors = () => {
             <span>1 CP</span>
           </div>
           <div className={style.stratName_info_stratBattleTactic}>
-            Используйте эту стратегию на этапе стрельбы, когда для стрельбы выбирается подразделение
-            FIRE WARRIOR TEAM из вашей армии. До конца фазы, каждый раз, когда БАЗОВАЯ модель в этом
-            подразделении совершает атаку импульсным оружием, неизмененный бросок удара из 6 автоматически
-            ранит цель.
+            Используйте эту стратегию на этапе стрельбы. До конца фазы, каждый раз, 
+            когда модель в этом подразделении совершает атаку импульсным оружием, 
+            неизмененный бросок удара из 6 автоматически ранит цель.
           </div>
         </div>
 
@@ -215,9 +213,9 @@ const FireWarriors = () => {
           </div>
           <div className={style.stratName_info_stratBattleTactic}>
             Используйте эту стратегию в начале вашей фазы стрельбы.
-            Выберите одно подразделение FIRE WARRIOR TEAM из вашей армии,
+            Выберите одно подразделение FIRE WARRIOR из вашей армии,
             которое находится в пределах досягаемости любых вражеских подразделений.
-            До конца фазы импульсные бластеры, импульсные карабины и импульсные винтовки,
+            До конца фазы pulse blasters, pulse carbines и pulse rifles,
             которыми оснащены модели в этом подразделении, имеют характеристику типа Pistol 2.
           </div>
         </div>

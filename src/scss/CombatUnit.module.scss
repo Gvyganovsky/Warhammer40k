@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
 
 :root {
     --color-stratBattleTactic: #294a67;
@@ -165,16 +166,17 @@
     margin-bottom: 10px;
     max-width: 630px;
     margin: 10px auto;
+    font-family: 'Rubik', sans-serif;
 }
 
 .stratName_stratBattleTactic {
+    font-family: 'Roboto', sans-serif;
     color: white;
     margin: 0 5px;
     padding: 5px;
     border-radius: 3px;
     background: linear-gradient(315deg, transparent 8px, var(--color-stratBattleTactic) 0);
     font-size: 15px;
-    font-family: Minion-Pro, times new roman, sans-serif;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
@@ -184,20 +186,18 @@
     border: solid var(--color-stratBattleTactic);
     margin: -15px 5px 0px 5px;
     padding: 15px 5px;
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     text-align: justify;
 }
 
-
 .stratName_stratStrategicPloy {
+    font-family: 'Roboto', sans-serif;
     color: white;
     margin: 0 5px;
     padding: 5px;
     border-radius: 3px;
     background: linear-gradient(315deg, transparent 8px, var(--color-stratStrategicPloy) 0);
     font-size: 15px;
-    font-family: Minion-Pro, times new roman, sans-serif;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
@@ -207,20 +207,19 @@
     border: solid var(--color-stratStrategicPloy);
     margin: -15px 5px 0px 5px;
     padding: 15px 5px;
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     text-align: justify;
 }
 
 
 .stratName_stratEpicDeed {
+    font-family: 'Roboto', sans-serif;
     color: white;
     margin: 0 5px;
     padding: 5px;
     border-radius: 3px;
     background: linear-gradient(315deg, transparent 8px, var(--color-stratEpicDeed) 0);
     font-size: 15px;
-    font-family: Minion-Pro, times new roman, sans-serif;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
@@ -230,7 +229,6 @@
     border: solid var(--color-stratEpicDeed);
     margin: -15px 5px 0px 5px;
     padding: 15px 5px;
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     text-align: justify;
 }
@@ -243,7 +241,6 @@
     border-radius: 3px;
     background: linear-gradient(315deg, transparent 8px, var(--color-stratEpicDeed) 0);
     font-size: 15px;
-    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
@@ -253,7 +250,6 @@
     border: solid var(--color-stratEpicDeed);
     margin: -15px 5px 0px 5px;
     padding: 15px 5px;
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     text-align: justify;
 }
