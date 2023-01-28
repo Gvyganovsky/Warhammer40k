@@ -16,7 +16,7 @@ const LayOut = () => {
                     <img src={logoImage} alt="logo" className={styles.logo} />
                 </div>
                 <div className={styles.block_burger}>
-                    <a href="/RegistrationPage" className={styles.as}><img src={profile} alt="profile" className={styles.home} /></a>
+                    <a href="/RegistrationPage" className={styles.ass}><img src={profile} alt="profile" className={styles.home2} /></a>
                 </div>
             </header>
 

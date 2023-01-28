@@ -17,6 +17,12 @@
   margin: 15px 0 15px 15px;
 }
 
+.home2 {
+  width: 30px;
+  height: 30px;
+  margin: 15px 15px 15px 0;
+}
+
 .block_burger {
   display: flex;
   justify-content: left;
