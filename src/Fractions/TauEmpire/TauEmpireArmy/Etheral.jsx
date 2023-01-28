@@ -13,6 +13,11 @@ import Ld from "../../../assets/icons/Ld.png";
 import Sv from "../../../assets/icons/Sv.png";
 
 import range from "../../../assets/icons/range.png";
+import hit from "../../../assets/icons/hit.svg";
+import question from "../../../assets/icons/question.png";
+import morale from "../../../assets/icons/morale.png";
+import limitation from "../../../assets/icons/limitation.png";
+import dice from "../../../assets/icons/dice.png";
 
 const Etheral = () => {
   return (
@@ -20,7 +25,7 @@ const Etheral = () => {
       <section className={style.content}>
         <img src={Ether} alt="Ether" className={style.combat_unit_img} />
         <div className={style.combat_unit_param}>
-          <div className={style.combat_unit_param_three}>
+
             <div className={style.combat_unit_param_block}>
               <img src={M} alt="M" className={style.param_img} />
               <div className={style.param_number}>6"</div>
@@ -35,9 +40,9 @@ const Etheral = () => {
               <img src={BS} alt="BS" className={style.param_img} />
               <div className={style.param_number}>4+</div>
             </div>
-          </div>
+   
 
-          <div className={style.combat_unit_param_three}>
+         
             <div className={style.combat_unit_param_block}>
               <img src={S} alt="S" className={style.param_img} />
               <div className={style.param_number}>3</div>
@@ -52,9 +57,9 @@ const Etheral = () => {
               <img src={W} alt="W" className={style.param_img} />
               <div className={style.param_number}>4</div>
             </div>
-          </div>
+         
 
-          <div className={style.combat_unit_param_three}>
+         
             <div className={style.combat_unit_param_block}>
               <img src={A} alt="A" className={style.param_img} />
               <div className={style.param_number}>3</div>
@@ -69,7 +74,7 @@ const Etheral = () => {
               <img src={Sv} alt="Sv" className={style.param_img} />
               <div className={style.param_number}>5+</div>
             </div>
-          </div>
+      
         </div>
       </section>
 
@@ -109,28 +114,36 @@ const Etheral = () => {
       <section className={style.content}>
         <div className={style.line}></div>
         <div className={style.content_title}>Способности</div>
-        <div className={style.abilities}>
-          <div className={style.abilities_title}>
-            Неудача - это не вариант
+
+        <div className={style.abilities_block}>
+          <div className={style.abilities_title_block}>
+            <div className={style.abilities_title}>Неудача - это не вариант</div>
+            <div className={style.block_symbol}>
+              <div className={style.symbol_text}>6"</div>
+              <img src={morale} alt="morale" className={style.abilities_symbol} />
+            </div>
           </div>
           <div className={style.abilities_text}>
-            В то время как дружественный ОСНОВНОЙ отряд ИМПЕРИИ Тау
-            находится в пределах 6" от ЭФИРНОЙ модели этого подразделения,
-            модели в этом подразделении могут использовать лидерские характеристики
-            этой модели вместо своих собственных.
+            В то время как отряд Империи Тау находится в пределах 6"
+            от Эфирного, модели в этом отряде могут использовать лидерские
+            характеристики этой модели вместо своих собственных.
           </div>
         </div>
 
-        <div className={style.abilities}>
-          <div className={style.abilities_title}>
-            Безмятежный объединитель
+        <div className={style.abilities_block}>
+          <div className={style.abilities_title_block}>
+            <div className={style.abilities_title}>Безмятежный объединитель</div>
+            <div className={style.block_symbol}>
+              <div className={style.symbol_text}>3+</div>
+              <img src={dice} alt="dice" className={style.abilities_symbol} />
+            </div>
           </div>
           <div className={style.abilities_text}>
-            Эта модель знает два призыва из Призывов Эфирного. В вашей командной фазе,
-            если эта модель находится на поле боя, она может произнести одно известное
-            ей заклинание, которое еще не было произнесено дружественной моделью в этот ход.
-            Бросок один D6: на 3+ произнесенный нараспев призыв вдохновляет и действует до начала
-            вашей следующей командной фазы.
+            <div>Эфирный знает два заклинания.</div>
+            <div>В вашей командной фазе, если эта модель
+              находится на поле боя, она может произнести одно известное ей заклинание,
+              которое еще не было использовано в этот ход.
+              Бросок 1D6: на 3+ заклинание действует до начала вашей следующей командной фазы.</div>
           </div>
         </div>
       </section>

@@ -13,6 +13,11 @@ import Ld from "../../../assets/icons/Ld.png";
 import Sv from "../../../assets/icons/Sv.png";
 
 import range from "../../../assets/icons/range.png";
+import location from "../../../assets/icons/location.png";
+import hit from "../../../assets/icons/hit.svg";
+import question from "../../../assets/icons/question.png";
+import morale from "../../../assets/icons/morale.png";
+import limitation from "../../../assets/icons/limitation.png";
 
 const DS8TacticalSupportTurret = () => {
     return (
@@ -20,7 +25,6 @@ const DS8TacticalSupportTurret = () => {
             <section className={style.content}>
                 <img src={DS8TacticalSupTurrett} alt="Tactical Support Turret" className={style.combat_unit_img} />
                 <div className={style.combat_unit_param}>
-                    <div className={style.combat_unit_param_three}>
                         <div className={style.combat_unit_param_block}>
                             <img src={M} alt="M" className={style.param_img} />
                             <div className={style.param_number}>-</div>
@@ -35,9 +39,7 @@ const DS8TacticalSupportTurret = () => {
                             <img src={BS} alt="BS" className={style.param_img} />
                             <div className={style.param_number}>4+</div>
                         </div>
-                    </div>
 
-                    <div className={style.combat_unit_param_three}>
                         <div className={style.combat_unit_param_block}>
                             <img src={S} alt="S" className={style.param_img} />
                             <div className={style.param_number}>3</div>
@@ -52,9 +54,7 @@ const DS8TacticalSupportTurret = () => {
                             <img src={W} alt="W" className={style.param_img} />
                             <div className={style.param_number}>1</div>
                         </div>
-                    </div>
 
-                    <div className={style.combat_unit_param_three}>
                         <div className={style.combat_unit_param_block}>
                             <img src={A} alt="A" className={style.param_img} />
                             <div className={style.param_number}>0</div>
@@ -69,7 +69,6 @@ const DS8TacticalSupportTurret = () => {
                             <img src={Sv} alt="Sv" className={style.param_img} />
                             <div className={style.param_number}>4+</div>
                         </div>
-                    </div>
                 </div>
             </section>
 
@@ -138,17 +137,50 @@ const DS8TacticalSupportTurret = () => {
             <section className={style.content}>
                 <div className={style.line}></div>
                 <div className={style.content_title}>Способности</div>
-                <div className={style.abilities}>
-                    <div className={style.abilities_title}>
-                        Особенность юнита
+
+                <div className={style.abilities_block}>
+                    <div className={style.abilities_title_block}>
+                        <div className={style.abilities_title}>Установка юнита</div>
+                        <div className={style.block_symbol}>
+                            <img src={location} alt="location" className={style.abilities_symbol} />
+                        </div>
                     </div>
                     <div className={style.abilities_text}>
-                        В конце любой из ваших фаз передвижения, вы можете установить башню тактической поддержки
-                        в пределах согласованности с ее подразделением и на расстоянии более 2 дюймов от любых
-                        вражеских моделей.
-                        Башня не может двигаться по какой-либо причине и уничтожается, если Ударная группа выходит
-                        из согласованности с ней. Уничтожение башни тактической поддержки игнорируется в целях проверки
-                        боевого духа.
+                        <div className={style.abilities_text}>
+                            В конце фазы передвижения, вы можете установить башню тактической поддержки
+                            в пределах согласованности с ее подразделением на расстоянии более 2" от
+                            любых вражеских моделей.
+                        </div>
+                    </div>
+                </div>
+
+                <div className={style.abilities_block}>
+                    <div className={style.abilities_title_block}>
+                        <div className={style.abilities_title}>Уничтожение юнита</div>
+                        <div className={style.block_symbol}>
+                            <img src={limitation} alt="limitation" className={style.abilities_symbol} />
+                        </div>
+                    </div>
+                    <div className={style.abilities_text}>
+                        <div className={style.abilities_text}>
+                            Башня не может двигаться по какой-либо причине и уничтожается, если Ударная группа
+                            выходит из согласованности с ней.
+                        </div>
+                    </div>
+                </div>
+
+                <div className={style.abilities_block}>
+                    <div className={style.abilities_title_block}>
+                        <div className={style.abilities_title}>Боевой дух</div>
+                        <div className={style.block_symbol}>
+                            <img src={morale} alt="morale" className={style.abilities_symbol} />
+                        </div>
+                    </div>
+                    <div className={style.abilities_text}>
+                        <div className={style.abilities_text}>
+                            Уничтожение башни тактической поддержки игнорируется в целях проверки
+                            боевого духа.
+                        </div>
                     </div>
                 </div>
             </section>

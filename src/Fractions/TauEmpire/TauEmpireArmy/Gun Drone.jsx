@@ -13,6 +13,10 @@ import Ld from "../../../assets/icons/Ld.png";
 import Sv from "../../../assets/icons/Sv.png";
 
 import range from "../../../assets/icons/range.png";
+import hit from "../../../assets/icons/hit.svg";
+import question from "../../../assets/icons/question.png";
+import morale from "../../../assets/icons/morale.png";
+import limitation from "../../../assets/icons/limitation.png";
 
 const GunDrone = () => {
     return (
@@ -20,7 +24,7 @@ const GunDrone = () => {
             <section className={style.content}>
                 <img src={GunDrones} alt="Gun Drone" className={style.combat_unit_img} />
                 <div className={style.combat_unit_param}>
-                    <div className={style.combat_unit_param_three}>
+          
                         <div className={style.combat_unit_param_block}>
                             <img src={M} alt="M" className={style.param_img} />
                             <div className={style.param_number}>10</div>
@@ -35,9 +39,9 @@ const GunDrone = () => {
                             <img src={BS} alt="BS" className={style.param_img} />
                             <div className={style.param_number}>5+</div>
                         </div>
-                    </div>
+                   
 
-                    <div className={style.combat_unit_param_three}>
+              
                         <div className={style.combat_unit_param_block}>
                             <img src={S} alt="S" className={style.param_img} />
                             <div className={style.param_number}>3</div>
@@ -52,9 +56,9 @@ const GunDrone = () => {
                             <img src={W} alt="W" className={style.param_img} />
                             <div className={style.param_number}>1</div>
                         </div>
-                    </div>
+                    
 
-                    <div className={style.combat_unit_param_three}>
+                    
                         <div className={style.combat_unit_param_block}>
                             <img src={A} alt="A" className={style.param_img} />
                             <div className={style.param_number}>1</div>
@@ -69,7 +73,7 @@ const GunDrone = () => {
                             <img src={Sv} alt="Sv" className={style.param_img} />
                             <div className={style.param_number}>4+</div>
                         </div>
-                    </div>
+               
                 </div>
             </section>
 
@@ -109,65 +113,65 @@ const GunDrone = () => {
             <section className={style.content}>
                 <div className={style.line}></div>
                 <div className={style.content_title}>Способности</div>
-                <div className={style.abilities}>
-                    <div className={style.abilities_title}>
-                        Протокол идентификации угрозы
+
+                <div className={style.abilities_block}>
+                    <div className={style.abilities_title_block}>
+                        <div className={style.abilities_title}>Протокол идентификации угрозы</div>
+                        <div className={style.block_symbol}>
+                            <img src={hit} alt="hit" className={style.abilities_symbol} />
+                        </div>
                     </div>
                     <div className={style.abilities_text}>
-                        Каждый раз, когда эта модель совершает дальнюю атаку, она может нацелиться
-                        только на ближайшего подходящего юнита.
+                        Каждый раз, когда эта модель совершает дальнобойную атаку,
+                        она может быть нацелена только на ближайшее подходящее подразделение.
                     </div>
                 </div>
 
-                <div className={style.abilities}>
-                    <div className={style.abilities_title}>
-                        Ценная жертва
+                <div className={style.abilities_block}>
+                    <div className={style.abilities_title_block}>
+                        <div className={style.abilities_title}>Ценная жертва</div>
+                        <div className={style.block_symbol}>
+                            <img src={morale} alt="morale" className={style.abilities_symbol} />
+                        </div>
                     </div>
                     <div className={style.abilities_text}>
-                        Каждый раз, когда модель дрона в этом блоке уничтожается, она игнорируется
-                        с целью проверки боевого духа, если этот блок также содержит модели без
-                        ключевого слова DRONE.
+                        Каждый раз, когда модель дрона в этом отряде уничтожается, потери
+                        игнорируется с целью проверки боевого духа.
                     </div>
                 </div>
 
-                <div className={style.abilities}>
-                    <div className={style.abilities_title}>
-                        Искусственные помощники
+                <div className={style.abilities_block}>
+                    <div className={style.abilities_title_block}>
+                        <div className={style.abilities_title}>Ограниченные параметры</div>
+                        <div className={style.block_symbol}>
+                            <img src={limitation} alt="limitation" className={style.abilities_symbol} />
+                        </div>
                     </div>
                     <div className={style.abilities_text}>
-                        <div>Модели беспилотных летательных аппаратов игнорируются в целях:</div>
-                        <div>Берегитесь, сэр рул.</div>
-                        <div>Определение начальной прочности этого блока и того, находится ли этот
-                            блок ниже половины прочности.</div>
-                        <div>Определение характеристики прочности этого устройства, если оно также
-                            содержит модели без ключевого слова DRONE.</div>
-                    </div>
-                </div>
-
-                <div className={style.abilities}>
-                    <div className={style.abilities_title}>
-                        Ограниченные параметры
-                    </div>
-                    <div className={style.abilities_text}>
-                        Если это устройство содержит только модели дронов, это устройство не может
-                        выполнять действия (за исключением действия Fire Markerlights) и теряет
+                        Если этот отряд содержит только модели дронов, этот отряд не может
+                        выполнять действия (за исключением Fire Markerlights) и теряет
                         способность Objective Secure, если она у него есть, и не может получить
                         ее никакими средствами.
                     </div>
                 </div>
 
-                <div className={style.abilities}>
-                    <div className={style.abilities_title}>
-                        Пристыкованный беспилотник
+                <div className={style.abilities_block}>
+                    <div className={style.abilities_title_block}>
+                        <div className={style.abilities_title}>Пристыкованный беспилотник</div>
+                        <div className={style.block_symbol}>
+                            <img src={question} alt="question" className={style.abilities_symbol} />
+                        </div>
                     </div>
                     <div className={style.abilities_text}>
-                        <div>Eсли эта модель пристыкована к другой:</div>
-                        <div>Любое оружие, которым оснащена эта модель, считается снаряженным
-                            в соответствии с моделью, с которой оно состыковано вместо этого.</div>
-                        <div>Атаки не могут быть отнесены к этой модели, и она не считается
-                            моделью на поле боя ни для каких целей правил.</div>
-                        <div>Если модель, с которой он состыкован, уничтожена, эта модель
-                            дрона также уничтожается.</div>
+                        <div className={style.abilities_text}>
+                            <div>Eсли эта модель пристыкована к другой:</div>
+                            <div>1. Любое оружие, которым оснащена эта модель, считается снаряженным
+                                в соответствии с моделью, с которой оно состыковано вместо этого.</div>
+                            <div>2. Атаки не могут быть отнесены к этой модели, и она не считается
+                                моделью на поле боя ни для каких целей правил.</div>
+                            <div>3. Если модель, с которой он состыкован, уничтожена, эта модель
+                                дрона также уничтожается.</div>
+                        </div>
                     </div>
                 </div>
             </section>

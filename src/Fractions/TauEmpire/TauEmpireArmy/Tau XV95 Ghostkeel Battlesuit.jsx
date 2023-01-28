@@ -13,6 +13,8 @@ import Ld from "../../../assets/icons/Ld.png";
 import Sv from "../../../assets/icons/Sv.png";
 
 import range from "../../../assets/icons/range.png";
+import hit from "../../../assets/icons/hit.svg";
+import location from "../../../assets/icons/location.png";
 
 const TauXV95GhostkeelBattlesuit = () => {
   return (
@@ -20,55 +22,49 @@ const TauXV95GhostkeelBattlesuit = () => {
       <section className={style.content}>
         <img src={Tau_XV95_Ghostkeel_Battlesuit} alt="TauXV95GhostkeelBattlesuit" className={style.combat_unit_img} />
         <div className={style.combat_unit_param}>
-          <div className={style.combat_unit_param_three}>
-            <div className={style.combat_unit_param_block}>
-              <img src={M} alt="M" className={style.param_img} />
-              <div className={style.param_number}>12</div>
-            </div>
-
-            <div className={style.combat_unit_param_block}>
-              <img src={WS} alt="WS" className={style.param_img} />
-              <div className={style.param_number}>5+</div>
-            </div>
-
-            <div className={style.combat_unit_param_block}>
-              <img src={BS} alt="BS" className={style.param_img} />
-              <div className={style.param_number}>4+</div>
-            </div>
+          <div className={style.combat_unit_param_block}>
+            <img src={M} alt="M" className={style.param_img} />
+            <div className={style.param_number}>12"</div>
           </div>
 
-          <div className={style.combat_unit_param_three}>
-            <div className={style.combat_unit_param_block}>
-              <img src={S} alt="S" className={style.param_img} />
-              <div className={style.param_number}>6</div>
-            </div>
-
-            <div className={style.combat_unit_param_block}>
-              <img src={T} alt="T" className={style.param_img} />
-              <div className={style.param_number}>6</div>
-            </div>
-
-            <div className={style.combat_unit_param_block}>
-              <img src={W} alt="W" className={style.param_img} />
-              <div className={style.param_number}>10</div>
-            </div>
+          <div className={style.combat_unit_param_block}>
+            <img src={WS} alt="WS" className={style.param_img} />
+            <div className={style.param_number}>5+</div>
           </div>
 
-          <div className={style.combat_unit_param_three}>
-            <div className={style.combat_unit_param_block}>
-              <img src={A} alt="A" className={style.param_img} />
-              <div className={style.param_number}>3</div>
-            </div>
+          <div className={style.combat_unit_param_block}>
+            <img src={BS} alt="BS" className={style.param_img} />
+            <div className={style.param_number}>4+</div>
+          </div>
 
-            <div className={style.combat_unit_param_block}>
-              <img src={Ld} alt="Ld" className={style.param_img} />
-              <div className={style.param_number}>8</div>
-            </div>
+          <div className={style.combat_unit_param_block}>
+            <img src={S} alt="S" className={style.param_img} />
+            <div className={style.param_number}>6</div>
+          </div>
 
-            <div className={style.combat_unit_param_block}>
-              <img src={Sv} alt="Sv" className={style.param_img} />
-              <div className={style.param_number}>3+</div>
-            </div>
+          <div className={style.combat_unit_param_block}>
+            <img src={T} alt="T" className={style.param_img} />
+            <div className={style.param_number}>6</div>
+          </div>
+
+          <div className={style.combat_unit_param_block}>
+            <img src={W} alt="W" className={style.param_img} />
+            <div className={style.param_number}>10</div>
+          </div>
+
+          <div className={style.combat_unit_param_block}>
+            <img src={A} alt="A" className={style.param_img} />
+            <div className={style.param_number}>3</div>
+          </div>
+
+          <div className={style.combat_unit_param_block}>
+            <img src={Ld} alt="Ld" className={style.param_img} />
+            <div className={style.param_number}>8</div>
+          </div>
+
+          <div className={style.combat_unit_param_block}>
+            <img src={Sv} alt="Sv" className={style.param_img} />
+            <div className={style.param_number}>3+</div>
           </div>
         </div>
       </section>
@@ -288,27 +284,37 @@ const TauXV95GhostkeelBattlesuit = () => {
       <section className={style.content}>
         <div className={style.line}></div>
         <div className={style.content_title}>Способности</div>
-        <div className={style.abilities}>
-          <div className={style.abilities_title}>
-            Набор электрошокеров Ghostkeel
+
+        <div className={style.abilities_block}>
+          <div className={style.abilities_title_block}>
+            <div className={style.abilities_title}>Набор электрошокеров Ghostkeel</div>
+            <div className={style.block_symbol}>
+              <div className={style.symbol_text}>-1</div>
+              <img src={hit} alt="hit" className={style.abilities_symbol} />
+            </div>
           </div>
           <div className={style.abilities_text}>
-            Ваш противник должен вычесть 1 из бросков попадания для моделей,
-            атакующих эту модель с расстояния более 6".
+            Ваш противник вычетает 1 из бросков попадания для моделей, атакующих
+            эту модель с расстояния более 6".
           </div>
+        </div>
 
-          <div className={style.abilities_title}>
-            Лазутчики
+        <div className={style.abilities_block}>
+          <div className={style.abilities_title_block}>
+            <div className={style.abilities_title}>Лазутчики</div>
+            <div className={style.block_symbol}>
+              <div className={style.symbol_text}>12"</div>
+              <img src={location} alt="location" className={style.abilities_symbol} />
+            </div>
           </div>
           <div className={style.abilities_text}>
             Во время развертывания это подразделение и любые сопровождающие его дроны
-            могут быть установлены в любом месте поля боя, которое не находится в зоне
-            развертывания вашего противника и находится более чем в 12" от любого
-            вражеского подразделения.
+            могут быть установлены в любом месте поля боя, которое находится более чем
+            в 12" от любого вражеского подразделения.
           </div>
         </div>
       </section>
-    </div >
+    </div>
   )
 }
 

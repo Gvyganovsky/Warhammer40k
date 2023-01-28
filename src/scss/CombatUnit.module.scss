@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@600&family=Open+Sans:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500;800&display=swap');
 
 :root {
     --color-stratBattleTactic: #294a67;
@@ -11,6 +12,7 @@
     display: block;
     justify-content: center;
     text-align: center;
+    margin: 0 5px;
 }
 
 .combat_unit_img {
@@ -19,35 +21,31 @@
 }
 
 .combat_unit_param {
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 250px;
 }
 
 .param_img {
     width: 30px;
     height: 30px;
+    margin-right: 5px;
 }
 
 .param_number {
-    font-family: 'Alegreya', serif;
+    font-family: 'Alegreya SC', serif;
     font-size: 24px;
-    text-align: center;
-    margin: 0px 20px 5px 5px;
+    align-self: center;
 }
 
 .combat_unit_param_block {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 80px;
-}
-
-.combat_unit_param_three {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 5px;
+    text-align: left;
+    width: 65px;
+    margin: 5px;
 }
 
 .weapon {
@@ -57,13 +55,13 @@
 }
 
 .weapon_info {
-    font-family: 'Alegreya', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 
 .weapon_content {
     margin: 5px 10px 5px 10px;
-    font-family: 'Alegreya', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     width: 50px;
     height: 60px;
@@ -80,7 +78,7 @@
 }
 
 .content_title {
-    font-family: 'Alegreya', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 25px;
     font-weight: bold;
     text-align: center;
@@ -92,23 +90,61 @@
 }
 
 .gun_title {
-    font-family: 'Alegreya', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: bold;
     width: 100px;
 }
 
+.abilities_block {
+    background-color: #e9edf7;
+    border-radius: 25px;
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.abilities_title_block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
 .abilities_title {
-    font-family: 'Alegreya', serif;
-    font-size: 25px;
-    font-weight: bold;
-    color: #cc0000;
+    font-family: 'Rubik', sans-serif;
+    align-self: center;
+    font-weight: 500;
+}
+
+.block_symbol {
+    display: flex;
+}
+
+.symbol_text {
+    font-family: 'Rubik', sans-serif;
+    align-self: center;
+    margin-right: 6px;
+    font-weight: 500;
+}
+
+.abilities_symbol {
+    width: 30px;
+    height: 30px;
 }
 
 .abilities_text {
-    font-family: 'Alegreya', serif;
-    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    text-align: justify;
+    color: #586e8a;
 }
+
+
+
+
+
+
+
+
 
 .damage_content {
     display: flex;
@@ -120,13 +156,15 @@
 }
 
 .damage_block {
-    font-family: 'Alegreya', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
     margin: 0 10px;
 }
 
 .strat {
     margin-bottom: 10px;
+    max-width: 630px;
+    margin: 10px auto;
 }
 
 .stratName_stratBattleTactic {
@@ -146,7 +184,7 @@
     border: solid var(--color-stratBattleTactic);
     margin: -15px 5px 0px 5px;
     padding: 15px 5px;
-    font-family: 'Alegreya', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     text-align: justify;
 }
@@ -169,7 +207,7 @@
     border: solid var(--color-stratStrategicPloy);
     margin: -15px 5px 0px 5px;
     padding: 15px 5px;
-    font-family: 'Alegreya', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     text-align: justify;
 }
@@ -192,7 +230,7 @@
     border: solid var(--color-stratEpicDeed);
     margin: -15px 5px 0px 5px;
     padding: 15px 5px;
-    font-family: 'Alegreya', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     text-align: justify;
 }
@@ -205,7 +243,7 @@
     border-radius: 3px;
     background: linear-gradient(315deg, transparent 8px, var(--color-stratEpicDeed) 0);
     font-size: 15px;
-    font-family: Minion-Pro, times new roman, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
@@ -215,7 +253,7 @@
     border: solid var(--color-stratEpicDeed);
     margin: -15px 5px 0px 5px;
     padding: 15px 5px;
-    font-family: 'Alegreya', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     text-align: justify;
 }

@@ -20,7 +20,7 @@ const FireWarriors = () => {
       <section className={style.content}>
         <img src={FireWarrior} alt="FireWarriors" className={style.combat_unit_img} />
         <div className={style.combat_unit_param}>
-          <div className={style.combat_unit_param_three}>
+
             <div className={style.combat_unit_param_block}>
               <img src={M} alt="M" className={style.param_img} />
               <div className={style.param_number}>6"</div>
@@ -35,9 +35,9 @@ const FireWarriors = () => {
               <img src={BS} alt="BS" className={style.param_img} />
               <div className={style.param_number}>4+</div>
             </div>
-          </div>
+        
 
-          <div className={style.combat_unit_param_three}>
+          
             <div className={style.combat_unit_param_block}>
               <img src={S} alt="S" className={style.param_img} />
               <div className={style.param_number}>3</div>
@@ -52,9 +52,9 @@ const FireWarriors = () => {
               <img src={W} alt="W" className={style.param_img} />
               <div className={style.param_number}>1</div>
             </div>
-          </div>
+         
 
-          <div className={style.combat_unit_param_three}>
+         
             <div className={style.combat_unit_param_block}>
               <img src={A} alt="A" className={style.param_img} />
               <div className={style.param_number}>1</div>
@@ -69,7 +69,7 @@ const FireWarriors = () => {
               <img src={Sv} alt="Sv" className={style.param_img} />
               <div className={style.param_number}>4+</div>
             </div>
-          </div>
+          
         </div>
       </section>
 

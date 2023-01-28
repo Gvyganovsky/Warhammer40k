@@ -13,6 +13,11 @@ import Ld from "../../../assets/icons/Ld.png";
 import Sv from "../../../assets/icons/Sv.png";
 
 import range from "../../../assets/icons/range.png";
+import location from "../../../assets/icons/location.png";
+import hit from "../../../assets/icons/hit.svg";
+import question from "../../../assets/icons/question.png";
+import morale from "../../../assets/icons/morale.png";
+import limitation from "../../../assets/icons/limitation.png";
 
 const CrisisBattlesuits = () => {
   return (
@@ -332,36 +337,20 @@ const CrisisBattlesuits = () => {
       <section className={style.content}>
         <div className={style.line}></div>
         <div className={style.content_title}>Способности</div>
-        <div className={style.abilities}>
-          <div className={style.abilities_title}>
-            Ритуал скрепляющего ножа
+        <div className={style.abilities_block}>
+          <div className={style.abilities_title_block}>
+            <div className={style.abilities_title}>Удар Манты</div>
+            <div className={style.block_symbol}>
+              <div className={style.symbol_text}>9"</div>
+              <img src={location} alt="location" className={style.abilities_symbol} />
+            </div>
           </div>
           <div className={style.abilities_text}>
-            Если вы бросаете 6 при прохождении теста на моральный дух для этого подразделения,
-            тест автоматически пройден.
-          </div>
-        </div>
-
-        <div className={style.abilities}>
-          <div className={style.abilities_title}>
-            Удар Манты
-          </div>
-          <div className={style.abilities_text}>
-            Во время развертывания вы можете разместить это подразделение и любые
-            сопровождающие его дроны в трюме Манты вместо того, чтобы размещать их на поле боя.
+            Вы можете разместить это подразделение и любые сопровождающие его
+            дроны в трюме Манты вместо того, чтобы размещать их на поле боя.
             В конце любой из ваших фаз передвижения они могут использовать удар Манты,
             чтобы вступить в бой – разместите их в любом месте поля боя,
-            которое находится более чем на 9 дюймов от любых вражеских моделей.
-          </div>
-        </div>
-
-        <div className={style.abilities}>
-          <div className={style.abilities_title}>
-            Боевой костюм XV8-02 Crisis Iridium
-          </div>
-          <div className={style.abilities_text}>
-            Модель, оснащенная боевым костюмом XV8-02 Crisis Iridium,
-            увеличивает его характеристики безопасности до 2+.
+            которое находится более чем на 9" от любых вражеских моделей.
           </div>
         </div>
       </section>
