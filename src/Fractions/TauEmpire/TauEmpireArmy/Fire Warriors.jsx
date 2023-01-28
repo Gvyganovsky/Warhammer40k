@@ -13,7 +13,6 @@ import Ld from "../../../assets/icons/Ld.png";
 import Sv from "../../../assets/icons/Sv.png";
 
 import range from "../../../assets/icons/range.png";
-import step from "../../../assets/icons/step.png";
 
 const FireWarriors = () => {
   return (

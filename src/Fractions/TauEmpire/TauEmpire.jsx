@@ -10,11 +10,11 @@ import GunDrone from "../../assets/TauEmpire/Gun Drone.png";
 const TauEmpire = () => {
   return (
     <section className={style.content}>
-      <a href="/TauXV95GhostkeelBattlesuit">
+      <a href="/GhostkeelBattlesuit">
         <div className={style.Combat_Unit}>
           <img src={Tau_XV95_Ghostkeel_Battlesuit} alt="Tau XV95 Ghostkeel Battlesuit" className={style.TauXV95GhostkeelBattlesuit_img} />
           <div className={style.Combat_Unit_text}>
-            Tau XV95 Ghostkeel Battlesuit
+            Ghostkeel Battlesuit
           </div>
         </div>
       </a>

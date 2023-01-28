@@ -49,24 +49,77 @@
     margin: 5px;
 }
 
-.weapon {
+.weapon_content {
     display: flex;
+    flex-wrap: wrap;
+    text-align: center;
     justify-content: center;
-    align-items: center;
+}
+
+.weapon_block {
+    width: 210px;
+    height: 70px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+}
+
+.weaponOther_block {
+    padding: 10px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    font-family: 'Rubik', sans-serif;
+    text-align: justify;
+}
+
+.weapon_blockTwo {
+    width: 210px;
+    height: 70px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    background-color: #afbbcc;;
+}
+
+.weapon_title {
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.weapon_block_info {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0 10px;
 }
 
 .weapon_info {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-family: 'Alegreya SC', serif;
+    font-size: 18px;
+    margin: 0 10px;
 }
 
-.weapon_content {
-    margin: 5px 10px 5px 10px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    width: 50px;
-    height: 60px;
+.weapon_text {
+    align-self: center;
 }
+
+.weapon_img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
 
 .line {
     background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.2), transparent);
