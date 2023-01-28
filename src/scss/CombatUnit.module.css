@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@600&family=Open+Sans:wght@500;700&display=swap");
+:root {
+  --color-stratBattleTactic: #294a67;
+  --color-stratStrategicPloy: #246656;
+  --color-stratEpicDeed: #673d29;
+  --color-stratWargear: #626869;
+}
+
+.content {
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+.combat_unit_img {
+  max-width: 300px;
+  max-height: 340px;
+}
+
+.combat_unit_param {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.param_img {
+  width: 30px;
+  height: 30px;
+}
+
+.param_number {
+  font-family: "Alegreya", serif;
+  font-size: 24px;
+  text-align: center;
+  margin: 0px 20px 5px 5px;
+}
+
+.combat_unit_param_block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80px;
+}
+
+.combat_unit_param_three {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.weapon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weapon_info {
+  font-family: "Alegreya", serif;
+  font-size: 16px;
+}
+
+.weapon_content {
+  margin: 5px 10px 5px 10px;
+  font-family: "Alegreya", serif;
+  font-size: 16px;
+  width: 50px;
+  height: 60px;
+}
+
+.line {
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.2), transparent);
+  border: 0;
+  height: 1px;
+  margin: 22px 0 22px 0;
+  box-sizing: content-box;
+  display: block;
+}
+
+.content_title {
+  font-family: "Alegreya", serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gun_param {
+  display: flex;
+}
+
+.gun_title {
+  font-family: "Alegreya", serif;
+  font-size: 15px;
+  font-weight: bold;
+  width: 100px;
+}
+
+.abilities_title {
+  font-family: "Alegreya", serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #cc0000;
+}
+
+.abilities_text {
+  font-family: "Alegreya", serif;
+  font-size: 20px;
+}
+
+.damage_content {
+  display: flex;
+  justify-content: center;
+  border: 3px solid black;
+  padding: 10px;
+  width: 280px;
+  margin: auto;
+}
+
+.damage_block {
+  font-family: "Alegreya", serif;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+.strat {
+  margin-bottom: 10px;
+}
+
+.stratName_stratBattleTactic {
+  color: white;
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 3px;
+  background: linear-gradient(315deg, transparent 8px, var(--color-stratBattleTactic) 0);
+  font-size: 15px;
+  font-family: Minion-Pro, times new roman, sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stratName_info_stratBattleTactic {
+  border: solid var(--color-stratBattleTactic);
+  margin: -15px 5px 0px 5px;
+  padding: 15px 5px;
+  font-family: "Alegreya", serif;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.stratName_stratStrategicPloy {
+  color: white;
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 3px;
+  background: linear-gradient(315deg, transparent 8px, var(--color-stratStrategicPloy) 0);
+  font-size: 15px;
+  font-family: Minion-Pro, times new roman, sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stratName_info_stratStrategicPloy {
+  border: solid var(--color-stratStrategicPloy);
+  margin: -15px 5px 0px 5px;
+  padding: 15px 5px;
+  font-family: "Alegreya", serif;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.stratName_stratEpicDeed {
+  color: white;
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 3px;
+  background: linear-gradient(315deg, transparent 8px, var(--color-stratEpicDeed) 0);
+  font-size: 15px;
+  font-family: Minion-Pro, times new roman, sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stratName_info_stratEpicDeed {
+  border: solid var(--color-stratEpicDeed);
+  margin: -15px 5px 0px 5px;
+  padding: 15px 5px;
+  font-family: "Alegreya", serif;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.stratName_stratWargear {
+  color: white;
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 3px;
+  background: linear-gradient(315deg, transparent 8px, var(--color-stratEpicDeed) 0);
+  font-size: 15px;
+  font-family: Minion-Pro, times new roman, sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stratName_info_stratWargear {
+  border: solid var(--color-stratEpicDeed);
+  margin: -15px 5px 0px 5px;
+  padding: 15px 5px;
+  font-family: "Alegreya", serif;
+  font-size: 16px;
+  text-align: justify;
+}/*# sourceMappingURL=CombatUnit.module.css.map */

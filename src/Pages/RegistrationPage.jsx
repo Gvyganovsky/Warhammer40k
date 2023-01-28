@@ -10,6 +10,7 @@ const RegistrationPage = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
+        
         if (isAuth) {
             navigate("../Profile")
         }
