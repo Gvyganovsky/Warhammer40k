@@ -10,8 +10,6 @@
 }
 
 .content {
-    display: block;
-    justify-content: center;
     text-align: center;
     margin: 0 5px;
 }
@@ -38,50 +36,48 @@
 .param_number {
     font-family: 'Alegreya SC', serif;
     font-size: 24px;
-    align-self: center;
 }
 
 .combat_unit_param_block {
     display: flex;
-    flex-wrap: wrap;
-    text-align: left;
     width: 65px;
     margin: 5px;
 }
 
 .weapon_content {
     display: flex;
-    flex-wrap: wrap;
-    text-align: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .weapon_block {
-    width: 210px;
+    width: 160px;
     height: 70px;
     padding: 10px;
-    margin: 10px;
+    margin: 6px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 15px;
 }
 
 .weaponOther_block {
     padding: 10px;
-    margin: 10px;
+    margin: 6px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 15px;
     font-family: 'Rubik', sans-serif;
     text-align: justify;
+    max-width: 600px;
 }
 
 .weapon_blockTwo {
-    width: 210px;
+    width: 160px;
     height: 70px;
     padding: 10px;
-    margin: 10px;
+    margin: 6px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 15px;
-    background-color: #afbbcc;;
+    background-color: #afbbcc;
+    ;
 }
 
 .weapon_title {
@@ -96,13 +92,12 @@
     display: flex;
     text-align: center;
     justify-content: center;
-    padding: 0 10px;
 }
 
 .weapon_info {
     font-family: 'Alegreya SC', serif;
     font-size: 18px;
-    margin: 0 10px;
+    margin: 0 8px;
 }
 
 .weapon_text {
@@ -113,7 +108,6 @@
     width: 30px;
     height: 30px;
 }
-
 
 
 
@@ -153,7 +147,7 @@
 .abilities_block {
     background-color: #e9edf7;
     border-radius: 25px;
-    max-width: 600px;
+    max-width: 630px;
     margin: 10px auto;
     padding: 15px;
 }
@@ -204,13 +198,13 @@
     display: flex;
     justify-content: center;
     border: 3px solid black;
-    padding: 10px;
-    width: 280px;
+    max-width: 280px;
     margin: auto;
+    padding: 5px;
 }
 
 .damage_block {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Alegreya SC', serif;
     font-size: 24px;
     margin: 0 10px;
 }

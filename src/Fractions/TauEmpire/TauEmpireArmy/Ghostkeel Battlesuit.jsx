@@ -12,13 +12,15 @@ import A from "../../../assets/icons/A.png";
 import Ld from "../../../assets/icons/Ld.png";
 import Sv from "../../../assets/icons/Sv.png";
 
-import range from "../../../assets/icons/range.png";
 import hit from "../../../assets/icons/hit.svg";
 import location from "../../../assets/icons/location.png";
 
+import general from "../../../assets/icons/general.png";
+import shooting from "../../../assets/icons/shooting.png";
+
 const GhostkeelBattlesuit = () => {
   return (
-    <div>
+    <section>
       <section className={style.content}>
         <img src={Ghostkeel_Battlesuit} alt="Ghostkeel_Battlesuit" className={style.combat_unit_img} />
         <div className={style.combat_unit_param}>
@@ -71,6 +73,7 @@ const GhostkeelBattlesuit = () => {
 
       <section className={style.content}>
         <div className={style.line}></div>
+        <div className={style.content_title}>Изменение характеристик от урона</div>
         <div className={style.damage_content}>
           <div className={style.damage_block}>
             <img src={W} alt="W" className={style.param_img} />
@@ -323,20 +326,48 @@ const GhostkeelBattlesuit = () => {
       <section className={style.content}>
         <div className={style.line}></div>
         <div className={style.content_title}>Другое оружие</div>
-
         <div className={style.weapon_content}>
+
           <div className={style.weaponOther_block}>
-            <div className={style.weapon_title}>Drone controller</div>
-            <div className={style.weaponOther_info}>
-              <div className={style.weaponOther_text}>
-                На этапе командования вы можете выбрать один беспилотный летательный
-                аппарат в пределах 6 дюймов от носителя. До начала вашей следующей
-                командной фазы:
-              </div>
-              <div>Модели дронов в этом подразделении имеют баллистическую характеристику навыка 4+.</div>
-              <div>Модели боевых дронов в этом подразделении теряют способность «Протокола идентификации угрозы».</div>
+            <div className={style.abilities_title_block}>
+              <div className={style.abilities_title}>Drone controller</div>
+              <img src={general} alt="general" className={style.abilities_symbol} />
+            </div>
+            <div className={style.weaponOther_text}>
+              На этапе командования вы можете выбрать один дрон в пределах 6"
+              от носителя. До начала вашей следующей командной фазы:
+            </div>
+            <div>Модели дронов в этом подразделении имеют BS 4+.</div>
+            <div>Модели боевых дронов в этом подразделении теряют способность «Протокола идентификации угрозы».</div>
+          </div>
+
+          <div className={style.weaponOther_block}>
+            <div className={style.abilities_title_block}>
+              <div className={style.abilities_title}>Early warning override</div>
+              <img src={shooting} alt="shooting" className={style.abilities_symbol} />
+            </div>
+            <div className={style.weaponOther_text}>
+              Каждый раз, когда носитель запускает Overwatch, он получает попадания по неизмененным
+              броскам 5+ вместо 6+.
+            </div>
+            <div className={style.weaponOther_text}>
+              Каждый раз, когда вы используете стратагему "Огненный дозор", если носитель находится на
+              поле боя и его подразделение выбрано для "Огненного дозора", уменьшайте стоимость CP этой
+              стратагемы на 1СP.
             </div>
           </div>
+
+          <div className={style.weaponOther_block}>
+            <div className={style.abilities_title_block}>
+              <div className={style.abilities_title}>Flare launcher</div>
+              <img src={shooting} alt="shooting" className={style.abilities_symbol} />
+            </div>
+            <div className={style.weaponOther_text}>
+              Каждый раз, когда носитель теряет рану в результате дальней атаки с характеристикой силы 7 
+              или более, бросайте один D6: при 5+ эта рана не теряется.
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -373,7 +404,7 @@ const GhostkeelBattlesuit = () => {
           </div>
         </div>
       </section>
-    </div>
+    </section>
   )
 }
 
