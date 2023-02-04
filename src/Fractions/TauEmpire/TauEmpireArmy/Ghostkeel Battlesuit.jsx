@@ -418,7 +418,6 @@ const GhostkeelBattlesuit = () => {
         </div>
       </section>
 
-
       <section className={style.content}>
         <div className={style.line}></div>
         <div className={style.content_title}>Стратегемы</div>
@@ -445,8 +444,8 @@ const GhostkeelBattlesuit = () => {
             Используйте эту стратегию в <span className={style.strat_text_bold}>любой фазе</span>,
             когда спасбросок не удался для модели в подразделении SEPT из вашей армии. Выберите одну
             модель дрона SEPT в пределах 3" или 6" от этого устройства, если оно содержит модель,
-            оснащенную контроллером дрона. Эта модель дрона уничтожена, и характеристика урона от этой
-            атаки изменена на 0.
+            оснащенную дроном. Эта модель дрона уничтожена, и характеристика урона от этой атаки
+            изменена на 0.
           </div>
         </div>
 
@@ -465,6 +464,110 @@ const GhostkeelBattlesuit = () => {
           </div>
         </div>
 
+        <div className={style.strat}>
+          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
+            <span>BACKUP AI</span>
+            <span>1 CP</span>
+          </div>
+          <div className={style.strat_text}>
+            Используйте эту стратегию на этапе <span className={style.strat_text_bold}>вашего командования</span>.
+            Выберите одну модель в вашей армии. До начала вашей следующей фазы командования,
+            считается, что у этой модели остались полные раны, чтобы определить, какие характеристики
+            в ее профиле использовать.
+          </div>
+        </div>
+
+        <div className={style.strat}>
+          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
+            <span>ORBITAL UPLINK</span>
+            <span>1 CP</span>
+          </div>
+          <div className={style.strat_text}>
+            Используйте эту стратегию на <span className={style.strat_text_bold}>этапе стрельбы</span>.
+            Выберите одного вражеского юнита. До конца фазы, каждый раз, когда модель в подразделении
+            SA'CEA из вашей армии совершает дальнюю атаку против этого вражеского подразделения, цель
+            не получает преимуществ прикрытия от этой атаки.
+          </div>
+        </div>
+
+        <div className={style.strat}>
+          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
+            <span>WALL OF MIRRORS</span>
+            <span>1 CP</span>
+          </div>
+          <div className={style.strat_text}>
+            Используйте эту стратегию в конце вашей <span className={style.strat_text_bold}>фазы движения</span>.
+            Выберите один костюм НЕВИДИМКУ/ПРИЗРАК из вашей армии, который полностью находится в пределах 9" от
+            любого края поля боя. Уберите это подразделение с поля боя. На этапе подкрепления вашей следующей фазы
+            перемещения вы можете вернуть это подразделение на поле боя в любом месте, которое находится в пределах
+            9" от любого края поля боя и более чем в 9" от любых вражеских моделей. Если битва заканчивается, а этого
+            подразделения нет на поле боя, оно уничтожается.
+          </div>
+        </div>
+
+        <div className={style.strat}>
+          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
+            <span>COORDINATED ENGAGEMENT</span>
+            <span>1 CP</span>
+          </div>
+          <div className={style.strat_text}>
+            Используйте эту стратегию на <span className={style.strat_text_bold}>этапе стрельбы</span>,
+            прежде чем выбирать юнита для стрельбы. Выберите одно вражеское подразделение и 2 подразделения
+            SEPT из вашей армии, которые находятся в пределах 18" от этого вражеского подразделения и видны
+            ему. До конца фазы, каждый раз, когда модель в одном из этих подразделений SEPT совершает атаку:
+            Улучшите характеристику бронепробиваемости этой атаки на 1.
+          </div>
+        </div>
+
+        <div className={style.strat}>
+          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
+            <span>DESIGNATED TASKING</span>
+            <span>1 CP</span>
+          </div>
+          <div className={style.strat_text}>
+            Используйте эту стратегию на этапе <span className={style.strat_text_bold}>вашего командования</span>.
+            Вы можете разделить ваш отряд на 2, где содержаться дроны. Все дроны входят в новый отдельный отряд
+          </div>
+        </div>
+
+        <div className={style.strat}>
+          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
+            <span>STRIKE AND FADE</span>
+            <span>1 CP / 2 CP</span>
+          </div>
+          <div className={style.strat_text}>
+            Используйте эту стратегию в начале вашей <span className={style.strat_text_bold}>фазы стрельбы</span>.
+            Выберите отряд с реактивным ранцем. Вы можете стрелять с помощью этого устройства, и тогда
+            оно может совершать нормальное движение до 6 дюймов. Это устройство не может стрелять снова
+            на этом этапе. Если это подразделение содержит 5 или меньше моделей (исключая модели дронов),
+            эта стратегия стоит 1 CP.
+          </div>
+        </div>
+
+        <div className={style.strat}>
+          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #626869 0)' }}>
+            <span>REPULSOR IMPACT FIELD</span>
+            <span>1 CP</span>
+          </div>
+          <div className={style.strat_text}>
+            Используйте эту стратегию на этапе <span className={style.strat_text_bold}>атаки вашего противника</span>,
+            когда в качестве цели атаки выбирается боекостюм из вашей армии. До конца фазы вычтите 2 из бросков
+            заряда.
+          </div>
+        </div>
+
+        <div className={style.strat}>
+          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #626869 0)' }}>
+            <span>IONISED SHOCKFIELD</span>
+            <span>2 CP</span>
+          </div>
+          <div className={style.strat_text}>
+            Используйте эту стратегию на <span className={style.strat_text_bold}>этапе стрельбы</span>,
+            когда модель во вражеском подразделении уничтожена в результате атаки, произведенной ионным
+            оружием моделью SEPT из вашей армии. До начала вашей следующей фазы стрельбы на этот вражеский
+            юнит не влияют способности ауры других вражеских юнитов.
+          </div>
+        </div>
 
       </section>
     </section>
