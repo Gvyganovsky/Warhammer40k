@@ -12,11 +12,12 @@ import A from "../../../assets/icons/A.png";
 import Ld from "../../../assets/icons/Ld.png";
 import Sv from "../../../assets/icons/Sv.png";
 
-import hit from "../../../assets/icons/hit.svg";
-import location from "../../../assets/icons/location.png";
-
 import general from "../../../assets/icons/general.png";
 import shooting from "../../../assets/icons/shooting.png";
+
+import hit from "../../../assets/icons/hit.svg";
+import location from "../../../assets/icons/location.png";
+import skull from "../../../assets/icons/skull.png";
 
 const GhostkeelBattlesuit = () => {
   return (
@@ -46,12 +47,12 @@ const GhostkeelBattlesuit = () => {
 
           <div className={style.combat_unit_param_block}>
             <img src={T} alt="T" className={style.param_img} />
-            <div className={style.param_number}>6</div>
+            <div className={style.param_number}>7</div>
           </div>
 
           <div className={style.combat_unit_param_block}>
             <img src={W} alt="W" className={style.param_img} />
-            <div className={style.param_number}>10</div>
+            <div className={style.param_number}>12</div>
           </div>
 
           <div className={style.combat_unit_param_block}>
@@ -61,7 +62,7 @@ const GhostkeelBattlesuit = () => {
 
           <div className={style.combat_unit_param_block}>
             <img src={Ld} alt="Ld" className={style.param_img} />
-            <div className={style.param_number}>8</div>
+            <div className={style.param_number}>9</div>
           </div>
 
           <div className={style.combat_unit_param_block}>
@@ -77,9 +78,9 @@ const GhostkeelBattlesuit = () => {
         <div className={style.damage_content}>
           <div className={style.damage_block}>
             <img src={W} alt="W" className={style.param_img} />
-            <div className={style.damage_nubmer}>6-10+</div>
-            <div className={style.damage_nubmer}>3-5</div>
-            <div className={style.damage_nubmer}>1-2</div>
+            <div className={style.damage_nubmer}>7-12</div>
+            <div className={style.damage_nubmer}>4-6</div>
+            <div className={style.damage_nubmer}>1-3</div>
           </div>
 
           <div className={style.damage_block}>
@@ -99,7 +100,7 @@ const GhostkeelBattlesuit = () => {
           <div className={style.damage_block}>
             <img src={A} alt="A" className={style.param_img} />
             <div className={style.damage_nubmer}>3</div>
-            <div className={style.damage_nubmer}>2</div>
+            <div className={style.damage_nubmer}>D3</div>
             <div className={style.damage_nubmer}>1</div>
           </div>
         </div>
@@ -363,7 +364,7 @@ const GhostkeelBattlesuit = () => {
               <img src={shooting} alt="shooting" className={style.abilities_symbol} />
             </div>
             <div className={style.weaponOther_text}>
-              Каждый раз, когда носитель теряет рану в результате дальней атаки с характеристикой силы 7 
+              Каждый раз, когда носитель теряет рану в результате дальней атаки с характеристикой силы 7
               или более, бросайте один D6: при 5+ эта рана не теряется.
             </div>
           </div>
@@ -377,32 +378,94 @@ const GhostkeelBattlesuit = () => {
 
         <div className={style.abilities_block}>
           <div className={style.abilities_title_block}>
-            <div className={style.abilities_title}>Набор электрошокеров Ghostkeel</div>
+            <div className={style.abilities_title}>Electrowarfare Suite</div>
             <div className={style.block_symbol}>
               <div className={style.symbol_text}>-1</div>
               <img src={hit} alt="hit" className={style.abilities_symbol} />
             </div>
           </div>
           <div className={style.abilities_text}>
-            Ваш противник вычетает 1 из бросков попадания для моделей, атакующих
-            эту модель с расстояния более 6".
+            Каждый раз, когда дальняя атака нацелена на этого юнита, вычтите 1 из броска попадания этой атаки.
           </div>
         </div>
 
         <div className={style.abilities_block}>
           <div className={style.abilities_title_block}>
-            <div className={style.abilities_title}>Лазутчики</div>
+            <div className={style.abilities_title}>Infiltrator</div>
             <div className={style.block_symbol}>
-              <div className={style.symbol_text}>12"</div>
+              <div className={style.symbol_text}>9"</div>
               <img src={location} alt="location" className={style.abilities_symbol} />
             </div>
           </div>
           <div className={style.abilities_text}>
-            Во время развертывания это подразделение и любые сопровождающие его дроны
-            могут быть установлены в любом месте поля боя, которое находится более чем
-            в 12" от любого вражеского подразделения.
+            Во время развертывания, юнита можно установить в любом месте поля боя, которое
+            находится более чем в 9" от зоны развертывания противника и любых вражеских моделей.
           </div>
         </div>
+
+        <div className={style.abilities_block}>
+          <div className={style.abilities_title_block}>
+            <div className={style.abilities_title}>Infiltrator</div>
+            <div className={style.block_symbol}>
+              <img src={skull} alt="skull" className={style.abilities_symbol} />
+            </div>
+          </div>
+          <div className={style.abilities_text}>
+            Когда модель этого юнита будет уничтожена, бросьте 1D6,
+            прежде чем удалить его из игры. На 6 он взрывается, и каждый
+            юнит в пределах 6 " получает урон D3.
+          </div>
+        </div>
+      </section>
+
+
+      <section className={style.content}>
+        <div className={style.line}></div>
+        <div className={style.content_title}>Стратегемы</div>
+
+        <div className={style.strat}>
+          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
+            <span>EXPERIMENTAL WEAPONRY</span>
+            <span>2 CP</span>
+          </div>
+          <div className={style.strat_text}>
+            Используйте эту стратегию на <span className={style.strat_text_bold}>этапе стрельбы</span>.
+            Выберите одну модель в этом подразделении и одно оружие, которым оснащена
+            эта модель. До конца фазы, каждый раз, когда эта модель совершает атаку этим
+            оружием, неуязвимые спасброски не могут быть предприняты против этой атаки.
+          </div>
+        </div>
+
+        <div className={style.strat}>
+          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
+            <span>SAVIOUR PROTOCOLS</span>
+            <span>1 CP</span>
+          </div>
+          <div className={style.strat_text}>
+            Используйте эту стратегию в <span className={style.strat_text_bold}>любой фазе</span>,
+            когда спасбросок не удался для модели в подразделении SEPT из вашей армии. Выберите одну
+            модель дрона SEPT в пределах 3" или 6" от этого устройства, если оно содержит модель,
+            оснащенную контроллером дрона. Эта модель дрона уничтожена, и характеристика урона от этой
+            атаки изменена на 0.
+          </div>
+        </div>
+
+        <div className={style.strat}>
+          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
+            <span>FAIL-SAFE DETONATOR</span>
+            <span>1 CP</span>
+          </div>
+          <div className={style.strat_text}>
+            Используйте эту стратегию на <span className={style.strat_text_bold}>любой фазе</span>,
+            когда модель боевого костюма из вашей армии будет уничтожена. Прежде чем удалить эту
+            модель из игры, вместо использования каких-либо правил, которые срабатывают при уничтожении
+            этой модели, бросьте по одному D6 для каждого юнита в пределах 3" от этой модели, добавив
+            1 к броску, если у уничтоженной модели характеристика ран 12 или более: на 3-5, этот юнит
+            получает D3 смертельных ранения; на 6+, этот юнит получает 3 смертельных ранения.
+          </div>
+        </div>
+
+
       </section>
     </section>
   )

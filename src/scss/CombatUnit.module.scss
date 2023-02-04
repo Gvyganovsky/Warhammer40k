@@ -27,6 +27,12 @@
     max-width: 250px;
 }
 
+.combat_unit_param_block {
+    display: flex;
+    width: 65px;
+    margin: 5px;
+}
+
 .param_img {
     width: 30px;
     height: 30px;
@@ -38,10 +44,37 @@
     font-size: 24px;
 }
 
-.combat_unit_param_block {
+.line {
+    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.2), transparent);
+    border: 0;
+    height: 1px;
+    margin: 22px 0 22px 0;
+    box-sizing:
+        content-box;
+    display: block;
+}
+
+.content_title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.damage_content {
     display: flex;
-    width: 65px;
-    margin: 5px;
+    justify-content: center;
+    border: 3px solid black;
+    max-width: 280px;
+    margin: auto;
+    padding: 5px;
+}
+
+.damage_block {
+    font-family: 'Alegreya SC', serif;
+    font-size: 24px;
+    margin: 0 10px;
 }
 
 .weapon_content {
@@ -56,6 +89,20 @@
     margin: 6px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 15px;
+}
+
+.weapon_title {
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.weapon_block_info {
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .weaponOther_block {
@@ -79,20 +126,6 @@
     ;
 }
 
-.weapon_title {
-    font-size: 18px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 600;
-    text-align: center;
-    padding-bottom: 5px;
-}
-
-.weapon_block_info {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
 .weapon_info {
     font-family: 'Alegreya SC', serif;
     font-size: 18px;
@@ -106,30 +139,6 @@
 .weapon_img {
     width: 30px;
     height: 30px;
-}
-
-
-
-
-
-
-
-.line {
-    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.2), transparent);
-    border: 0;
-    height: 1px;
-    margin: 22px 0 22px 0;
-    box-sizing:
-        content-box;
-    display: block;
-}
-
-.content_title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 .gun_param {
@@ -190,24 +199,6 @@
 
 
 
-
-
-
-.damage_content {
-    display: flex;
-    justify-content: center;
-    border: 3px solid black;
-    max-width: 280px;
-    margin: auto;
-    padding: 5px;
-}
-
-.damage_block {
-    font-family: 'Alegreya SC', serif;
-    font-size: 24px;
-    margin: 0 10px;
-}
-
 .strat {
     margin-bottom: 10px;
     max-width: 630px;
@@ -215,8 +206,31 @@
     font-family: 'Rubik', sans-serif;
 }
 
+.strat_title {
+    color: white;
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.strat_text {
+    border-radius: 0 0 15px 15px;
+    margin: -15px 5px 5px 5px;
+    padding: 20px 5px 5px;
+    text-align: justify;
+}
+
+.strat_text_bold {
+    font-weight: 600;
+}
+
+
+
+
 .stratName_stratBattleTactic {
-    font-family: 'Roboto', sans-serif;
     color: white;
     margin: 0 5px;
     padding: 5px;
@@ -237,7 +251,6 @@
 }
 
 .stratName_stratStrategicPloy {
-    font-family: 'Roboto', sans-serif;
     color: white;
     margin: 0 5px;
     padding: 5px;
@@ -259,7 +272,6 @@
 
 
 .stratName_stratEpicDeed {
-    font-family: 'Roboto', sans-serif;
     color: white;
     margin: 0 5px;
     padding: 5px;
@@ -295,7 +307,12 @@
 .stratName_info_stratWargear {
     border: solid var(--color-stratEpicDeed);
     margin: -15px 5px 0px 5px;
-    padding: 15px 5px;
+    padding: 10px 10px;
     font-size: 16px;
     text-align: justify;
+}
+
+.stratName_info_title {
+    font-weight: 600;
+    padding: 5px 0;
 }
