@@ -6,13 +6,14 @@ import CrisisBattlesuits from "../../assets/TauEmpire/Crisis Battlesuits.png";
 import Etheral from "../../assets/TauEmpire/Etheral.jpg";
 import SupportTurret from "../../assets/TauEmpire/Support Turret.png";
 import Drone from "../../assets/TauEmpire/Drone.png";
+import CadreFireblade from "../../assets/TauEmpire/Cadre Fireblade.png";
 
 const TauEmpire = () => {
   return (
     <section className={style.content}>
       <a href="/GhostkeelBattlesuit">
         <div className={style.Combat_Unit}>
-          <img src={Tau_XV95_Ghostkeel_Battlesuit} alt="Tau XV95 Ghostkeel Battlesuit" className={style.TauXV95GhostkeelBattlesuit_img} />
+          <img src={Tau_XV95_Ghostkeel_Battlesuit} alt="Tau XV95 Ghostkeel Battlesuit" className={style.Combat_Unit_img} style={{ margin: '-38px 0px 0px -20px' }} />
           <div className={style.Combat_Unit_text}>
             Ghostkeel Battlesuit
           </div>
@@ -21,7 +22,7 @@ const TauEmpire = () => {
 
       <a href="/FireWarriors">
         <div className={style.Combat_Unit}>
-          <img src={FireWarrior} alt="FireWarriors" className={style.FireWarriors_img} />
+          <img src={FireWarrior} alt="FireWarriors" className={style.Combat_Unit_img} style={{ margin: '-20px 0px -33px -20px' }} />
           <div className={style.Combat_Unit_text}>
             Fire Warriors
           </div>
@@ -30,7 +31,7 @@ const TauEmpire = () => {
 
       <a href="/CrisisBattlesuits">
         <div className={style.Combat_Unit}>
-          <img src={CrisisBattlesuits} alt="CrisisBattlesuits" className={style.CrisisBattlesuits_img} />
+          <img src={CrisisBattlesuits} alt="CrisisBattlesuits" className={style.Combat_Unit_img} style={{ margin: '-35px 0px 0px -20px' }} />
           <div className={style.Combat_Unit_text}>
             Crisis Battlesuits
           </div>
@@ -39,7 +40,7 @@ const TauEmpire = () => {
 
       <a href="/Etheral">
         <div className={style.Combat_Unit}>
-          <img src={Etheral} alt="Etheral" className={style.Etheral_img} />
+          <img src={Etheral} alt="Etheral" className={style.Combat_Unit_img} style={{ margin: '-70px 0px 0px -20px' }} />
           <div className={style.Combat_Unit_text}>
             Etheral
           </div>
@@ -48,7 +49,7 @@ const TauEmpire = () => {
 
       <a href="/SupportTurret">
         <div className={style.Combat_Unit}>
-          <img src={SupportTurret} alt="SupportTurret" className={style.DS8TacticalSupportTurret_img} />
+          <img src={SupportTurret} alt="SupportTurret" className={style.Combat_Unit_img} style={{ margin: '-70px 0px 0px -20px' }} />
           <div className={style.Combat_Unit_text}>
             Support Turret
           </div>
@@ -57,9 +58,18 @@ const TauEmpire = () => {
 
       <a href="/Drones">
         <div className={style.Combat_Unit}>
-          <img src={Drone} alt="Drone" className={style.GunDrone_img} />
+          <img src={Drone} alt="Drone" className={style.Combat_Unit_img} style={{ margin: '-45px 0px 0px -20px' }} />
           <div className={style.Combat_Unit_text}>
             Drones
+          </div>
+        </div>
+      </a>
+
+      <a href="/CadreFireblade">
+        <div className={style.Combat_Unit}>
+          <img src={CadreFireblade} alt="CadreFireblade" className={style.Combat_Unit_img} style={{ margin: '-30px 0px 0px -20px' }} />
+          <div className={style.Combat_Unit_text}>
+            Cadre Fireblade
           </div>
         </div>
       </a>

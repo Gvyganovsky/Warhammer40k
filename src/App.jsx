@@ -21,6 +21,7 @@ import { CrisisBattlesuits } from './Fractions/TauEmpire/TauEmpireArmy/Crisis Ba
 import { Etheral } from './Fractions/TauEmpire/TauEmpireArmy/Etheral';
 import { SupportTurret } from './Fractions/TauEmpire/TauEmpireArmy/Support Turret';
 import { Drones } from './Fractions/TauEmpire/TauEmpireArmy/Drones';
+import { CadreFireblade } from './Fractions/TauEmpire/TauEmpireArmy/CadreFireblade';
 
 const App = () => {
   return (
@@ -44,6 +45,7 @@ const App = () => {
         <Route path='Etheral' element={<Etheral />} />
         <Route path='SupportTurret' element={<SupportTurret />} />
         <Route path='Drones' element={<Drones />} />
+        <Route path='CadreFireblade' element={<CadreFireblade />} />
 
         <Route path='*' element={<NotFoundPage />} />
       </Route>
