@@ -6,13 +6,6 @@ import AstraMilitarumImg from '../assets/logoFractions/AstraMilitarum.png';
 const HomePage = () => {
     return (
         <section className={styles.content}>
-            <a href="./RegistrationPage">
-                <div className={styles.block_conent}>
-                    <img src={TauEmpireImg} alt="TauEmpire" className={styles.content_img} />
-                    <div className={styles.content_title}>Регистрация</div>
-                </div>
-            </a>
-
             <a href="./TauEmpire">
                 <div className={styles.block_conent}>
                     <img src={TauEmpireImg} alt="TauEmpire" className={styles.content_img} />

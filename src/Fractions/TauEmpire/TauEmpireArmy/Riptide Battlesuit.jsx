@@ -2,17 +2,19 @@ import React from "react";
 import style from "../../../scss/CombatUnit.module.scss";
 import Riptidebattlesuit from "../../../assets/TauEmpire/Riptide Battlesuit.png";
 
-import { SAVIOUR_PROTOCOLS } from "../TauEmpireStrat";
-import { COORDINATED_ENGAGEMENT } from "../TauEmpireStrat";
-import { ORBITAL_UPLINK } from "../TauEmpireStrat";
-import { EXPERIMENTAL_WEAPONRY } from "../TauEmpireStrat";
-import { BRANCHED_NOVA_CHARGE } from "../TauEmpireStrat";
-import { FAIL_SAFE_DETONATOR } from "../TauEmpireStrat";
-import { BACKUP_AI } from "../TauEmpireStrat";
-import { COUNTERFIRE_DEFENCE_SYSTEM } from "../TauEmpireStrat";
-import { STRIKE_AND_FADE } from "../TauEmpireStrat";
-import { REPULSOR_IMPACT_FIELD } from "../TauEmpireStrat";
-import { IONISED_SHOCKFIELD } from "../TauEmpireStrat";
+import {
+    SAVIOUR_PROTOCOLS,
+    COORDINATED_ENGAGEMENT,
+    ORBITAL_UPLINK,
+    EXPERIMENTAL_WEAPONRY,
+    BRANCHED_NOVA_CHARGE,
+    FAIL_SAFE_DETONATOR,
+    BACKUP_AI,
+    COUNTERFIRE_DEFENCE_SYSTEM,
+    STRIKE_AND_FADE,
+    REPULSOR_IMPACT_FIELD,
+    IONISED_SHOCKFIELD
+} from "../TauEmpireStrat";
 
 import M from "../../../assets/icons/M.png";
 import WS from "../../../assets/icons/WS.png";

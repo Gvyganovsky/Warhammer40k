@@ -2,17 +2,19 @@ import React from "react";
 import style from "../../../scss/CombatUnit.module.scss";
 import FireWarrior from "../../../assets/TauEmpire/Fire Warriors.png";
 
-import { FOCUSED_FIRE } from "../TauEmpireStrat";
-import { RELENTLESS_FUSILLADE } from "../TauEmpireStrat";
-import { PULSE_ONSLAUGHT } from "../TauEmpireStrat";
-import { POINT_BLANK_VOLLEY } from "../TauEmpireStrat";
-import { EXPERIMENTAL_WEAPONRY } from "../TauEmpireStrat";
-import { SAVIOUR_PROTOCOLS } from "../TauEmpireStrat";
-import { OUTFLANK } from "../TauEmpireStrat";
-import { ORBITAL_UPLINK } from "../TauEmpireStrat";
-import { COORDINATED_ENGAGEMENT } from "../TauEmpireStrat";
-import { DESIGNATED_TASKING } from "../TauEmpireStrat";
-import { PHOTON_GRENADES } from "../TauEmpireStrat";
+import {
+  FOCUSED_FIRE,
+  RELENTLESS_FUSILLADE,
+  PULSE_ONSLAUGHT,
+  POINT_BLANK_VOLLEY,
+  EXPERIMENTAL_WEAPONRY,
+  SAVIOUR_PROTOCOLS,
+  OUTFLANK,
+  ORBITAL_UPLINK,
+  COORDINATED_ENGAGEMENT,
+  DESIGNATED_TASKING,
+  PHOTON_GRENADES
+} from "../TauEmpireStrat";
 
 import M from "../../../assets/icons/M.png";
 import WS from "../../../assets/icons/WS.png";

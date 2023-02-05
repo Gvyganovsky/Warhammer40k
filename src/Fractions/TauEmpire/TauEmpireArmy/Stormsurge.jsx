@@ -2,13 +2,15 @@ import React from "react";
 import style from "../../../scss/CombatUnit.module.scss";
 import stormsurge from "../../../assets/TauEmpire/stormsurge.png";
 
-import { SAVIOUR_PROTOCOLS } from "../TauEmpireStrat";
-import { COORDINATED_ENGAGEMENT } from "../TauEmpireStrat";
-import { ORBITAL_UPLINK } from "../TauEmpireStrat";
-import { EXPERIMENTAL_WEAPONRY } from "../TauEmpireStrat";
-import { BACKUP_AI } from "../TauEmpireStrat";
-import { COUNTERFIRE_DEFENCE_SYSTEM } from "../TauEmpireStrat";
-import { FREQUENCY_LOCK } from "../TauEmpireStrat";
+import {
+    SAVIOUR_PROTOCOLS,
+    COORDINATED_ENGAGEMENT,
+    ORBITAL_UPLINK,
+    EXPERIMENTAL_WEAPONRY,
+    BACKUP_AI,
+    COUNTERFIRE_DEFENCE_SYSTEM,
+    FREQUENCY_LOCK
+} from "../TauEmpireStrat";
 
 import M from "../../../assets/icons/M.png";
 import WS from "../../../assets/icons/WS.png";

@@ -2,16 +2,18 @@ import React from "react";
 import style from "../../../scss/CombatUnit.module.scss";
 import Ghostkeel_Battlesuit from "../../../assets/TauEmpire/Tau XV95 Ghostkeel Battlesuit.png";
 
-import { EXPERIMENTAL_WEAPONRY } from "../TauEmpireStrat";
-import { SAVIOUR_PROTOCOLS } from "../TauEmpireStrat";
-import { FAIL_SAFE_DETONATOR } from "../TauEmpireStrat";
-import { BACKUP_AI } from "../TauEmpireStrat";
-import { ORBITAL_UPLINK } from "../TauEmpireStrat";
-import { WALL_OF_MIRRORS } from "../TauEmpireStrat";
-import { COORDINATED_ENGAGEMENT } from "../TauEmpireStrat";
-import { DESIGNATED_TASKING } from "../TauEmpireStrat";
-import { STRIKE_AND_FADE } from "../TauEmpireStrat";
-import { REPULSOR_IMPACT_FIELD } from "../TauEmpireStrat";
+import {
+  EXPERIMENTAL_WEAPONRY,
+  SAVIOUR_PROTOCOLS,
+  FAIL_SAFE_DETONATOR,
+  BACKUP_AI,
+  ORBITAL_UPLINK,
+  WALL_OF_MIRRORS,
+  COORDINATED_ENGAGEMENT,
+  DESIGNATED_TASKING,
+  STRIKE_AND_FADE,
+  REPULSOR_IMPACT_FIELD,
+} from "../TauEmpireStrat";
 
 import M from "../../../assets/icons/M.png";
 import WS from "../../../assets/icons/WS.png";

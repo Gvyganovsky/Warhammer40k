@@ -2,12 +2,14 @@ import React from "react";
 import style from "../../../scss/CombatUnit.module.scss";
 import Ether from "../../../assets/TauEmpire/Etheral.jpg";
 
-import { SAVIOUR_PROTOCOLS } from "../TauEmpireStrat";
-import { WISDOM_OF_THE_MANY } from "../TauEmpireStrat";
-import { EMERGENCY_DISPENSATION } from "../TauEmpireStrat";
-import { PROMISING_PUPIL } from "../TauEmpireStrat";
-import { COORDINATED_ENGAGEMENT } from "../TauEmpireStrat";
-import { DESIGNATED_TASKING } from "../TauEmpireStrat";
+import {
+  SAVIOUR_PROTOCOLS,
+  WISDOM_OF_THE_MANY,
+  EMERGENCY_DISPENSATION,
+  PROMISING_PUPIL,
+  COORDINATED_ENGAGEMENT,
+  DESIGNATED_TASKING,
+} from "../TauEmpireStrat";
 
 import M from "../../../assets/icons/M.png";
 import WS from "../../../assets/icons/WS.png";

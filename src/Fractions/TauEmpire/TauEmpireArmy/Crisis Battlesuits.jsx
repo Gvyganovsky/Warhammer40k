@@ -2,19 +2,21 @@ import React from "react";
 import style from "../../../scss/CombatUnit.module.scss";
 import CrisisBattlesuit from "../../../assets/TauEmpire/Crisis Battlesuits.png";
 
-import { FOCUSED_FIRE } from "../TauEmpireStrat";
-import { DROP_ZONE_CLEAR } from "../TauEmpireStrat";
-import { DYNAMIC_OFFENSIVE } from "../TauEmpireStrat";
-import { EXPERIMENTAL_WEAPONRY } from "../TauEmpireStrat";
-import { SAVIOUR_PROTOCOLS } from "../TauEmpireStrat";
-import { FAIL_SAFE_DETONATOR } from "../TauEmpireStrat";
-import { OUTFLANK } from "../TauEmpireStrat";
-import { ORBITAL_UPLINK } from "../TauEmpireStrat";
-import { COORDINATED_ENGAGEMENT } from "../TauEmpireStrat";
-import { DESIGNATED_TASKING } from "../TauEmpireStrat";
-import { STRIKE_AND_FADE } from "../TauEmpireStrat";
-import { REPULSOR_IMPACT_FIELD } from "../TauEmpireStrat";
-import { IONISED_SHOCKFIELD } from "../TauEmpireStrat";
+import {
+  FOCUSED_FIRE,
+  DROP_ZONE_CLEAR,
+  DYNAMIC_OFFENSIVE,
+  EXPERIMENTAL_WEAPONRY,
+  SAVIOUR_PROTOCOLS,
+  FAIL_SAFE_DETONATOR,
+  OUTFLANK,
+  ORBITAL_UPLINK,
+  COORDINATED_ENGAGEMENT,
+  DESIGNATED_TASKING,
+  STRIKE_AND_FADE,
+  REPULSOR_IMPACT_FIELD,
+  IONISED_SHOCKFIELD
+} from "../TauEmpireStrat";
 
 import M from "../../../assets/icons/M.png";
 import WS from "../../../assets/icons/WS.png";

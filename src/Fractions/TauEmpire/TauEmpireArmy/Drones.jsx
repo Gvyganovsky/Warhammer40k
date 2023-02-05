@@ -2,10 +2,12 @@ import React from "react";
 import style from "../../../scss/CombatUnit.module.scss";
 import Drone from "../../../assets/TauEmpire/Drone.png";
 
-import { EXPERIMENTAL_WEAPONRY } from "../TauEmpireStrat";
-import { SAVIOUR_PROTOCOLS } from "../TauEmpireStrat";
-import { ORBITAL_UPLINK } from "../TauEmpireStrat";
-import { COORDINATED_ENGAGEMENT } from "../TauEmpireStrat";
+import {
+    EXPERIMENTAL_WEAPONRY,
+    SAVIOUR_PROTOCOLS,
+    ORBITAL_UPLINK,
+    COORDINATED_ENGAGEMENT,
+} from "../TauEmpireStrat";
 
 import M from "../../../assets/icons/M.png";
 import WS from "../../../assets/icons/WS.png";

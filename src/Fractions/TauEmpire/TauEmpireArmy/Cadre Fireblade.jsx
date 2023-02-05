@@ -2,14 +2,16 @@ import React from "react";
 import style from "../../../scss/CombatUnit.module.scss";
 import Cadrefireblade from "../../../assets/TauEmpire/Cadre Fireblade.png";
 
-import { SAVIOUR_PROTOCOLS } from "../TauEmpireStrat";
-import { EMERGENCY_DISPENSATION } from "../TauEmpireStrat";
-import { PROMISING_PUPIL } from "../TauEmpireStrat";
-import { COORDINATED_ENGAGEMENT } from "../TauEmpireStrat";
-import { DESIGNATED_TASKING } from "../TauEmpireStrat";
-import { ORBITAL_UPLINK } from "../TauEmpireStrat";
-import { EXPERIMENTAL_WEAPONRY } from "../TauEmpireStrat";
-import { PHOTON_GRENADES } from "../TauEmpireStrat";
+import {
+    SAVIOUR_PROTOCOLS,
+    EMERGENCY_DISPENSATION,
+    PROMISING_PUPIL,
+    COORDINATED_ENGAGEMENT,
+    DESIGNATED_TASKING,
+    ORBITAL_UPLINK,
+    EXPERIMENTAL_WEAPONRY,
+    PHOTON_GRENADES
+} from "../TauEmpireStrat";
 
 import M from "../../../assets/icons/M.png";
 import WS from "../../../assets/icons/WS.png";
