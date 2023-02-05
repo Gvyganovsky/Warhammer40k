@@ -9,6 +9,7 @@ import Drone from "../../assets/TauEmpire/Drone.png";
 import CadreFireblade from "../../assets/TauEmpire/Cadre Fireblade.png";
 import RiptideBattlesuit from "../../assets/TauEmpire/Riptide Battlesuit.png";
 import Stormsurge from "../../assets/TauEmpire/stormsurge.png";
+import Broadside from "../../assets/TauEmpire/Broadside.png";
 
 const TauEmpire = () => {
   return (
@@ -73,6 +74,13 @@ const TauEmpire = () => {
         <img src={Stormsurge} alt="Stormsurge" className={style.Combat_Unit_img} style={{ margin: '-30px 0px 0px -20px' }} />
         <div className={style.Combat_Unit_text}>
           Stormsurge
+        </div>
+      </a>
+
+      <a href="/BroadsideBattlesuits" className={style.Combat_Unit}>
+        <img src={Broadside} alt="Broadside" className={style.Combat_Unit_img} style={{ margin: '-35px 0px 0px -20px' }} />
+        <div className={style.Combat_Unit_text}>
+          Broadside Battlesuits
         </div>
       </a>
     </section>

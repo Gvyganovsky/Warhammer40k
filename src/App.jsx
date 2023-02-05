@@ -24,6 +24,7 @@ import { Drones } from './Fractions/TauEmpire/TauEmpireArmy/Drones';
 import { CadreFireblade } from './Fractions/TauEmpire/TauEmpireArmy/Cadre Fireblade';
 import { RiptideBattlesuit } from './Fractions/TauEmpire/TauEmpireArmy/Riptide Battlesuit';
 import { Stormsurge } from './Fractions/TauEmpire/TauEmpireArmy/Stormsurge';
+import { BroadsideBattlesuits } from './Fractions/TauEmpire/TauEmpireArmy/Broadside Battlesuits';
 
 const App = () => {
   return (
@@ -50,6 +51,7 @@ const App = () => {
         <Route path='CadreFireblade' element={<CadreFireblade />} />
         <Route path='RiptideBattlesuit' element={<RiptideBattlesuit />} />
         <Route path='Stormsurge' element={<Stormsurge />} />
+        <Route path='BroadsideBattlesuits' element={<BroadsideBattlesuits />} />
 
         <Route path='*' element={<NotFoundPage />} />
       </Route>
