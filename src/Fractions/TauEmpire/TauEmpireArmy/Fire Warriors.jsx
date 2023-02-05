@@ -13,14 +13,21 @@ import Ld from "../../../assets/icons/Ld.png";
 import Sv from "../../../assets/icons/Sv.png";
 
 import range from "../../../assets/icons/range.png";
+import location from "../../../assets/icons/location.png";
+import hit from "../../../assets/icons/hit.svg";
+import question from "../../../assets/icons/question.png";
+import morale from "../../../assets/icons/morale.png";
+import limitation from "../../../assets/icons/limitation.png";
+
+import shooting from "../../../assets/icons/shooting.png";
+import skull from "../../../assets/icons/skull.png";
 
 const FireWarriors = () => {
   return (
-    <div>
+    <section>
       <section className={style.content}>
         <img src={FireWarrior} alt="FireWarriors" className={style.combat_unit_img} />
         <div className={style.combat_unit_param}>
-
           <div className={style.combat_unit_param_block}>
             <img src={M} alt="M" className={style.param_img} />
             <div className={style.param_number}>6"</div>
@@ -35,8 +42,6 @@ const FireWarriors = () => {
             <img src={BS} alt="BS" className={style.param_img} />
             <div className={style.param_number}>4+</div>
           </div>
-
-
 
           <div className={style.combat_unit_param_block}>
             <img src={S} alt="S" className={style.param_img} />
@@ -53,8 +58,6 @@ const FireWarriors = () => {
             <div className={style.param_number}>1</div>
           </div>
 
-
-
           <div className={style.combat_unit_param_block}>
             <img src={A} alt="A" className={style.param_img} />
             <div className={style.param_number}>1</div>
@@ -69,97 +72,102 @@ const FireWarriors = () => {
             <img src={Sv} alt="Sv" className={style.param_img} />
             <div className={style.param_number}>4+</div>
           </div>
-
         </div>
-      </section>
+      </section >
 
       <section className={style.content}>
         <div className={style.line}></div>
         <div className={style.content_title}>Оружие</div>
-        <div className={style.weapon}>
-          <div className={style.gun_title}>Pulse rifle</div>
 
-          <div className={style.weapon_content}>
-            <img src={range} alt="range" className={style.param_img} />
-            <div className={style.gun_number}>36"</div>
+        <div className={style.weapon_content}>
+          <div className={style.weapon_block}>
+            <div className={style.weapon_title}>Pulse rifle</div>
+            <div className={style.weapon_block_info}>
+              <div className={style.weapon_info}>
+                <div className={style.weapon_text}>R</div>
+                <div className={style.weapon_text}>36"</div>
+              </div>
+
+              <div className={style.weapon_info}>
+                <div className={style.weapon_text}>Rf</div>
+                <div className={style.weapon_text}>1</div>
+              </div>
+
+              <div className={style.weapon_info}>
+                <div className={style.weapon_text}>S</div>
+                <div className={style.weapon_text}>5</div>
+              </div>
+
+              <div className={style.weapon_info}>
+                <div className={style.weapon_text}>AP</div>
+                <div className={style.weapon_text}>-1</div>
+              </div>
+
+              <div className={style.weapon_info}>
+                <div className={style.weapon_text}>D</div>
+                <div className={style.weapon_text}>1</div>
+              </div>
+            </div>
           </div>
 
-          <div className={style.weapon_content}>
-            <div className={style.gun_number}>Rapid Fire</div>
-            <div className={style.gun_number}>1</div>
+          <div className={style.weapon_block}>
+            <div className={style.weapon_title}>Pulse carbine</div>
+            <div className={style.weapon_block_info}>
+              <div className={style.weapon_info}>
+                <div className={style.weapon_text}>R</div>
+                <div className={style.weapon_text}>24"</div>
+              </div>
+
+              <div className={style.weapon_info}>
+                <div className={style.weapon_text}>As</div>
+                <div className={style.weapon_text}>2</div>
+              </div>
+
+              <div className={style.weapon_info}>
+                <div className={style.weapon_text}>S</div>
+                <div className={style.weapon_text}>5</div>
+              </div>
+
+              <div className={style.weapon_info}>
+                <div className={style.weapon_text}>AP</div>
+                <div className={style.weapon_text}>0</div>
+              </div>
+
+              <div className={style.weapon_info}>
+                <div className={style.weapon_text}>D</div>
+                <div className={style.weapon_text}>1</div>
+              </div>
+            </div>
           </div>
 
-          <div className={style.weapon_content}>
-            <img src={S} alt="S" className={style.param_img} />
-            <div className={style.gun_number}>5</div>
-          </div>
+          <div className={style.weapon_block}>
+            <div className={style.weapon_title}>Pulse pistol</div>
+            <div className={style.weapon_block_info}>
+              <div className={style.weapon_info}>
+                <div className={style.weapon_text}>R</div>
+                <div className={style.weapon_text}>12"</div>
+              </div>
 
-          <div className={style.weapon_content}>
-            <div className={style.gun_number}>AP</div>
-            <div className={style.gun_number}>-1</div>
-          </div>
+              <div className={style.weapon_info}>
+                <div className={style.weapon_text}>Ps</div>
+                <div className={style.weapon_text}>1</div>
+              </div>
 
-          <div className={style.weapon_content}>
-            <div className={style.gun_number}>D</div>
-            <div className={style.gun_number}>1</div>
-          </div>
-        </div>
+              <div className={style.weapon_info}>
+                <div className={style.weapon_text}>S</div>
+                <div className={style.weapon_text}>5</div>
+              </div>
 
-        <div className={style.weapon}>
-          <div className={style.gun_title}>Pulse carbine</div>
+              <div className={style.weapon_info}>
+                <div className={style.weapon_text}>AP</div>
+                <div className={style.weapon_text}>-1</div>
+              </div>
 
-          <div className={style.weapon_content}>
-            <img src={range} alt="range" className={style.param_img} />
-            <div className={style.gun_number}>24"</div>
-          </div>
-
-          <div className={style.weapon_content}>
-            <div className={style.gun_number}>Assault</div>
-            <div className={style.gun_number}>2</div>
-          </div>
-
-          <div className={style.weapon_content}>
-            <img src={S} alt="S" className={style.param_img} />
-            <div className={style.gun_number}>5</div>
-          </div>
-
-          <div className={style.weapon_content}>
-            <div className={style.gun_number}>AP</div>
-            <div className={style.gun_number}>0</div>
-          </div>
-
-          <div className={style.weapon_content}>
-            <div className={style.gun_number}>D</div>
-            <div className={style.gun_number}>1</div>
-          </div>
-        </div>
-
-        <div className={style.weapon}>
-          <div className={style.gun_title}>Pulse pistol</div>
-
-          <div className={style.weapon_content}>
-            <img src={range} alt="range" className={style.param_img} />
-            <div className={style.gun_number}>12"</div>
-          </div>
-
-          <div className={style.weapon_content}>
-            <div className={style.gun_number}>Pistol</div>
-            <div className={style.gun_number}>1</div>
-          </div>
-
-          <div className={style.weapon_content}>
-            <img src={S} alt="S" className={style.param_img} />
-            <div className={style.gun_number}>5</div>
-          </div>
-
-          <div className={style.weapon_content}>
-            <div className={style.gun_number}>AP</div>
-            <div className={style.gun_number}>0</div>
-          </div>
-
-          <div className={style.weapon_content}>
-            <div className={style.gun_number}>D</div>
-            <div className={style.gun_number}>1</div>
+              <div className={style.weapon_info}>
+                <div className={style.weapon_text}>D</div>
+                <div className={style.weapon_text}>1</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -167,165 +175,144 @@ const FireWarriors = () => {
       <section className={style.content}>
         <div className={style.line}></div>
         <div className={style.content_title}>Стратегемы</div>
+
         <div className={style.strat}>
-          <div className={style.stratName_stratBattleTactic}>
-            <span>СОСРЕДОТОЧЕННЫЙ ОГОНЬ</span>
+          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #294a67 0)' }}>
+            <span>FOCUSED FIRE</span>
             <span>2 CP</span>
           </div>
-          <div className={style.stratName_info_stratBattleTactic}>
-            Используйте эту стратегему на этапе стрельбы, когда вражеская модель получает урон
-            в результате атаки. До конца фазы, каждый раз, когда модель вашей армии совершает
-            атаку против подразделения этой вражеской модели, добавляйте 1 к броску урона этой атаки.
+          <div className={style.strat_text}>
+            <span className={style.strat_text_bold}>Фаза стрельбы</span>.
+            До конца фазы: вражеская модель теряет ранение в результате атаки, при атаке прибавьте
+            1 к броску ранений этой атаки.
           </div>
         </div>
 
         <div className={style.strat}>
-          <div className={style.stratName_stratBattleTactic}>
-            <span>БЕЗЖАЛОСТНЫЙ ОБСТРЕЛ</span>
+          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #294a67 0)' }}>
+            <span>RELENTLESS FUSILLADE</span>
             <span>1 CP</span>
           </div>
-          <div className={style.stratName_info_stratBattleTactic}>
-            Используйте эту стратегию на этапе стрельбы. До конца фазы:
-            Вместо того, чтобы следовать обычным правилам для Rapid Fire,
-            модели в этом подразделении, стреляющие из pulse rifles, совершают вдвое больше атак.
-            Каждый раз, когда модель в этом подразделении совершает атаку дальнего боя,
-            улучшайте характеристику AP этой атаки на 1.
+          <div className={style.strat_text}>
+            <span className={style.strat_text_bold}>Фаза стрельбы</span>.
+            Вместо того, чтобы следовать правилам для оружия
+            типа Rapid Fire, модели в этом подразделении, стреляющие
+            из Pulse rifle, совершают вдвое больше атак.
+            При этом увеличьте бронебойность этой атаки на 1
           </div>
         </div>
 
         <div className={style.strat}>
-          <div className={style.stratName_stratBattleTactic}>
-            <span>ИМПУЛЬСНЫЙ НАТИСК</span>
+          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #294a67 0)' }}>
+            <span>PULSE ONSLAUGHT</span>
             <span>1 CP</span>
           </div>
-          <div className={style.stratName_info_stratBattleTactic}>
-            Используйте эту стратегию на этапе стрельбы. До конца фазы, каждый раз, 
-            когда модель в этом подразделении совершает атаку импульсным оружием, 
-            неизмененный бросок удара из 6 автоматически ранит цель.
+          <div className={style.strat_text}>
+            <span className={style.strat_text_bold}>Фаза стрельбы</span>.
+            До конца фазы: при попадании импульсным оружием, бросок удара на 6
+            автоматически ранит цель.
           </div>
         </div>
 
         <div className={style.strat}>
-          <div className={style.stratName_stratBattleTactic}>
-            <span>ЗАЛП В УПОР</span>
+          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #294a67 0)' }}>
+            <span>POINT-BLANK VOLLEY</span>
             <span>1 CP</span>
           </div>
-          <div className={style.stratName_info_stratBattleTactic}>
-            Используйте эту стратегию в начале вашей фазы стрельбы.
-            Выберите одно подразделение FIRE WARRIOR из вашей армии,
-            которое находится в пределах досягаемости любых вражеских подразделений.
-            До конца фазы pulse blasters, pulse carbines и pulse rifles,
-            которыми оснащены модели в этом подразделении, имеют характеристику типа Pistol 2.
-          </div>
-        </div>
-
-
-        <div className={style.strat}>
-          <div className={style.stratName_stratStrategicPloy}>
-            <span>ОБОЙТИ С ФЛАНГА</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.stratName_info_stratStrategicPloy}>
-            Используйте эту стратегию в конце вашей фазы движения. Выберите один ДАЛЬНИЙ ОСНОВНОЙ
-            отряд или ВСПОМОГАТЕЛЬНЫЙ отряд Тау из вашей армии, который находится в пределах 9"
-            от любого края поля боя. Если в миссии, которую вы выполняете, используется
-            правило стратегических резервов, вы можете удалить это подразделение с поля боя и
-            поместить его в Стратегические резервы.
+          <div className={style.strat_text}>
+            <span className={style.strat_text_bold}>Этап стрельбы</span>.
+            До конца фазы: Pulse rifle, Pulse carbine и Pulse pistol имеют тип Pistol 2
+            (Действует только на 1 отряд).
           </div>
         </div>
 
         <div className={style.strat}>
-          <div className={style.stratName_stratStrategicPloy}>
-            <span>ОРБИТАЛЬНАЯ ЛИНИЯ СВЯЗИ</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.stratName_info_stratStrategicPloy}>
-            Используйте эту стратегию на этапе съемки. Выберите одного вражеского юнита.
-            До конца фазы, каждый раз, когда модель в подразделении SA'CEA из вашей армии
-            совершает дальнюю атаку против этого вражеского подразделения, цель не получает
-            преимуществ прикрытия от этой атаки.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.stratName_stratStrategicPloy}>
-            <span>СКООРДИНИРОВАННОЕ ВЗАИМОДЕЙСТВИЕ</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.stratName_info_stratStrategicPloy}>
-            Используйте эту стратегию на этапе стрельбы, прежде чем выбирать юнит для стрельбы.
-            Выберите одно вражеское подразделение и два подразделения 'SEPT' из вашей армии,
-            которые находятся в пределах 18 дюймов от этого вражеского подразделения и видны ему.
-            До конца фазы, каждый раз, когда модель в одном из этих подразделений 'SEPT' совершает атаку:
-            Эта атака может быть нацелена только на этот вражеский юнит и только в том случае, если это
-            подходящая цель. Улучшите характеристику бронепробиваемости этой атаки на 1.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.stratName_stratStrategicPloy}>
-            <span>НАЗНАЧЕННАЯ ЗАДАЧА</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.stratName_info_stratStrategicPloy}>
-            Используйте эту стратегию на этапе вашего командования. Выберите одно подразделение ИМПЕРИИ Тау
-            из вашей армии, которое не находится в пределах досягаемости вражеских подразделений и содержит
-            как модели дронов, так и модели без ключевого слова DRONE. Разделите этот блок на два блока, один
-            из которых содержит все модели дронов, а другой содержит все модели без ключевого слова DRONE.
-
-            Если какая-либо из этих моделей дронов состыкована с другой моделью, установите их в пределах 1"
-            от модели, с которой они состыкованы, прежде чем разделять устройство. Эти модели дронов больше
-            не состыкованы с этой моделью.
-          </div>
-        </div>
-
-
-        <div className={style.strat}>
-          <div className={style.stratName_stratEpicDeed}>
-            <span>ЭКСПЕРИМЕНТАЛЬНОЕ ОРУЖИЕ</span>
+          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
+            <span>EXPERIMENTAL WEAPONRY</span>
             <span>2 CP</span>
           </div>
-          <div className={style.stratName_info_stratEpicDeed}>
-            Используйте эту стратегию на этапе стрельбы, когда для стрельбы выбирается подразделение
-            БОРК'ан из вашей армии. Выберите одну модель в этом подразделении и одно оружие, которым
-            оснащена эта модель. До конца фазы, каждый раз, когда эта модель совершает атаку этим оружием,
-            неуязвимые спасброски не могут быть предприняты против этой атаки.
+          <div className={style.strat_text}>
+            <span className={style.strat_text_bold}>Фаза стрельбы</span>.
+            До конца фазы: выбранная модель совершает атаку, неуязвимые спасброски
+            не могут быть предприняты против этой атаки.
           </div>
         </div>
 
         <div className={style.strat}>
-          <div className={style.stratName_stratEpicDeed}>
-            <span>ПРОТОКОЛЫ СПАСИТЕЛЯ</span>
+          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
+            <span>SAVIOUR PROTOCOLS</span>
             <span>1 CP</span>
           </div>
-          <div className={style.stratName_info_stratEpicDeed}>
-            Используйте эту стратегию на любой фазе, когда спасбросок не удался для модели в подразделении
-            'SEPT' из вашей армии. Выберите одну удобную модель дрона 'SEPT' в пределах 3 дюймов
-            от этого устройства или в пределах 6 дюймов от этого устройства, если оно содержит модель,
-            оснащенную контроллером дрона. Эта модель дрона уничтожена, и характеристика урона от этой
-            атаки изменена на 0.
+          <div className={style.strat_text}>
+            <span className={style.strat_text_bold}>Любая фаза</span>.
+            Если спасбросок не удался, выберите и уберите модель дрона в пределах 3" или 6" от юнита.
+            Урон от атаки по основной цели снижен до 0.
           </div>
         </div>
 
-
         <div className={style.strat}>
-          <div className={style.stratName_stratWargear}>
-            <span>ФОТОННЫЕ ГРАНАТЫ</span>
+          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
+            <span>OUTFLANK</span>
             <span>1 CP</span>
           </div>
-          <div className={style.stratName_info_stratWargear}>
-            Используйте эту стратегию на этапе атаки вашего противника, когда подразделение ФОТОННЫХ ГРАНАТ
-            из вашей армии выбрано в качестве цели для атаки, объявленной вражеским подразделением
-            (за исключением транспортных средств и монстров). До конца хода: Вычтите 2 из бросков
-            заряда этого устройства.
+          <div className={style.strat_text}>
+            <span className={style.strat_text_bold}>Фаза движения</span>.
+            Вы можете убрать ваш отряд с поля в резерв, если он находится в 9" от края поля.
+          </div>
+        </div>
+
+        <div className={style.strat}>
+          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
+            <span>ORBITAL UPLINK</span>
+            <span>1 CP</span>
+          </div>
+          <div className={style.strat_text}>
+            <span className={style.strat_text_bold}>Фаза стрельбы</span>.
+            До конца фазы: При дальней атаки против этого вражеского
+            подразделения, цель не получает преимуществ прикрытия от этой атаки.
+          </div>
+        </div>
+
+        <div className={style.strat}>
+          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
+            <span>COORDINATED ENGAGEMENT</span>
+            <span>1 CP</span>
+          </div>
+          <div className={style.strat_text}>
+            <span className={style.strat_text_bold}>Фаза стрельбы</span>.
+            Прежде чем выбирать юнита для стрельбы. Выберите одно вражеское подразделение и 2 подразделения
+            SEPT из вашей армии, которые находятся в пределах 18" от этого вражеского подразделения и видны
+            ему. До конца фазы, каждый раз, когда модель в одном из этих подразделений SEPT совершает атаку:
+            Улучшите характеристику бронепробиваемости этой атаки на 1.
+          </div>
+        </div>
+
+        <div className={style.strat}>
+          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
+            <span>DESIGNATED TASKING</span>
+            <span>1 CP</span>
+          </div>
+          <div className={style.strat_text}>
+            <span className={style.strat_text_bold}>Фаза командования</span>.
+            Вы можете разделить ваш отряд на 2, где содержаться дроны. 
+            Все дроны входят в новый отдельный отряд
+          </div>
+        </div>
+
+        <div className={style.strat}>
+          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #626869 0)' }}>
+            <span>PHOTON GRENADES</span>
+            <span>1 CP</span>
+          </div>
+          <div className={style.strat_text}>
+            <span className={style.strat_text_bold}>Фаза атаки противника</span>.
+            Вычтите 2 из бросков заряда юнита с фотонными гранатами.
             Каждый раз, когда модель в этом подразделении совершает атаку, вычтите 1 из броска удара этой атаки.
-            Модификатор броска заряда, полученный с помощью этой стратегии, не суммируется с каким-либо
-            другим отрицательным модификатором броска заряда единицы.
           </div>
         </div>
 
       </section>
-    </div >
+    </section >
   )
 }
 

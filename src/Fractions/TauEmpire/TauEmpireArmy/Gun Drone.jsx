@@ -24,56 +24,56 @@ const GunDrone = () => {
             <section className={style.content}>
                 <img src={GunDrones} alt="Gun Drone" className={style.combat_unit_img} />
                 <div className={style.combat_unit_param}>
-          
-                        <div className={style.combat_unit_param_block}>
-                            <img src={M} alt="M" className={style.param_img} />
-                            <div className={style.param_number}>10</div>
-                        </div>
 
-                        <div className={style.combat_unit_param_block}>
-                            <img src={WS} alt="WS" className={style.param_img} />
-                            <div className={style.param_number}>5+</div>
-                        </div>
+                    <div className={style.combat_unit_param_block}>
+                        <img src={M} alt="M" className={style.param_img} />
+                        <div className={style.param_number}>10</div>
+                    </div>
 
-                        <div className={style.combat_unit_param_block}>
-                            <img src={BS} alt="BS" className={style.param_img} />
-                            <div className={style.param_number}>5+</div>
-                        </div>
-                   
+                    <div className={style.combat_unit_param_block}>
+                        <img src={WS} alt="WS" className={style.param_img} />
+                        <div className={style.param_number}>5+</div>
+                    </div>
 
-              
-                        <div className={style.combat_unit_param_block}>
-                            <img src={S} alt="S" className={style.param_img} />
-                            <div className={style.param_number}>3</div>
-                        </div>
+                    <div className={style.combat_unit_param_block}>
+                        <img src={BS} alt="BS" className={style.param_img} />
+                        <div className={style.param_number}>5+</div>
+                    </div>
 
-                        <div className={style.combat_unit_param_block}>
-                            <img src={T} alt="T" className={style.param_img} />
-                            <div className={style.param_number}>4</div>
-                        </div>
 
-                        <div className={style.combat_unit_param_block}>
-                            <img src={W} alt="W" className={style.param_img} />
-                            <div className={style.param_number}>1</div>
-                        </div>
-                    
 
-                    
-                        <div className={style.combat_unit_param_block}>
-                            <img src={A} alt="A" className={style.param_img} />
-                            <div className={style.param_number}>1</div>
-                        </div>
+                    <div className={style.combat_unit_param_block}>
+                        <img src={S} alt="S" className={style.param_img} />
+                        <div className={style.param_number}>3</div>
+                    </div>
 
-                        <div className={style.combat_unit_param_block}>
-                            <img src={Ld} alt="Ld" className={style.param_img} />
-                            <div className={style.param_number}>6</div>
-                        </div>
+                    <div className={style.combat_unit_param_block}>
+                        <img src={T} alt="T" className={style.param_img} />
+                        <div className={style.param_number}>4</div>
+                    </div>
 
-                        <div className={style.combat_unit_param_block}>
-                            <img src={Sv} alt="Sv" className={style.param_img} />
-                            <div className={style.param_number}>4+</div>
-                        </div>
-               
+                    <div className={style.combat_unit_param_block}>
+                        <img src={W} alt="W" className={style.param_img} />
+                        <div className={style.param_number}>1</div>
+                    </div>
+
+
+
+                    <div className={style.combat_unit_param_block}>
+                        <img src={A} alt="A" className={style.param_img} />
+                        <div className={style.param_number}>1</div>
+                    </div>
+
+                    <div className={style.combat_unit_param_block}>
+                        <img src={Ld} alt="Ld" className={style.param_img} />
+                        <div className={style.param_number}>6</div>
+                    </div>
+
+                    <div className={style.combat_unit_param_block}>
+                        <img src={Sv} alt="Sv" className={style.param_img} />
+                        <div className={style.param_number}>4+</div>
+                    </div>
+
                 </div>
             </section>
 
@@ -185,12 +185,10 @@ const GunDrone = () => {
                         <span>2 CP</span>
                     </div>
                     <div className={style.stratName_info_stratEpicDeed}>
-                        Используйте эту стратегию на этапе стрельбы, когда для стрельбы
-                        выбирается подразделение БОРК'ан из вашей армии. Выберите одну
-                        модель в этом подразделении и одно оружие, которым оснащена эта
-                        модель. До конца фазы, каждый раз, когда эта модель совершает
-                        атаку этим оружием, неуязвимые спасброски не могут быть предприняты
-                        против этой атаки.
+                        <span className={style.strat_text_bold}>Фаза стрельбы</span>.
+                        Выберите одну модель. До конца фазы, каждый раз, когда эта модель
+                        совершает атаку этим оружием, неуязвимые спасброски не могут быть
+                        предприняты против этой атаки.
                     </div>
                 </div>
 
@@ -216,8 +214,8 @@ const GunDrone = () => {
                         <span>1 CP</span>
                     </div>
                     <div className={style.stratName_info_stratStrategicPloy}>
-                        Используйте эту стратегию на этапе съемки. Выберите одного вражеского юнита.
-                        До конца фазы, каждый раз, когда модель в подразделении SA'CEA из вашей армии
+                        <span className={style.strat_text_bold}>Фаза стрельбы</span>.
+                        До конца фазы: каждый раз, когда модель в подразделении SA'CEA из вашей армии
                         совершает дальнюю атаку против этого вражеского подразделения, цель не получает
                         преимуществ прикрытия от этой атаки.
                     </div>
@@ -229,7 +227,7 @@ const GunDrone = () => {
                         <span>1 CP</span>
                     </div>
                     <div className={style.stratName_info_stratStrategicPloy}>
-                        Используйте эту стратегию на этапе стрельбы, прежде чем выбирать юнит для стрельбы.
+                        <span className={style.strat_text_bold}>Фаза стрельбы</span>.
                         Выберите одно вражеское подразделение и два подразделения 'SEPT' из вашей армии,
                         которые находятся в пределах 18 дюймов от этого вражеского подразделения и видны ему.
                         До конца фазы, каждый раз, когда модель в одном из этих подразделений 'SEPT'

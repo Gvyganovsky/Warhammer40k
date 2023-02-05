@@ -50,7 +50,7 @@ const TauEmpire = () => {
         <div className={style.Combat_Unit}>
           <img src={SupportTurret} alt="SupportTurret" className={style.DS8TacticalSupportTurret_img} />
           <div className={style.Combat_Unit_text}>
-            DS8 Tactical Support Turret
+            Support Turret
           </div>
         </div>
       </a>
