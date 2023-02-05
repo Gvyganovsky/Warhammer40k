@@ -23,6 +23,7 @@ import { SupportTurret } from './Fractions/TauEmpire/TauEmpireArmy/Support Turre
 import { Drones } from './Fractions/TauEmpire/TauEmpireArmy/Drones';
 import { CadreFireblade } from './Fractions/TauEmpire/TauEmpireArmy/Cadre Fireblade';
 import { RiptideBattlesuit } from './Fractions/TauEmpire/TauEmpireArmy/Riptide Battlesuit';
+import { Stormsurge } from './Fractions/TauEmpire/TauEmpireArmy/Stormsurge';
 
 const App = () => {
   return (
@@ -48,6 +49,7 @@ const App = () => {
         <Route path='Drones' element={<Drones />} />
         <Route path='CadreFireblade' element={<CadreFireblade />} />
         <Route path='RiptideBattlesuit' element={<RiptideBattlesuit />} />
+        <Route path='Stormsurge' element={<Stormsurge />} />
 
         <Route path='*' element={<NotFoundPage />} />
       </Route>

@@ -1,17 +1,6 @@
 import React from "react";
 import style from "../../scss/CombatUnit.module.scss";
 
-import range from "../../assets/icons/range.png";
-import location from "../../assets/icons/location.png";
-import hit from "../../assets/icons/hit.svg";
-import question from "../../assets/icons/question.png";
-import morale from "../../assets/icons/morale.png";
-import limitation from "../../assets/icons/limitation.png";
-
-import general from "../../assets/icons/general.png";
-import shooting from "../../assets/icons/shooting.png";
-import skull from "../../assets/icons/skull.png";
-
 export const TauEmpireStrat = () => {
     return (
         <div>
@@ -420,6 +409,23 @@ export const COUNTERFIRE_DEFENCE_SYSTEM = () => {
                 <span className={style.strat_text_bold}>Фаза стрельбы противника</span>.
                 Характеристика урона врага изменена на 1. Если эта модель имеет характеристику ран,
                 равную 14 или более, эта стратегия стоит 2 CP; в противном случае она стоит 1 CP.
+            </div>
+        </div>
+    )
+}
+
+export const FREQUENCY_LOCK = () => {
+    return (
+        <div className={style.strat}>
+            <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #626869 0)' }}>
+                <span>FREQUENCY LOCK</span>
+                <span>1 CP</span>
+            </div>
+            <div className={style.strat_text}>
+                <span className={style.strat_text_bold}>Фаза стрельбы</span>.
+                До конца фазы, каждый раз, когда эта модель совершает атаку seeker missile, missile rack или destroyer missile:
+                Эта атака может быть нацелена на объекты с одним или несколькими маркерами Markerlight, которые не видны атакующей модели.
+                Добавьте 1 к броску раны этой атаки.
             </div>
         </div>
     )

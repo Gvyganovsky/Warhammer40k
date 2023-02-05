@@ -1,18 +1,14 @@
 import React from "react";
 import style from "../../../scss/CombatUnit.module.scss";
-import Riptidebattlesuit from "../../../assets/TauEmpire/Riptide Battlesuit.png";
+import stormsurge from "../../../assets/TauEmpire/stormsurge.png";
 
 import { SAVIOUR_PROTOCOLS } from "../TauEmpireStrat";
 import { COORDINATED_ENGAGEMENT } from "../TauEmpireStrat";
 import { ORBITAL_UPLINK } from "../TauEmpireStrat";
 import { EXPERIMENTAL_WEAPONRY } from "../TauEmpireStrat";
-import { BRANCHED_NOVA_CHARGE } from "../TauEmpireStrat";
-import { FAIL_SAFE_DETONATOR } from "../TauEmpireStrat";
 import { BACKUP_AI } from "../TauEmpireStrat";
 import { COUNTERFIRE_DEFENCE_SYSTEM } from "../TauEmpireStrat";
-import { STRIKE_AND_FADE } from "../TauEmpireStrat";
-import { REPULSOR_IMPACT_FIELD } from "../TauEmpireStrat";
-import { IONISED_SHOCKFIELD } from "../TauEmpireStrat";
+import { FREQUENCY_LOCK } from "../TauEmpireStrat";
 
 import M from "../../../assets/icons/M.png";
 import WS from "../../../assets/icons/WS.png";
@@ -24,18 +20,19 @@ import A from "../../../assets/icons/A.png";
 import Ld from "../../../assets/icons/Ld.png";
 import Sv from "../../../assets/icons/Sv.png";
 
-import skull from "../../../assets/icons/skull.png";
-import dice from "../../../assets/icons/dice.png";
+import hit from "../../../assets/icons/hit.svg";
+import shooting from "../../../assets/icons/shooting.png";
+import general from "../../../assets/icons/general.png";
 
-const RiptideBattlesuit = () => {
+const Stormsurge = () => {
     return (
         <section>
             <section className={style.content}>
-                <img src={Riptidebattlesuit} alt="Riptidebattlesuit" className={style.combat_unit_img} />
+                <img src={stormsurge} alt="stormsurge" className={style.combat_unit_img} />
                 <div className={style.combat_unit_param}>
                     <div className={style.combat_unit_param_block}>
                         <img src={M} alt="M" className={style.param_img} />
-                        <div className={style.param_number}>12"</div>
+                        <div className={style.param_number}>8"</div>
                     </div>
 
                     <div className={style.combat_unit_param_block}>
@@ -50,27 +47,27 @@ const RiptideBattlesuit = () => {
 
                     <div className={style.combat_unit_param_block}>
                         <img src={S} alt="S" className={style.param_img} />
-                        <div className={style.param_number}>6</div>
+                        <div className={style.param_number}>8</div>
                     </div>
 
                     <div className={style.combat_unit_param_block}>
                         <img src={T} alt="T" className={style.param_img} />
-                        <div className={style.param_number}>7</div>
+                        <div className={style.param_number}>8</div>
                     </div>
 
                     <div className={style.combat_unit_param_block}>
                         <img src={W} alt="W" className={style.param_img} />
-                        <div className={style.param_number}>14</div>
+                        <div className={style.param_number}>22</div>
                     </div>
 
                     <div className={style.combat_unit_param_block}>
                         <img src={A} alt="A" className={style.param_img} />
-                        <div className={style.param_number}>6</div>
+                        <div className={style.param_number}>3</div>
                     </div>
 
                     <div className={style.combat_unit_param_block}>
                         <img src={Ld} alt="Ld" className={style.param_img} />
-                        <div className={style.param_number}>9</div>
+                        <div className={style.param_number}>8</div>
                     </div>
 
                     <div className={style.combat_unit_param_block}>
@@ -86,16 +83,16 @@ const RiptideBattlesuit = () => {
                 <div className={style.damage_content}>
                     <div className={style.damage_block}>
                         <img src={W} alt="W" className={style.param_img} />
-                        <div className={style.damage_nubmer}>8-14</div>
-                        <div className={style.damage_nubmer}>5-7</div>
-                        <div className={style.damage_nubmer}>1-4</div>
+                        <div className={style.damage_nubmer}>12-22</div>
+                        <div className={style.damage_nubmer}>6-11</div>
+                        <div className={style.damage_nubmer}>1-5</div>
                     </div>
 
                     <div className={style.damage_block}>
-                        <img src={M} alt="M" className={style.param_img} />
-                        <div className={style.damage_nubmer}>12"</div>
-                        <div className={style.damage_nubmer}>8"</div>
-                        <div className={style.damage_nubmer}>4"</div>
+                        <img src={S} alt="S" className={style.param_img} />
+                        <div className={style.damage_nubmer}>8</div>
+                        <div className={style.damage_nubmer}>7</div>
+                        <div className={style.damage_nubmer}>6</div>
                     </div>
 
                     <div className={style.damage_block}>
@@ -107,9 +104,9 @@ const RiptideBattlesuit = () => {
 
                     <div className={style.damage_block}>
                         <img src={A} alt="A" className={style.param_img} />
-                        <div className={style.damage_nubmer}>6</div>
-                        <div className={style.damage_nubmer}>5</div>
-                        <div className={style.damage_nubmer}>4</div>
+                        <div className={style.damage_nubmer}>3</div>
+                        <div className={style.damage_nubmer}>D3</div>
+                        <div className={style.damage_nubmer}>1</div>
                     </div>
                 </div>
             </section>
@@ -120,21 +117,81 @@ const RiptideBattlesuit = () => {
 
                 <div className={style.weapon_content}>
                     <div className={style.weapon_block}>
-                        <div className={style.weapon_title}>Fusion blaster</div>
+                        <div className={style.weapon_title}>Cluster rocket syst</div>
                         <div className={style.weapon_block_info}>
                             <div className={style.weapon_info}>
                                 <div className={style.weapon_text}>R</div>
-                                <div className={style.weapon_text}>18"</div>
+                                <div className={style.weapon_text}>48"</div>
                             </div>
 
                             <div className={style.weapon_info}>
-                                <div className={style.weapon_text}>As</div>
+                                <div className={style.weapon_text}>Hv</div>
+                                <div className={style.weapon_text}>4D6</div>
+                            </div>
+
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>S</div>
+                                <div className={style.weapon_text}>5</div>
+                            </div>
+
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>AP</div>
+                                <div className={style.weapon_text}>-1</div>
+                            </div>
+
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>D</div>
+                                <div className={style.weapon_text}>1</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={style.weapon_block}>
+                        <div className={style.weapon_title}>Destroyer missile</div>
+                        <div className={style.weapon_block_info}>
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>R</div>
+                                <div className={style.weapon_text}>72"</div>
+                            </div>
+
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>Hv</div>
                                 <div className={style.weapon_text}>1</div>
                             </div>
 
                             <div className={style.weapon_info}>
                                 <div className={style.weapon_text}>S</div>
-                                <div className={style.weapon_text}>8</div>
+                                <div className={style.weapon_text}>12</div>
+                            </div>
+
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>AP</div>
+                                <div className={style.weapon_text}>-5</div>
+                            </div>
+
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>D</div>
+                                <div className={style.weapon_text}>2D3</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={style.weapon_blockTwo}>
+                        <div className={style.weapon_title}>Pulse blast F</div>
+                        <div className={style.weapon_block_info}>
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>R</div>
+                                <div className={style.weapon_text}>24"</div>
+                            </div>
+
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>Hv</div>
+                                <div className={style.weapon_text}>2</div>
+                            </div>
+
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>S</div>
+                                <div className={style.weapon_text}>16</div>
                             </div>
 
                             <div className={style.weapon_info}>
@@ -144,92 +201,32 @@ const RiptideBattlesuit = () => {
 
                             <div className={style.weapon_info}>
                                 <div className={style.weapon_text}>D</div>
-                                <div className={style.weapon_text}>D6</div>
+                                <div className={style.weapon_text}>12</div>
                             </div>
                         </div>
                     </div>
 
-                    <div className={style.weapon_block}>
-                        <div className={style.weapon_title}>Hv burst cannon</div>
+                    <div className={style.weapon_blockTwo}>
+                        <div className={style.weapon_title}>Pulse blast D</div>
                         <div className={style.weapon_block_info}>
                             <div className={style.weapon_info}>
                                 <div className={style.weapon_text}>R</div>
-                                <div className={style.weapon_text}>36"</div>
+                                <div className={style.weapon_text}>48"</div>
                             </div>
 
                             <div className={style.weapon_info}>
                                 <div className={style.weapon_text}>Hv</div>
-                                <div className={style.weapon_text}>12</div>
+                                <div className={style.weapon_text}>6</div>
                             </div>
 
                             <div className={style.weapon_info}>
                                 <div className={style.weapon_text}>S</div>
-                                <div className={style.weapon_text}>6</div>
+                                <div className={style.weapon_text}>12</div>
                             </div>
 
                             <div className={style.weapon_info}>
                                 <div className={style.weapon_text}>AP</div>
                                 <div className={style.weapon_text}>-2</div>
-                            </div>
-
-                            <div className={style.weapon_info}>
-                                <div className={style.weapon_text}>D</div>
-                                <div className={style.weapon_text}>2</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className={style.weapon_blockTwo}>
-                        <div className={style.weapon_title}>Ion accelerator S</div>
-                        <div className={style.weapon_block_info}>
-                            <div className={style.weapon_info}>
-                                <div className={style.weapon_text}>R</div>
-                                <div className={style.weapon_text}>72"</div>
-                            </div>
-
-                            <div className={style.weapon_info}>
-                                <div className={style.weapon_text}>Hv</div>
-                                <div className={style.weapon_text}>6</div>
-                            </div>
-
-                            <div className={style.weapon_info}>
-                                <div className={style.weapon_text}>S</div>
-                                <div className={style.weapon_text}>7</div>
-                            </div>
-
-                            <div className={style.weapon_info}>
-                                <div className={style.weapon_text}>AP</div>
-                                <div className={style.weapon_text}>-3</div>
-                            </div>
-
-                            <div className={style.weapon_info}>
-                                <div className={style.weapon_text}>D</div>
-                                <div className={style.weapon_text}>3</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className={style.weapon_blockTwo}>
-                        <div className={style.weapon_title}>Ion accelerator O</div>
-                        <div className={style.weapon_block_info}>
-                            <div className={style.weapon_info}>
-                                <div className={style.weapon_text}>R</div>
-                                <div className={style.weapon_text}>72"</div>
-                            </div>
-
-                            <div className={style.weapon_info}>
-                                <div className={style.weapon_text}>Hv</div>
-                                <div className={style.weapon_text}>6</div>
-                            </div>
-
-                            <div className={style.weapon_info}>
-                                <div className={style.weapon_text}>S</div>
-                                <div className={style.weapon_text}>8</div>
-                            </div>
-
-                            <div className={style.weapon_info}>
-                                <div className={style.weapon_text}>AP</div>
-                                <div className={style.weapon_text}>-3</div>
                             </div>
 
                             <div className={style.weapon_info}>
@@ -240,21 +237,21 @@ const RiptideBattlesuit = () => {
                     </div>
 
                     <div className={style.weapon_block}>
-                        <div className={style.weapon_title}>Plasma rifle</div>
+                        <div className={style.weapon_title}>Pulse driver can</div>
                         <div className={style.weapon_block_info}>
                             <div className={style.weapon_info}>
                                 <div className={style.weapon_text}>R</div>
-                                <div className={style.weapon_text}>30"</div>
+                                <div className={style.weapon_text}>72"</div>
                             </div>
 
                             <div className={style.weapon_info}>
-                                <div className={style.weapon_text}>As</div>
-                                <div className={style.weapon_text}>1</div>
+                                <div className={style.weapon_text}>Hv</div>
+                                <div className={style.weapon_text}>3D3</div>
                             </div>
 
                             <div className={style.weapon_info}>
                                 <div className={style.weapon_text}>S</div>
-                                <div className={style.weapon_text}>8</div>
+                                <div className={style.weapon_text}>10</div>
                             </div>
 
                             <div className={style.weapon_info}>
@@ -300,7 +297,97 @@ const RiptideBattlesuit = () => {
                     </div>
 
                     <div className={style.weapon_block}>
-                        <div className={style.weapon_title}>Riptide fists</div>
+                        <div className={style.weapon_title}>Twin air frag</div>
+                        <div className={style.weapon_block_info}>
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>R</div>
+                                <div className={style.weapon_text}>24"</div>
+                            </div>
+
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>As</div>
+                                <div className={style.weapon_text}>2D6</div>
+                            </div>
+
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>S</div>
+                                <div className={style.weapon_text}>4</div>
+                            </div>
+
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>AP</div>
+                                <div className={style.weapon_text}>-1</div>
+                            </div>
+
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>D</div>
+                                <div className={style.weapon_text}>1</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={style.weapon_block}>
+                        <div className={style.weapon_title}>Twin burst can</div>
+                        <div className={style.weapon_block_info}>
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>R</div>
+                                <div className={style.weapon_text}>18"</div>
+                            </div>
+
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>As</div>
+                                <div className={style.weapon_text}>12</div>
+                            </div>
+
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>S</div>
+                                <div className={style.weapon_text}>5</div>
+                            </div>
+
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>AP</div>
+                                <div className={style.weapon_text}>0</div>
+                            </div>
+
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>D</div>
+                                <div className={style.weapon_text}>1</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={style.weapon_block}>
+                        <div className={style.weapon_title}>Twin T’au flamer</div>
+                        <div className={style.weapon_block_info}>
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>R</div>
+                                <div className={style.weapon_text}>12"</div>
+                            </div>
+
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>As</div>
+                                <div className={style.weapon_text}>2D6+4</div>
+                            </div>
+
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>S</div>
+                                <div className={style.weapon_text}>4</div>
+                            </div>
+
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>AP</div>
+                                <div className={style.weapon_text}>0</div>
+                            </div>
+
+                            <div className={style.weapon_info}>
+                                <div className={style.weapon_text}>D</div>
+                                <div className={style.weapon_text}>1</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={style.weapon_block}>
+                        <div className={style.weapon_title}>Thund footfalls</div>
                         <div className={style.weapon_block_info}>
                             <div className={style.weapon_info}>
                                 <div className={style.weapon_text}>R</div>
@@ -314,7 +401,7 @@ const RiptideBattlesuit = () => {
 
                             <div className={style.weapon_info}>
                                 <div className={style.weapon_text}>S</div>
-                                <div className={style.weapon_text}>+1</div>
+                                <div className={style.weapon_text}>-</div>
                             </div>
 
                             <div className={style.weapon_info}>
@@ -334,61 +421,64 @@ const RiptideBattlesuit = () => {
             <section className={style.content}>
                 <div className={style.line}></div>
                 <div className={style.content_title}>Способности</div>
+                <div className={style.weapon_content}>
 
-                <div className={style.abilities_block}>
-                    <div className={style.abilities_title_block}>
-                        <div className={style.abilities_title}>Riptide Shield Generator</div>
-                        <div className={style.block_symbol}>
-                            <div className={style.symbol_text}>4+</div>
-                            <img src={Sv} alt="Sv" className={style.abilities_symbol} />
+                    <div className={style.weaponOther_block}>
+                        <div className={style.abilities_title_block}>
+                            <div className={style.abilities_title}>Drone controller</div>
+                            <img src={general} alt="general" className={style.abilities_symbol} />
                         </div>
+                        <div className={style.weaponOther_text}>
+                            <span className={style.strat_text_bold}>Фаза командования</span>.
+                            Вы можете выбрать один дрон в пределах 6"
+                            от носителя. До начала вашей следующей командной фазы:
+                        </div>
+                        <div>Модели дронов в этом подразделении имеют BS 4+.</div>
+                        <div>Модели боевых дронов в этом подразделении теряют способность «Протокола идентификации угрозы».</div>
                     </div>
-                    <div className={style.abilities_text}>
-                        Модель имеет 4+ неуязвимых сейва.
-                    </div>
-                </div>
 
-                <div className={style.abilities_block}>
-                    <div className={style.abilities_title_block}>
-                        <div className={style.abilities_title}>Explodes</div>
-                        <div className={style.block_symbol}>
-                            <div className={style.symbol_text}>6</div>
-                            <img src={skull} alt="skull" className={style.abilities_symbol} />
+                    <div className={style.weaponOther_block}>
+                        <div className={style.abilities_title_block}>
+                            <div className={style.abilities_title}>Early warning override</div>
+                            <img src={shooting} alt="shooting" className={style.abilities_symbol} />
+                        </div>
+                        <div className={style.weaponOther_text}>
+                            <div>Когда носитель запускает Overwatch, он получает попадания по неизмененным броскам 5+ вместо 6.</div>
+                            <div>Каждый раз, когда вы используете стратагему Fire Overwatch, если носитель находится на поле боя и его
+                                подразделение выбрано для Fire Overwatch, уменьшайте стоимость CP этой стратагемы на 1.
+                            </div>
                         </div>
                     </div>
-                    <div className={style.abilities_text}>
-                        Когда модель будет уничтожена, бросьте 1D6: на 6 юнит взрывавется,
-                        и каждый юнит в пределах 6" получает смертельные ранение D3.
-                    </div>
-                </div>
 
-                <div className={style.abilities_block}>
-                    <div className={style.abilities_title_block}>
-                        <div className={style.abilities_title}>Nova Reactor</div>
-                        <div className={style.block_symbol}>
-                            <div className={style.symbol_text}>6</div>
-                            <img src={dice} alt="dice" className={style.abilities_symbol} />
+                    <div className={style.weaponOther_block}>
+                        <div className={style.abilities_title_block}>
+                            <div className={style.abilities_title}>Multi-tracker</div>
+                            <img src={A} alt="A" className={style.abilities_symbol} />
+                        </div>
+                        <div className={style.weaponOther_text}>
+                            Когда дальняя атака нацелена на юнита, содержащий 6 или более моделей, немодифицированный
+                            бросок 6 ударов дает 1 дополнительный удар. Максимум 1 на модель.
                         </div>
                     </div>
-                    <div className={style.abilities_text}>
-                        На этапе командования бросьте 2D6: если результат больше, чем
-                        оставшиеся раны модели, реактор сгорает и эту способность вы
-                        больше не сможете использовать. Если вам повезло, то:
-                        <div className={style.abilities_text}>
-                            1. Nova Shield. До начала вашей следующей командной фазы,
-                            каждый раз, когда эта модель теряет рану, бросайте один D6:
-                            на 5+, эта рана не теряется.
+
+                    <div className={style.weaponOther_block}>
+                        <div className={style.abilities_title_block}>
+                            <div className={style.abilities_title}>Target lock</div>
+                            <img src={hit} alt="hit" className={style.abilities_symbol} />
                         </div>
-                        <div className={style.abilities_text}>
-                            2. Boost. На следующем этапе зарядки этот юнит может совершать
-                            нормальное движение до 2D6". Если это произойдет, то до конца фазы
-                            вы не сможете объявить charge с помощью этого устройства.
+                        <div className={style.weaponOther_text}>
+                            Когда носитель совершает дальнюю атаку, цель не получает преимущества легкого прикрытия от этой атаки.
                         </div>
-                        <div className={style.abilities_text}>
-                            3. Nova Charge. До начала вашей следующей фазы командования, если эта
-                            модель оснащена heavy burst cannon, это оружие имеет тип, характерный
-                            для Heavy 16; в противном случае оба профиля ионного ускорителя этой
-                            модели имеют тип, характерный для Heavy 8.
+                    </div>
+
+                    <div className={style.weaponOther_block}>
+                        <div className={style.abilities_title_block}>
+                            <div className={style.abilities_title}>Velocity tracker</div>
+                            <img src={BS} alt="BS" className={style.abilities_symbol} />
+                        </div>
+                        <div className={style.weaponOther_text}>
+                            Когда носитель совершает атаку дальнего боя против юнита, который может ЛЕТАТЬ, добавляйте 1
+                            к броску попадания этой атаки. Максимум 1 на модель.
                         </div>
                     </div>
                 </div>
@@ -399,18 +489,14 @@ const RiptideBattlesuit = () => {
                 <div className={style.content_title}>Стратегемы</div>
                 <EXPERIMENTAL_WEAPONRY />
                 <SAVIOUR_PROTOCOLS />
-                <BRANCHED_NOVA_CHARGE />
-                <FAIL_SAFE_DETONATOR />
                 <BACKUP_AI />
                 <ORBITAL_UPLINK />
                 <COORDINATED_ENGAGEMENT />
                 <COUNTERFIRE_DEFENCE_SYSTEM />
-                <STRIKE_AND_FADE />
-                <REPULSOR_IMPACT_FIELD />
-                <IONISED_SHOCKFIELD />
+                <FREQUENCY_LOCK />
             </section>
         </section >
     )
 }
 
-export { RiptideBattlesuit }
+export { Stormsurge }
