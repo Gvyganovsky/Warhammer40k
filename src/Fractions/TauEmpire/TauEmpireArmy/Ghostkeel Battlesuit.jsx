@@ -2,6 +2,17 @@ import React from "react";
 import style from "../../../scss/CombatUnit.module.scss";
 import Ghostkeel_Battlesuit from "../../../assets/TauEmpire/Tau XV95 Ghostkeel Battlesuit.png";
 
+import { EXPERIMENTAL_WEAPONRY } from "../TauEmpireStrat";
+import { SAVIOUR_PROTOCOLS } from "../TauEmpireStrat";
+import { FAIL_SAFE_DETONATOR } from "../TauEmpireStrat";
+import { BACKUP_AI } from "../TauEmpireStrat";
+import { ORBITAL_UPLINK } from "../TauEmpireStrat";
+import { WALL_OF_MIRRORS } from "../TauEmpireStrat";
+import { COORDINATED_ENGAGEMENT } from "../TauEmpireStrat";
+import { DESIGNATED_TASKING } from "../TauEmpireStrat";
+import { STRIKE_AND_FADE } from "../TauEmpireStrat";
+import { REPULSOR_IMPACT_FIELD } from "../TauEmpireStrat";
+
 import M from "../../../assets/icons/M.png";
 import WS from "../../../assets/icons/WS.png";
 import BS from "../../../assets/icons/BS.png";
@@ -14,7 +25,6 @@ import Sv from "../../../assets/icons/Sv.png";
 
 import general from "../../../assets/icons/general.png";
 import shooting from "../../../assets/icons/shooting.png";
-
 import hit from "../../../assets/icons/hit.svg";
 import location from "../../../assets/icons/location.png";
 import skull from "../../../assets/icons/skull.png";
@@ -422,150 +432,16 @@ const GhostkeelBattlesuit = () => {
       <section className={style.content}>
         <div className={style.line}></div>
         <div className={style.content_title}>Стратегемы</div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
-            <span>EXPERIMENTAL WEAPONRY</span>
-            <span>2 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Фаза стрельбы</span>.
-            До конца фазы: выбранная модель совершает атаку, неуязвимые спасброски
-            не могут быть предприняты против этой атаки.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
-            <span>SAVIOUR PROTOCOLS</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Любая фаза</span>.
-            Если спасбросок не удался, выберите и уберите модель дрона в пределах 3" или 6" от юнита.
-            Урон от атаки по основной цели снижен до 0.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
-            <span>FAIL-SAFE DETONATOR</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Любая фаза</span>.
-            Когда модель боевого костюма из вашей армии будет уничтожена. Прежде чем удалить эту
-            модель из игры, вместо использования каких-либо правил, которые срабатывают при уничтожении
-            этой модели, бросьте по одному D6 для каждого юнита в пределах 3" от этой модели, добавив
-            1 к броску, если у уничтоженной модели характеристика ран 12 или более: на 3-5, этот юнит
-            получает D3 смертельных ранения; на 6+, этот юнит получает 3 смертельных ранения.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
-            <span>BACKUP AI</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Фаза командования</span>.
-            Выберите одну модель в вашей армии. До начала вашей следующей фазы командования,
-            считается, что у этой модели остались полные раны, чтобы определить, какие характеристики
-            в ее профиле использовать.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
-            <span>ORBITAL UPLINK</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Фаза стрельбы</span>.
-            До конца фазы: При дальней атаки против этого вражеского
-            подразделения, цель не получает преимуществ прикрытия от этой атаки.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
-            <span>WALL OF MIRRORS</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Фаза движения</span>.
-            Выберите один костюм НЕВИДИМКУ/ПРИЗРАК из вашей армии, который полностью находится в пределах 9" от
-            любого края поля боя. Уберите это подразделение с поля боя. На этапе подкрепления вашей следующей фазы
-            перемещения вы можете вернуть это подразделение на поле боя в любом месте, которое находится в пределах
-            9" от любого края поля боя и более чем в 9" от любых вражеских моделей. Если битва заканчивается, а этого
-            подразделения нет на поле боя, оно уничтожается.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
-            <span>COORDINATED ENGAGEMENT</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Фаза стрельбы</span>.
-            Прежде чем выбирать юнита для стрельбы. Выберите одно вражеское подразделение и 2 подразделения
-            SEPT из вашей армии, которые находятся в пределах 18" от этого вражеского подразделения и видны
-            ему. До конца фазы, каждый раз, когда модель в одном из этих подразделений SEPT совершает атаку:
-            Улучшите характеристику бронепробиваемости этой атаки на 1.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
-            <span>DESIGNATED TASKING</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Фаза командования</span>.
-            Вы можете разделить ваш отряд на 2, где содержаться дроны. Все дроны входят в новый отдельный отряд
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
-            <span>STRIKE AND FADE</span>
-            <span>1 CP / 2 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Фаза стрельбы</span>.
-            Выберите отряд с реактивным ранцем. Вы можете стрелять с помощью этого устройства, и тогда
-            оно может совершать нормальное движение до 6 дюймов. Это устройство не может стрелять снова
-            на этом этапе. Если это подразделение содержит 5 или меньше моделей (исключая модели дронов),
-            эта стратегия стоит 1 CP.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #626869 0)' }}>
-            <span>REPULSOR IMPACT FIELD</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Фаза атаки противника</span>.
-            когда в качестве цели атаки выбирается боекостюм из вашей армии. До конца фазы вычтите 2 из бросков
-            заряда.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #626869 0)' }}>
-            <span>IONISED SHOCKFIELD</span>
-            <span>2 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Фаза стрельбы</span>.
-            Модель во вражеском подразделении уничтожена в результате атаки, произведенной ионным
-            оружием моделью SEPT из вашей армии. До начала вашей следующей фазы стрельбы на этот вражеский
-            юнит не влияют способности ауры других вражеских юнитов.
-          </div>
-        </div>
-
+        <EXPERIMENTAL_WEAPONRY />
+        <SAVIOUR_PROTOCOLS />
+        <FAIL_SAFE_DETONATOR />
+        <BACKUP_AI />
+        <ORBITAL_UPLINK />
+        <WALL_OF_MIRRORS />
+        <COORDINATED_ENGAGEMENT />
+        <DESIGNATED_TASKING />
+        <STRIKE_AND_FADE />
+        <REPULSOR_IMPACT_FIELD />
       </section>
     </section>
   )

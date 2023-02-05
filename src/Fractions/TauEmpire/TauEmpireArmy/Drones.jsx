@@ -2,6 +2,11 @@ import React from "react";
 import style from "../../../scss/CombatUnit.module.scss";
 import Drone from "../../../assets/TauEmpire/Drone.png";
 
+import { EXPERIMENTAL_WEAPONRY } from "../TauEmpireStrat";
+import { SAVIOUR_PROTOCOLS } from "../TauEmpireStrat";
+import { ORBITAL_UPLINK } from "../TauEmpireStrat";
+import { COORDINATED_ENGAGEMENT } from "../TauEmpireStrat";
+
 import M from "../../../assets/icons/M.png";
 import WS from "../../../assets/icons/WS.png";
 import BS from "../../../assets/icons/BS.png";
@@ -12,16 +17,9 @@ import A from "../../../assets/icons/A.png";
 import Ld from "../../../assets/icons/Ld.png";
 import Sv from "../../../assets/icons/Sv.png";
 
-import range from "../../../assets/icons/range.png";
 import hit from "../../../assets/icons/hit.svg";
-import question from "../../../assets/icons/question.png";
 import morale from "../../../assets/icons/morale.png";
 import limitation from "../../../assets/icons/limitation.png";
-import general from "../../../assets/icons/general.png";
-import shooting from "../../../assets/icons/shooting.png";
-
-import location from "../../../assets/icons/location.png";
-import skull from "../../../assets/icons/skull.png";
 
 const Drones = () => {
     return (
@@ -184,70 +182,11 @@ const Drones = () => {
             <section className={style.content}>
                 <div className={style.line}></div>
                 <div className={style.content_title}>Стратегемы</div>
-
-                <div className={style.strat}>
-                    <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
-                        <span>EXPERIMENTAL WEAPONRY</span>
-                        <span>2 CP</span>
-                    </div>
-                    <div className={style.strat_text}>
-                        <span className={style.strat_text_bold}>Фаза стрельбы</span>.
-                        До конца фазы: выбранная модель совершает атаку, неуязвимые спасброски
-                        не могут быть предприняты против этой атаки.
-                    </div>
-                </div>
-
-                <div className={style.strat}>
-                    <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
-                        <span>SAVIOUR PROTOCOLS</span>
-                        <span>1 CP</span>
-                    </div>
-                    <div className={style.strat_text}>
-                        <span className={style.strat_text_bold}>Любая фаза</span>.
-                        Если спасбросок не удался, выберите и уберите модель дрона в пределах 3" или 6" от юнита.
-                        Урон от атаки по основной цели снижен до 0.
-                    </div>
-                </div>
-
-                <div className={style.strat}>
-                    <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
-                        <span>ORBITAL UPLINK</span>
-                        <span>1 CP</span>
-                    </div>
-                    <div className={style.strat_text}>
-                        <span className={style.strat_text_bold}>Фаза стрельбы</span>.
-                        До конца фазы: При дальней атаки против этого вражеского
-                        подразделения, цель не получает преимуществ прикрытия от этой атаки.
-                    </div>
-                </div>
-
-                <div className={style.strat}>
-                    <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
-                        <span>ORBITAL UPLINK</span>
-                        <span>1 CP</span>
-                    </div>
-                    <div className={style.strat_text}>
-                        <span className={style.strat_text_bold}>Фаза стрельбы</span>.
-                        До конца фазы: При дальней атаки против этого вражеского
-                        подразделения, цель не получает преимуществ прикрытия от этой атаки.
-                    </div>
-                </div>
-
-                <div className={style.strat}>
-                    <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
-                        <span>COORDINATED ENGAGEMENT</span>
-                        <span>1 CP</span>
-                    </div>
-                    <div className={style.strat_text}>
-                        <span className={style.strat_text_bold}>Фаза стрельбы</span>.
-                        Прежде чем выбирать юнита для стрельбы. Выберите одно вражеское подразделение и 2 подразделения
-                        SEPT из вашей армии, которые находятся в пределах 18" от этого вражеского подразделения и видны
-                        ему. До конца фазы, каждый раз, когда модель в одном из этих подразделений SEPT совершает атаку:
-                        Улучшите характеристику бронепробиваемости этой атаки на 1.
-                    </div>
-                </div>
+                <EXPERIMENTAL_WEAPONRY />
+                <SAVIOUR_PROTOCOLS />
+                <ORBITAL_UPLINK />
+                <COORDINATED_ENGAGEMENT />
             </section>
-
         </section>
     )
 }

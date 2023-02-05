@@ -2,6 +2,13 @@ import React from "react";
 import style from "../../../scss/CombatUnit.module.scss";
 import Ether from "../../../assets/TauEmpire/Etheral.jpg";
 
+import { SAVIOUR_PROTOCOLS } from "../TauEmpireStrat";
+import { WISDOM_OF_THE_MANY } from "../TauEmpireStrat";
+import { EMERGENCY_DISPENSATION } from "../TauEmpireStrat";
+import { PROMISING_PUPIL } from "../TauEmpireStrat";
+import { COORDINATED_ENGAGEMENT } from "../TauEmpireStrat";
+import { DESIGNATED_TASKING } from "../TauEmpireStrat";
+
 import M from "../../../assets/icons/M.png";
 import WS from "../../../assets/icons/WS.png";
 import BS from "../../../assets/icons/BS.png";
@@ -12,12 +19,10 @@ import A from "../../../assets/icons/A.png";
 import Ld from "../../../assets/icons/Ld.png";
 import Sv from "../../../assets/icons/Sv.png";
 
-import range from "../../../assets/icons/range.png";
 import hit from "../../../assets/icons/hit.svg";
 import question from "../../../assets/icons/question.png";
 import morale from "../../../assets/icons/morale.png";
 import limitation from "../../../assets/icons/limitation.png";
-import dice from "../../../assets/icons/dice.png";
 
 const Etheral = () => {
   return (
@@ -246,88 +251,13 @@ const Etheral = () => {
       <section className={style.content}>
         <div className={style.line}></div>
         <div className={style.content_title}>Стратегемы</div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
-            <span>SAVIOUR PROTOCOLS</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Любая фаза</span>.
-            Если спасбросок не удался, выберите и уберите модель дрона в пределах 3" или 6" от юнита.
-            Урон от атаки по основной цели снижен до 0.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
-            <span>WISDOM OF THE MANY</span>
-            <span>2 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Любая фаза, кроме фазы командования</span>.
-            Выберите Эфирного, который не произносил заклинание в этот ход. Эта модель может
-            произнести одно заклинание, который еще не было использовано в этот ход.
-            Это заклинание автоматически вступает в силу до начала вашей следующей командной фазы.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #ba2617 0)' }}>
-            <span>EMERGENCY DISPENSATION</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Перед битвой</span>.
-            Выберите вашего командира и дайте ему реликвию. Каждая реликвия в вашей
-            армии должна быть уникальной. Юнит может иметь только 1 реликвию.
-            (Если вы играете в Strike Force battle - можете использовать стратегему
-            только 2 раза, Onslaught battle - 3 раза).
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #ba2617 0)' }}>
-            <span>PROMISING PUPIL</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Перед битвой</span>.
-            Выберите вашего командира и дайте ему черту. Каждая черта в вашей
-            армии должна быть уникальной. Юнит может иметь только 1 черту.
-            (Если вы играете в Strike Force battle - можете использовать стратегему
-            только 2 раза, Onslaught battle - 3 раза).
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
-            <span>COORDINATED ENGAGEMENT</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Фаза стрельбы</span>.
-            До конца фазы: выберите 2 отряда в пределах 18" от вражеского отряда.
-            Атаки могут быть совершены только по этому вражескому отряду, бронебойность
-            атак увеличьте на 1.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
-            <span>DESIGNATED TASKING</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Фаза командования</span>.
-            Вы можете разделить ваш отряд на 2, где содержаться дроны.
-            Все дроны входят в новый отдельный отряд
-          </div>
-        </div>
-
+        <SAVIOUR_PROTOCOLS />
+        <WISDOM_OF_THE_MANY />
+        <EMERGENCY_DISPENSATION />
+        <PROMISING_PUPIL />
+        <COORDINATED_ENGAGEMENT />
+        <DESIGNATED_TASKING />
       </section>
-
-
     </section>
   )
 }

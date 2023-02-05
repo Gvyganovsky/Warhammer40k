@@ -2,6 +2,20 @@ import React from "react";
 import style from "../../../scss/CombatUnit.module.scss";
 import CrisisBattlesuit from "../../../assets/TauEmpire/Crisis Battlesuits.png";
 
+import { FOCUSED_FIRE } from "../TauEmpireStrat";
+import { DROP_ZONE_CLEAR } from "../TauEmpireStrat";
+import { DYNAMIC_OFFENSIVE } from "../TauEmpireStrat";
+import { EXPERIMENTAL_WEAPONRY } from "../TauEmpireStrat";
+import { SAVIOUR_PROTOCOLS } from "../TauEmpireStrat";
+import { FAIL_SAFE_DETONATOR } from "../TauEmpireStrat";
+import { OUTFLANK } from "../TauEmpireStrat";
+import { ORBITAL_UPLINK } from "../TauEmpireStrat";
+import { COORDINATED_ENGAGEMENT } from "../TauEmpireStrat";
+import { DESIGNATED_TASKING } from "../TauEmpireStrat";
+import { STRIKE_AND_FADE } from "../TauEmpireStrat";
+import { REPULSOR_IMPACT_FIELD } from "../TauEmpireStrat";
+import { IONISED_SHOCKFIELD } from "../TauEmpireStrat";
+
 import M from "../../../assets/icons/M.png";
 import WS from "../../../assets/icons/WS.png";
 import BS from "../../../assets/icons/BS.png";
@@ -12,16 +26,8 @@ import A from "../../../assets/icons/A.png";
 import Ld from "../../../assets/icons/Ld.png";
 import Sv from "../../../assets/icons/Sv.png";
 
-import range from "../../../assets/icons/range.png";
-import location from "../../../assets/icons/location.png";
 import hit from "../../../assets/icons/hit.svg";
-import question from "../../../assets/icons/question.png";
-import morale from "../../../assets/icons/morale.png";
-import limitation from "../../../assets/icons/limitation.png";
-
-import general from "../../../assets/icons/general.png";
 import shooting from "../../../assets/icons/shooting.png";
-import skull from "../../../assets/icons/skull.png";
 
 const CrisisBattlesuits = () => {
   return (
@@ -399,172 +405,19 @@ const CrisisBattlesuits = () => {
       <section className={style.content}>
         <div className={style.line}></div>
         <div className={style.content_title}>Стратегемы</div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #294a67 0)' }}>
-            <span>FOCUSED FIRE</span>
-            <span>2 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Фаза стрельбы</span>.
-            До конца фазы: вражеская модель теряет ранение в результате атаки, при атаке прибавьте
-            1 к броску ранений этой атаки.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #294a67 0)' }}>
-            <span>DROP ZONE CLEAR</span>
-            <span>3 CP / 2 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Фаза движения</span>.
-            До конца хода, каждый раз, когда модель боевого костюма в этом подразделении совершает дальнюю
-            атаку, вы можете повторно выполнить бросок удара и бросок ранения. Если этот юнит содержит 4 или
-            более моделей боевых скафандров, эта стратегия стоит 3 CP; в противном случае она стоит 2 CP.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #294a67 0)' }}>
-            <span>DYNAMIC OFFENSIVE</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Фаза движения</span>.
-            Каждый раз, когда это подразделение продвигается вперед, не делайте бросок вперед.
-            Вместо этого, до конца фазы, добавьте 6" к характеристике перемещения моделей в этом блоке.
-            Модели в этом подразделении не подвергаются штрафу за попадание в броски из оружия Assault.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
-            <span>EXPERIMENTAL WEAPONRY</span>
-            <span>2 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Фаза стрельбы</span>.
-            До конца фазы: выбранная модель совершает атаку, неуязвимые спасброски
-            не могут быть предприняты против этой атаки.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
-            <span>SAVIOUR PROTOCOLS</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Любая фаза</span>.
-            Если спасбросок не удался, выберите и уберите модель дрона в пределах 3" или 6" от юнита.
-            Урон от атаки по основной цели снижен до 0.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
-            <span>FAIL-SAFE DETONATOR</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Любая фаза</span>.
-            Когда модель боевого костюма из вашей армии будет уничтожена, прежде чем удалить эту
-            модель из игры, вместо использования каких-либо правил, которые срабатывают при уничтожении
-            этой модели, бросьте по одному D6 для каждого юнита в пределах 3" от этой модели, добавив
-            1 к броску, если у уничтоженной модели характеристика ран 12 или более: на 3-5, этот юнит
-            получает D3 смертельных ранения; на 6+, этот юнит получает 3 смертельных ранения.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
-            <span>OUTFLANK</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Фаза движения</span>.
-            Вы можете убрать ваш отряд с поля в резерв, если он находится в 9" от края поля.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
-            <span>ORBITAL UPLINK</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Фаза стрельбы</span>.
-            До конца фазы: При дальней атаки против этого вражеского
-            подразделения, цель не получает преимуществ прикрытия от этой атаки.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
-            <span>COORDINATED ENGAGEMENT</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Фаза стрельбы</span>.
-            Прежде чем выбирать юнита для стрельбы. Выберите одно вражеское подразделение и 2 подразделения
-            SEPT из вашей армии, которые находятся в пределах 18" от этого вражеского подразделения и видны
-            ему. До конца фазы, каждый раз, когда модель в одном из этих подразделений SEPT совершает атаку:
-            Улучшите характеристику бронепробиваемости этой атаки на 1.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
-            <span>DESIGNATED TASKING</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Фаза командования</span>.
-            Вы можете разделить ваш отряд на 2, где содержаться дроны.
-            Все дроны входят в новый отдельный отряд
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
-            <span>STRIKE AND FADE</span>
-            <span>1 CP / 2 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Фаза трельбы</span>.
-            Выберите отряд с реактивным ранцем. Вы можете стрелять с помощью этого устройства, и тогда
-            оно может совершать нормальное движение до 6 дюймов. Это устройство не может стрелять снова
-            на этом этапе. Если это подразделение содержит 5 или меньше моделей (исключая модели дронов),
-            эта стратегия стоит 1 CP.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #626869 0)' }}>
-            <span>REPULSOR IMPACT FIELD</span>
-            <span>1 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Фаза атаки противника</span>.
-            когда в качестве цели атаки выбирается боекостюм из вашей армии. До конца фазы вычтите 2 из бросков
-            заряда.
-          </div>
-        </div>
-
-        <div className={style.strat}>
-          <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #626869 0)' }}>
-            <span>IONISED SHOCKFIELD</span>
-            <span>2 CP</span>
-          </div>
-          <div className={style.strat_text}>
-            <span className={style.strat_text_bold}>Фаза стрельбы</span>.
-            Модель во вражеском подразделении уничтожена в результате атаки, произведенной ионным
-            оружием моделью SEPT из вашей армии. До начала вашей следующей фазы стрельбы на этот вражеский
-            юнит не влияют способности ауры других вражеских юнитов.
-          </div>
-        </div>
-
+        <FOCUSED_FIRE />
+        <DROP_ZONE_CLEAR />
+        <DYNAMIC_OFFENSIVE />
+        <EXPERIMENTAL_WEAPONRY />
+        <SAVIOUR_PROTOCOLS />
+        <FAIL_SAFE_DETONATOR />
+        <OUTFLANK />
+        <ORBITAL_UPLINK />
+        <COORDINATED_ENGAGEMENT />
+        <DESIGNATED_TASKING />
+        <STRIKE_AND_FADE />
+        <REPULSOR_IMPACT_FIELD />
+        <IONISED_SHOCKFIELD />
       </section>
     </section>
   )

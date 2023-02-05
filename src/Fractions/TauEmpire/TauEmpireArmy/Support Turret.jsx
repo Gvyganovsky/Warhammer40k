@@ -12,15 +12,8 @@ import A from "../../../assets/icons/A.png";
 import Ld from "../../../assets/icons/Ld.png";
 import Sv from "../../../assets/icons/Sv.png";
 
-import range from "../../../assets/icons/range.png";
-import location from "../../../assets/icons/location.png";
-import hit from "../../../assets/icons/hit.svg";
 import question from "../../../assets/icons/question.png";
 import morale from "../../../assets/icons/morale.png";
-import limitation from "../../../assets/icons/limitation.png";
-
-import shooting from "../../../assets/icons/shooting.png";
-import skull from "../../../assets/icons/skull.png";
 
 const SupportTurret = () => {
     return (

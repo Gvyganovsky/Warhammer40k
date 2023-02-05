@@ -14,6 +14,7 @@ import { TauEmpire } from './Fractions/TauEmpire/TauEmpire';
 import { AstraMilitarum } from './Fractions/AstraMilitarum/AstraMilitarum';
 import { Necrons } from './Fractions/Necrons/Nercons';
 
+import { TauEmpireStrat } from './Fractions/TauEmpire/TauEmpireStrat';
 import { GhostkeelBattlesuit } from './Fractions/TauEmpire/TauEmpireArmy/Ghostkeel Battlesuit';
 import { FireWarriors } from './Fractions/TauEmpire/TauEmpireArmy/Fire Warriors';
 import { CrisisBattlesuits } from './Fractions/TauEmpire/TauEmpireArmy/Crisis Battlesuits';
@@ -36,6 +37,7 @@ const App = () => {
         <Route path='AstraMilitarum' element={<AstraMilitarum />} />
         <Route path='Necrons' element={<Necrons />} />
 
+        <Route path='TauEmpireStrat' element={<TauEmpireStrat />} />
         <Route path='GhostkeelBattlesuit' element={<GhostkeelBattlesuit />} />
         <Route path='FireWarriors' element={<FireWarriors />} />
         <Route path='CrisisBattlesuits' element={<CrisisBattlesuits />} />
