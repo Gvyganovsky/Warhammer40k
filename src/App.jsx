@@ -19,7 +19,7 @@ import { FireWarriors } from './Fractions/TauEmpire/TauEmpireArmy/Fire Warriors'
 import { CrisisBattlesuits } from './Fractions/TauEmpire/TauEmpireArmy/Crisis Battlesuits';
 import { Etheral } from './Fractions/TauEmpire/TauEmpireArmy/Etheral';
 import { SupportTurret } from './Fractions/TauEmpire/TauEmpireArmy/Support Turret';
-import { GunDrone } from './Fractions/TauEmpire/TauEmpireArmy/Gun Drone';
+import { Drones } from './Fractions/TauEmpire/TauEmpireArmy/Drones';
 
 const App = () => {
   return (
@@ -41,7 +41,7 @@ const App = () => {
         <Route path='CrisisBattlesuits' element={<CrisisBattlesuits />} />
         <Route path='Etheral' element={<Etheral />} />
         <Route path='SupportTurret' element={<SupportTurret />} />
-        <Route path='GunDrone' element={<GunDrone />} />
+        <Route path='Drones' element={<Drones />} />
 
         <Route path='*' element={<NotFoundPage />} />
       </Route>
