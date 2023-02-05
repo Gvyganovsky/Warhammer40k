@@ -392,6 +392,42 @@ export const PHOTON_GRENADES = () => {
     )
 }
 
+export const BRANCHED_NOVA_CHARGE = () => {
+    return (
+        <div className={style.strat}>
+            <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
+                <span>PHOTON GRENADES</span>
+                <span>2 CP</span>
+            </div>
+            <div className={style.strat_text}>
+                <span className={style.strat_text_bold}>Фаза командования</span>.
+                Модель уничтожается, используя способность Nova Reactor. Реактор
+                nova этой модели не сгорает, и вы можете выбрать одну из его реакторных
+                способностей.
+            </div>
+        </div>
+    )
+}
+
+export const COUNTERFIRE_DEFENCE_SYSTEM = () => {
+    return (
+        <div className={style.strat}>
+            <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
+                <span>COUNTERFIRE DEFENCE SYSTEM</span>
+                <span>1 CP / 2 CP</span>
+            </div>
+            <div className={style.strat_text}>
+                <span className={style.strat_text_bold}>Фаза стрельбы противника</span>.
+                Характеристика урона врага изменена на 1. Если эта модель имеет характеристику ран,
+                равную 14 или более, эта стратегия стоит 2 CP; в противном случае она стоит 1 CP.
+            </div>
+        </div>
+    )
+}
+
+
+
+
 
 
 

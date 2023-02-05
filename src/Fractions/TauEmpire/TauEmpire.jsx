@@ -7,6 +7,7 @@ import Etheral from "../../assets/TauEmpire/Etheral.jpg";
 import SupportTurret from "../../assets/TauEmpire/Support Turret.png";
 import Drone from "../../assets/TauEmpire/Drone.png";
 import CadreFireblade from "../../assets/TauEmpire/Cadre Fireblade.png";
+import RiptideBattlesuit from "../../assets/TauEmpire/Riptide Battlesuit.png";
 
 const TauEmpire = () => {
   return (
@@ -70,6 +71,15 @@ const TauEmpire = () => {
           <img src={CadreFireblade} alt="CadreFireblade" className={style.Combat_Unit_img} style={{ margin: '-30px 0px 0px -20px' }} />
           <div className={style.Combat_Unit_text}>
             Cadre Fireblade
+          </div>
+        </div>
+      </a>
+
+      <a href="/RiptideBattlesuit">
+        <div className={style.Combat_Unit}>
+          <img src={RiptideBattlesuit} alt="RiptideBattlesuit" className={style.Combat_Unit_img} style={{ margin: '-30px 0px 0px -20px' }} />
+          <div className={style.Combat_Unit_text}>
+            Riptide Battlesuit
           </div>
         </div>
       </a>

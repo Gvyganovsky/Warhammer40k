@@ -83,7 +83,7 @@ const CadreFireblade = () => {
 
                 <div className={style.weapon_content}>
                     <div className={style.weapon_block}>
-                        <div className={style.weapon_title}>Fireblade pulse rifle</div>
+                        <div className={style.weapon_title}>Firebl pulse rifle</div>
                         <div className={style.weapon_block_info}>
                             <div className={style.weapon_info}>
                                 <div className={style.weapon_text}>R</div>
