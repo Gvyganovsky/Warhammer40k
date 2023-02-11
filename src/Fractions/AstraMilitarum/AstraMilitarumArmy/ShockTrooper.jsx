@@ -85,13 +85,7 @@ const ShockTrooper = () => {
                 <div className={style.weapon_content}>
                     <Bolt_pistol />
                     <Laspistol />
-
                     <Frag_grenades />
-
-
-
-
-
                     <Drum_fed_autogun />
                     <Flamer />
                     <Frag_grenade />
