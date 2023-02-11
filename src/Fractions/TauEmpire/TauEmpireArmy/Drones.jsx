@@ -45,8 +45,6 @@ const Drones = () => {
                         <div className={style.param_number}>5+</div>
                     </div>
 
-
-
                     <div className={style.combat_unit_param_block}>
                         <img src={S} alt="S" className={style.param_img} />
                         <div className={style.param_number}>3</div>
@@ -83,34 +81,35 @@ const Drones = () => {
             <section className={style.content}>
                 <div className={style.line}></div>
                 <div className={style.content_title}>Оружие</div>
-
                 <div className={style.weapon_content}>
-                    <div className={style.weapon_block}>
-                        <div className={style.weapon_title}>Pulse carbine</div>
-                        <div className={style.weapon_block_info}>
-                            <div className={style.weapon_info}>
-                                <div className={style.weapon_text}>R</div>
-                                <div className={style.weapon_text}>24"</div>
-                            </div>
+                    <div className={style.block_text_weapon}>
+                        <div className={style.weapon_block}>
+                            <div className={style.weapon_title}>Pulse carbine</div>
+                            <div className={style.weapon_block_info}>
+                                <div className={style.weapon_info}>
+                                    <div className={style.weapon_text}>R</div>
+                                    <div className={style.weapon_text}>24"</div>
+                                </div>
 
-                            <div className={style.weapon_info}>
-                                <div className={style.weapon_text}>As</div>
-                                <div className={style.weapon_text}>2</div>
-                            </div>
+                                <div className={style.weapon_info}>
+                                    <div className={style.weapon_text}>As</div>
+                                    <div className={style.weapon_text}>2</div>
+                                </div>
 
-                            <div className={style.weapon_info}>
-                                <div className={style.weapon_text}>S</div>
-                                <div className={style.weapon_text}>5</div>
-                            </div>
+                                <div className={style.weapon_info}>
+                                    <div className={style.weapon_text}>S</div>
+                                    <div className={style.weapon_text}>5</div>
+                                </div>
 
-                            <div className={style.weapon_info}>
-                                <div className={style.weapon_text}>AP</div>
-                                <div className={style.weapon_text}>0</div>
-                            </div>
+                                <div className={style.weapon_info}>
+                                    <div className={style.weapon_text}>AP</div>
+                                    <div className={style.weapon_text}>0</div>
+                                </div>
 
-                            <div className={style.weapon_info}>
-                                <div className={style.weapon_text}>D</div>
-                                <div className={style.weapon_text}>1</div>
+                                <div className={style.weapon_info}>
+                                    <div className={style.weapon_text}>D</div>
+                                    <div className={style.weapon_text}>1</div>
+                                </div>
                             </div>
                         </div>
                     </div>

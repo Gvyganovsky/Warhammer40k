@@ -82,37 +82,41 @@ const Etheral = () => {
       <section className={style.content}>
         <div className={style.line}></div>
         <div className={style.content_title}>Оружие</div>
-
         <div className={style.weapon_content}>
-          <div className={style.weapon_block}>
-            <div className={style.weapon_title}>Honour stave</div>
-            <div className={style.weapon_block_info}>
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>R</div>
-                <div className={style.weapon_text}>-</div>
-              </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>Ml</div>
-                <div className={style.weapon_text}>-</div>
-              </div>
+          <div className={style.block_text_weapon}>
+            <div className={style.weapon_block}>
+              <div className={style.weapon_title}>Honour stave</div>
+              <div className={style.weapon_block_info}>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>R</div>
+                  <div className={style.weapon_text}>-</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>S</div>
-                <div className={style.weapon_text}>+2</div>
-              </div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>Ml</div>
+                  <div className={style.weapon_text}>-</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>AP</div>
-                <div className={style.weapon_text}>-1</div>
-              </div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>S</div>
+                  <div className={style.weapon_text}>+2</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>D</div>
-                <div className={style.weapon_text}>2</div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>AP</div>
+                  <div className={style.weapon_text}>-1</div>
+                </div>
+
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>D</div>
+                  <div className={style.weapon_text}>2</div>
+                </div>
               </div>
             </div>
+            <div className={style.weapon_info_text}>*Вычтите 1 из броска попадания.</div>
           </div>
+
         </div>
       </section>
 

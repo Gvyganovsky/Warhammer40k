@@ -123,212 +123,230 @@ const GhostkeelBattlesuit = () => {
         <div className={style.content_title}>Оружие</div>
 
         <div className={style.weapon_content}>
-          <div className={style.weapon_block}>
-            <div className={style.weapon_title}>Burst cannon</div>
-            <div className={style.weapon_block_info}>
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>R</div>
-                <div className={style.weapon_text}>18"</div>
-              </div>
+          <div className={style.block_text_weapon}>
+            <div className={style.weapon_block}>
+              <div className={style.weapon_title}>Burst cannon</div>
+              <div className={style.weapon_block_info}>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>R</div>
+                  <div className={style.weapon_text}>18"</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>As</div>
-                <div className={style.weapon_text}>6</div>
-              </div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>As</div>
+                  <div className={style.weapon_text}>6</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>S</div>
-                <div className={style.weapon_text}>5</div>
-              </div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>S</div>
+                  <div className={style.weapon_text}>5</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>AP</div>
-                <div className={style.weapon_text}>0</div>
-              </div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>AP</div>
+                  <div className={style.weapon_text}>0</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>D</div>
-                <div className={style.weapon_text}>1</div>
-              </div>
-            </div>
-          </div>
-
-          <div className={style.weapon_block}>
-            <div className={style.weapon_title}>T’au flamer</div>
-            <div className={style.weapon_block_info}>
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>R</div>
-                <div className={style.weapon_text}>12"</div>
-              </div>
-
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>As</div>
-                <div className={style.weapon_text}>D6+2</div>
-              </div>
-
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>S</div>
-                <div className={style.weapon_text}>4</div>
-              </div>
-
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>AP</div>
-                <div className={style.weapon_text}>0</div>
-              </div>
-
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>D</div>
-                <div className={style.weapon_text}>1</div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>D</div>
+                  <div className={style.weapon_text}>1</div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className={style.weapon_blockTwo}>
-            <div className={style.weapon_title}>Cyclic ion raker St</div>
-            <div className={style.weapon_block_info}>
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>R</div>
-                <div className={style.weapon_text}>36"</div>
-              </div>
+          <div className={style.block_text_weapon}>
+            <div className={style.weapon_block}>
+              <div className={style.weapon_title}>T’au flamer</div>
+              <div className={style.weapon_block_info}>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>R</div>
+                  <div className={style.weapon_text}>12"</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>Hv</div>
-                <div className={style.weapon_text}>6</div>
-              </div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>As</div>
+                  <div className={style.weapon_text}>D6+2</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>S</div>
-                <div className={style.weapon_text}>7</div>
-              </div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>S</div>
+                  <div className={style.weapon_text}>4</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>AP</div>
-                <div className={style.weapon_text}>-2</div>
-              </div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>AP</div>
+                  <div className={style.weapon_text}>0</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>D</div>
-                <div className={style.weapon_text}>2</div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>D</div>
+                  <div className={style.weapon_text}>1</div>
+                </div>
+              </div>
+            </div>
+            <div className={style.weapon_info_text}>*Атака автоматически попадает в цель.</div>
+          </div>
+
+          <div className={style.block_text_weapon}>
+            <div className={style.weapon_blockTwo}>
+              <div className={style.weapon_title}>Cyclic ion raker St</div>
+              <div className={style.weapon_block_info}>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>R</div>
+                  <div className={style.weapon_text}>36"</div>
+                </div>
+
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>Hv</div>
+                  <div className={style.weapon_text}>6</div>
+                </div>
+
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>S</div>
+                  <div className={style.weapon_text}>7</div>
+                </div>
+
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>AP</div>
+                  <div className={style.weapon_text}>-2</div>
+                </div>
+
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>D</div>
+                  <div className={style.weapon_text}>2</div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className={style.weapon_blockTwo}>
-            <div className={style.weapon_title}>Cyclic ion raker Ov</div>
-            <div className={style.weapon_block_info}>
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>R</div>
-                <div className={style.weapon_text}>36"</div>
-              </div>
+          <div className={style.block_text_weapon}>
+            <div className={style.weapon_blockTwo}>
+              <div className={style.weapon_title}>Cyclic ion raker Ov</div>
+              <div className={style.weapon_block_info}>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>R</div>
+                  <div className={style.weapon_text}>36"</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>Hv</div>
-                <div className={style.weapon_text}>6</div>
-              </div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>Hv</div>
+                  <div className={style.weapon_text}>6</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>S</div>
-                <div className={style.weapon_text}>8</div>
-              </div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>S</div>
+                  <div className={style.weapon_text}>8</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>AP</div>
-                <div className={style.weapon_text}>-2</div>
-              </div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>AP</div>
+                  <div className={style.weapon_text}>-2</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>D</div>
-                <div className={style.weapon_text}>3</div>
-              </div>
-            </div>
-          </div>
-
-          <div className={style.weapon_block}>
-            <div className={style.weapon_title}>Fusion blaster</div>
-            <div className={style.weapon_block_info}>
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>R</div>
-                <div className={style.weapon_text}>18"</div>
-              </div>
-
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>As</div>
-                <div className={style.weapon_text}>1</div>
-              </div>
-
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>S</div>
-                <div className={style.weapon_text}>8</div>
-              </div>
-
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>AP</div>
-                <div className={style.weapon_text}>-4</div>
-              </div>
-
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>D</div>
-                <div className={style.weapon_text}>D6</div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>D</div>
+                  <div className={style.weapon_text}>3</div>
+                </div>
               </div>
             </div>
+            <div className={style.weapon_info_text}>*Если выпала 1 на попадание, юнит получает урон.</div>
           </div>
 
-          <div className={style.weapon_block}>
-            <div className={style.weapon_title}>Fusion collider</div>
-            <div className={style.weapon_block_info}>
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>R</div>
-                <div className={style.weapon_text}>24"</div>
-              </div>
+          <div className={style.block_text_weapon}>
+            <div className={style.weapon_block}>
+              <div className={style.weapon_title}>Fusion blaster</div>
+              <div className={style.weapon_block_info}>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>R</div>
+                  <div className={style.weapon_text}>18"</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>Hv</div>
-                <div className={style.weapon_text}>3</div>
-              </div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>As</div>
+                  <div className={style.weapon_text}>1</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>S</div>
-                <div className={style.weapon_text}>9</div>
-              </div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>S</div>
+                  <div className={style.weapon_text}>8</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>AP</div>
-                <div className={style.weapon_text}>-4</div>
-              </div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>AP</div>
+                  <div className={style.weapon_text}>-4</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>D</div>
-                <div className={style.weapon_text}>D6</div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>D</div>
+                  <div className={style.weapon_text}>D6</div>
+                </div>
               </div>
             </div>
+            <div className={style.weapon_info_text}>*Если атака в половине дистанции, урон D6+2.</div>
           </div>
 
-          <div className={style.weapon_block}>
-            <div className={style.weapon_title}>Ghostkeel fists</div>
-            <div className={style.weapon_block_info}>
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>Ml</div>
-                <div className={style.weapon_text}>-</div>
-              </div>
+          <div className={style.block_text_weapon}>
+            <div className={style.weapon_block}>
+              <div className={style.weapon_title}>Fusion collider</div>
+              <div className={style.weapon_block_info}>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>R</div>
+                  <div className={style.weapon_text}>24"</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>Ml</div>
-                <div className={style.weapon_text}>-</div>
-              </div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>Hv</div>
+                  <div className={style.weapon_text}>3</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>S</div>
-                <div className={style.weapon_text}>+1</div>
-              </div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>S</div>
+                  <div className={style.weapon_text}>9</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>AP</div>
-                <div className={style.weapon_text}>-1</div>
-              </div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>AP</div>
+                  <div className={style.weapon_text}>-4</div>
+                </div>
 
-              <div className={style.weapon_info}>
-                <div className={style.weapon_text}>D</div>
-                <div className={style.weapon_text}>2</div>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>D</div>
+                  <div className={style.weapon_text}>D6</div>
+                </div>
+              </div>
+            </div>
+            <div className={style.weapon_info_text}>*Если атака в половине дистанции, урон D6+2.</div>
+          </div>
+
+          <div className={style.block_text_weapon}>
+            <div className={style.weapon_block}>
+              <div className={style.weapon_title}>Ghostkeel fists</div>
+              <div className={style.weapon_block_info}>
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>Ml</div>
+                  <div className={style.weapon_text}>-</div>
+                </div>
+
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>Ml</div>
+                  <div className={style.weapon_text}>-</div>
+                </div>
+
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>S</div>
+                  <div className={style.weapon_text}>+1</div>
+                </div>
+
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>AP</div>
+                  <div className={style.weapon_text}>-1</div>
+                </div>
+
+                <div className={style.weapon_info}>
+                  <div className={style.weapon_text}>D</div>
+                  <div className={style.weapon_text}>2</div>
+                </div>
               </div>
             </div>
           </div>

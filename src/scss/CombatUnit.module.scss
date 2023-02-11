@@ -87,7 +87,6 @@
     width: 170px;
     height: 70px;
     padding: 10px;
-    margin: 6px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 15px;
 }
@@ -120,11 +119,25 @@
     width: 170px;
     height: 70px;
     padding: 10px;
-    margin: 6px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 15px;
     background-color: #afbbcc;
-    ;
+}
+
+.block_text_weapon {
+    display: block;
+    max-width: 190px;
+    margin: 6px;
+}
+
+.weapon_info_text {
+    display: block;
+    text-align: justify;
+    color: rgb(186, 38, 23);
+    font-weight: 700;
+    font-size: 11px;
+    margin: 5px 0;
+    padding: 0 10px;
 }
 
 .weapon_info {
