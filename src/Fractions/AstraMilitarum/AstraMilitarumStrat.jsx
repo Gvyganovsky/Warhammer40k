@@ -236,3 +236,41 @@ export const ACCEPTABLE_LOSSES = () => {
         </div>
     )
 }
+
+export const FIELD_PROMOTION = () => {
+    return (
+        <div className={style.strat}>
+            <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
+                <span>FIELD PROMOTION</span>
+                <span>1 CP</span>
+            </div>
+            <div className={style.strat_text}>
+                <span className={style.strat_text_bold}>Любая фаза</span>.
+                Если ваш командир был убит, вы можете назначить новую модель командиром.
+                Используйте эту стратегию только 1 раз.
+            </div>
+        </div>
+    )
+}
+
+export const ARTILLERY_STRIKE_REQUESTED = () => {
+    return (
+        <div className={style.strat}>
+            <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
+                <span>ARTILLERY STRIKE REQUESTED</span>
+                <span>2 CP</span>
+            </div>
+            <div className={style.strat_text}>
+                <span className={style.strat_text_bold}>Фаза командования</span>.
+                Если на поле боя есть MASTER OF ORDNANCE или EXPERT BOMBARDIERS OFFICER, то
+                выберите 1 точку на поле боя и поставьте на нее маркер. В начале вашей следующей
+                командной фазы бросьте 1D6 для каждой единицы в пределах 6" от центра этого маркера,
+                прибавляя 1, если единица, для которой выполняется бросок, находится в пределах 3" от
+                центра маркера. При счете 2-5 этот юнит получает D3 смертельных ранения; при счете 6+
+                этот юнит получает D6 смертельных ран. Затем маркер удаляется. Вы можете использовать
+                эту уловку только один раз.
+            </div>
+        </div>
+    )
+}
+
