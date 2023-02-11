@@ -26,6 +26,8 @@ import { RiptideBattlesuit } from './Fractions/TauEmpire/TauEmpireArmy/Riptide B
 import { Stormsurge } from './Fractions/TauEmpire/TauEmpireArmy/Stormsurge';
 import { BroadsideBattlesuits } from './Fractions/TauEmpire/TauEmpireArmy/Broadside Battlesuits';
 
+import { ShockTrooper } from './Fractions/AstraMilitarum/AstraMilitarumArmy/ShockTrooper';
+
 const App = () => {
   return (
     <Routes>
@@ -52,6 +54,8 @@ const App = () => {
         <Route path='RiptideBattlesuit' element={<RiptideBattlesuit />} />
         <Route path='Stormsurge' element={<Stormsurge />} />
         <Route path='BroadsideBattlesuits' element={<BroadsideBattlesuits />} />
+
+        <Route path='ShockTrooper' element={<ShockTrooper />} />
 
         <Route path='*' element={<NotFoundPage />} />
       </Route>
