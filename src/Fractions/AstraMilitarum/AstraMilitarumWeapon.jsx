@@ -842,7 +842,7 @@ export const Heavy_flamer = () => {
                     </div>
                 </div>
             </div>
-            <div className={style.weapon_info_text}>*Атака автоматически попадает в цель.</div>А
+            <div className={style.weapon_info_text}>*Атака автоматически попадает в цель.</div>
         </div>
     )
 }
@@ -1387,6 +1387,43 @@ export const Autocannon = () => {
                     </div>
                 </div>
             </div>
+        </div>
+    )
+}
+
+export const Earthshaker_cannon = () => {
+    return (
+        <div className={style.block_text_weapon}>
+            <div className={style.weapon_block}>
+                <div className={style.weapon_title}>Earthshaker cannon</div>
+                <div className={style.weapon_block_info}>
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>R</div>
+                        <div className={style.weapon_text}>240"</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>Hv</div>
+                        <div className={style.weapon_text}>D6+3</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>S</div>
+                        <div className={style.weapon_text}>10</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>AP</div>
+                        <div className={style.weapon_text}>-3</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>D</div>
+                        <div className={style.weapon_text}>2</div>
+                    </div>
+                </div>
+            </div>
+            <div className={style.weapon_info_text}>*Может поражать юнитов, которые не видны владельцу.</div>
         </div>
     )
 }
