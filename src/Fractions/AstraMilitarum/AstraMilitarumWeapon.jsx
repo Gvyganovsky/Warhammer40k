@@ -1755,3 +1755,40 @@ export const Plasma_pistol_SP = () => {
         </div>
     )
 }
+
+export const Storm_eagle_rockets = () => {
+    return (
+        <div className={style.block_text_weapon}>
+            <div className={style.weapon_block}>
+                <div className={style.weapon_title}>Storm eagle rock</div>
+                <div className={style.weapon_block_info}>
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>R</div>
+                        <div className={style.weapon_text}>120"</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>Hv</div>
+                        <div className={style.weapon_text}>D6+3</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>S</div>
+                        <div className={style.weapon_text}>9</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>AP</div>
+                        <div className={style.weapon_text}>-2</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>D</div>
+                        <div className={style.weapon_text}>3</div>
+                    </div>
+                </div>
+            </div>
+            <div className={style.weapon_info_text}>*Оружие может нацеливаться на юнитов, которые не видны владельцу. Владелец может стрелять из этого оружия только 4 раза за бой.</div>
+        </div>
+    )
+}

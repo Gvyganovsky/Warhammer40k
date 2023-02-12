@@ -35,6 +35,8 @@ import { Basilisk } from './Fractions/AstraMilitarum/AstraMilitarumArmy/Basilisk
 import { Bullgryns } from './Fractions/AstraMilitarum/AstraMilitarumArmy/Bullgryns';
 import { Chimera } from './Fractions/AstraMilitarum/AstraMilitarumArmy/Chimera';
 import { Commissar } from './Fractions/AstraMilitarum/AstraMilitarumArmy/Commissar';
+import { Manticore } from './Fractions/AstraMilitarum/AstraMilitarumArmy/Manticore';
+import { PrimarisPsyker } from './Fractions/AstraMilitarum/AstraMilitarumArmy/PrimarisPsyker';
 
 const App = () => {
   return (
@@ -72,6 +74,8 @@ const App = () => {
         <Route path='Bullgryns' element={<Bullgryns />} />
         <Route path='Chimera' element={<Chimera />} />
         <Route path='Commissar' element={<Commissar />} />
+        <Route path='Manticore' element={<Manticore />} />
+        <Route path='PrimarisPsyker' element={<PrimarisPsyker />} />
         
         <Route path='*' element={<NotFoundPage />} />
       </Route>

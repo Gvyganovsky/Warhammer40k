@@ -9,7 +9,6 @@ import Basilisk from "../../assets/AstraMilitarum/Basilisk.png";
 import Bullgryns from "../../assets/AstraMilitarum/Bullgryns.png";
 import Chimera from "../../assets/AstraMilitarum/Chimera.png";
 import Commissar from "../../assets/AstraMilitarum/Commissar.png";
-import LemanRussBattleTanks from "../../assets/AstraMilitarum/Leman Russ Battle Tanks.png";
 import Manticore from "../../assets/AstraMilitarum/Manticore.png";
 import PrimarisPsyker from "../../assets/AstraMilitarum/Primaris Psyker.png";
 import Taurox from "../../assets/AstraMilitarum/Taurox.png";
@@ -77,13 +76,6 @@ const AstraMilitarum = () => {
         <img src={Commissar} alt="Commissar" className={style.Combat_Unit_img} style={{ margin: '-45px 0px 0px -20px' }} />
         <div className={style.Combat_Unit_text}>
           Commissar
-        </div>
-      </a>
-
-      <a href="/LemanRussBattleTanks" className={style.Combat_Unit}>
-        <img src={LemanRussBattleTanks} alt="LemanRussBattleTanks" className={style.Combat_Unit_img} style={{ margin: '-55px 0px 0px -20px' }} />
-        <div className={style.Combat_Unit_text}>
-          Leman Russ Battle Tanks
         </div>
       </a>
 
