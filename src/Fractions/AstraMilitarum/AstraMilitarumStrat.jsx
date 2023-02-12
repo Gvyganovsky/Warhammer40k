@@ -405,3 +405,23 @@ export const MAVERICK_MANOEUVRES = () => {
         </div>
     )
 }
+
+export const THUNDEROUS_CHARGE = () => {
+    return (
+        <div className={style.strat}>
+            <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
+                <span>THUNDEROUS CHARGE</span>
+                <span>1 CP</span>
+            </div>
+            <div className={style.strat_text}>
+                <span className={style.strat_text_bold}>Фаза атаки</span>.
+                Выберите одного вражеского юнита в пределах досягаемости этого подразделения OGRYNS
+                или ATTILAN ROUGH RIDERS и бросьте по одному D6 для каждой модели в том подразделении
+                OGRYNS или ATTILAN ROUGH RIDERS, которое находится в пределах досягаемости этого
+                вражеского юнита. За каждый результат, который равен или превышает характеристику
+                выносливости вражеского юнита, этот вражеский юнит получает 1 смертельное ранение.
+            </div>
+        </div>
+    )
+}
+

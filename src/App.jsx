@@ -33,6 +33,8 @@ import { TankCommander } from './Fractions/AstraMilitarum/AstraMilitarumArmy/Tan
 import { ArmouredSentinels } from './Fractions/AstraMilitarum/AstraMilitarumArmy/ArmouredSentinels';
 import { Basilisk } from './Fractions/AstraMilitarum/AstraMilitarumArmy/Basilisk';
 import { Bullgryns } from './Fractions/AstraMilitarum/AstraMilitarumArmy/Bullgryns';
+import { Chimera } from './Fractions/AstraMilitarum/AstraMilitarumArmy/Chimera';
+import { Commissar } from './Fractions/AstraMilitarum/AstraMilitarumArmy/Commissar';
 
 const App = () => {
   return (
@@ -68,6 +70,8 @@ const App = () => {
         <Route path='ArmouredSentinels' element={<ArmouredSentinels />} />
         <Route path='Basilisk' element={<Basilisk />} />
         <Route path='Bullgryns' element={<Bullgryns />} />
+        <Route path='Chimera' element={<Chimera />} />
+        <Route path='Commissar' element={<Commissar />} />
         
         <Route path='*' element={<NotFoundPage />} />
       </Route>

@@ -1536,3 +1536,222 @@ export const Frag_bombs = () => {
         </div>
     )
 }
+
+export const Chimera_heavy_bolter = () => {
+    return (
+        <div className={style.block_text_weapon}>
+            <div className={style.weapon_block}>
+                <div className={style.weapon_title}>Chimera heavy bolter</div>
+                <div className={style.weapon_block_info}>
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>R</div>
+                        <div className={style.weapon_text}>36"</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>Hv</div>
+                        <div className={style.weapon_text}>3</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>S</div>
+                        <div className={style.weapon_text}>5</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>AP</div>
+                        <div className={style.weapon_text}>-1</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>D</div>
+                        <div className={style.weapon_text}>2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export const Chimera_heavy_flamer = () => {
+    return (
+        <div className={style.block_text_weapon}>
+            <div className={style.weapon_block}>
+                <div className={style.weapon_title}>Chir heavy flamer</div>
+                <div className={style.weapon_block_info}>
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>R</div>
+                        <div className={style.weapon_text}>12"</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>Hv</div>
+                        <div className={style.weapon_text}>D6</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>S</div>
+                        <div className={style.weapon_text}>5</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>AP</div>
+                        <div className={style.weapon_text}>-1</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>D</div>
+                        <div className={style.weapon_text}>1</div>
+                    </div>
+                </div>
+            </div>
+            <div className={style.weapon_info_text}>*Атака автоматически попадает в цель.</div>
+        </div>
+    )
+}
+
+export const Chimera_multi_laser = () => {
+    return (
+        <div className={style.block_text_weapon}>
+            <div className={style.weapon_block}>
+                <div className={style.weapon_title}>Chir multi-laser</div>
+                <div className={style.weapon_block_info}>
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>R</div>
+                        <div className={style.weapon_text}>36"</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>Hv</div>
+                        <div className={style.weapon_text}>4</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>S</div>
+                        <div className={style.weapon_text}>6</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>AP</div>
+                        <div className={style.weapon_text}>-1</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>D</div>
+                        <div className={style.weapon_text}>1</div>
+                    </div>
+                </div>
+            </div>
+            <div className={style.weapon_info_text}>*Атака автоматически попадает в цель.</div>
+        </div>
+    )
+}
+
+export const Lasgun_array = () => {
+    return (
+        <div className={style.block_text_weapon}>
+            <div className={style.weapon_block}>
+                <div className={style.weapon_title}>Lasgun array</div>
+                <div className={style.weapon_block_info}>
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>R</div>
+                        <div className={style.weapon_text}>24"</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>Rf</div>
+                        <div className={style.weapon_text}>6</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>S</div>
+                        <div className={style.weapon_text}>3</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>AP</div>
+                        <div className={style.weapon_text}>0</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>D</div>
+                        <div className={style.weapon_text}>1</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export const Plasma_pistol_S = () => {
+    return (
+        <div className={style.block_text_weapon}>
+            <div className={style.weapon_blockTwo}>
+                <div className={style.weapon_title}>Plasma pistol S</div>
+                <div className={style.weapon_block_info}>
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>R</div>
+                        <div className={style.weapon_text}>12"</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>Ps</div>
+                        <div className={style.weapon_text}>1</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>S</div>
+                        <div className={style.weapon_text}>7</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>AP</div>
+                        <div className={style.weapon_text}>-3</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>D</div>
+                        <div className={style.weapon_text}>1</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export const Plasma_pistol_SP = () => {
+    return (
+        <div className={style.block_text_weapon}>
+            <div className={style.weapon_blockTwo}>
+                <div className={style.weapon_title}>Plasma pistol Sp</div>
+                <div className={style.weapon_block_info}>
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>R</div>
+                        <div className={style.weapon_text}>12"</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>Ps</div>
+                        <div className={style.weapon_text}>1</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>S</div>
+                        <div className={style.weapon_text}>8</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>AP</div>
+                        <div className={style.weapon_text}>-3</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>D</div>
+                        <div className={style.weapon_text}>2</div>
+                    </div>
+                </div>
+            </div>
+            <div className={style.weapon_info_text}>*Если выпала 1 на попадание, владелец уничтожается.</div>
+        </div>
+    )
+}
