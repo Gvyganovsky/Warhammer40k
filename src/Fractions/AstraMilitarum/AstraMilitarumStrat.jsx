@@ -274,3 +274,118 @@ export const ARTILLERY_STRIKE_REQUESTED = () => {
     )
 }
 
+export const VENGEFUL_SALUTE = () => {
+    return (
+        <div className={style.strat}>
+            <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
+                <span>VENGEFUL SALUTE</span>
+                <span>1 CP / 2 CP</span>
+            </div>
+            <div className={style.strat_text}>
+                <span className={style.strat_text_bold}>Фаза боя противника</span>.
+                Если ваш автомобиль уничтожен, но не взорван. Она может выстрелить после того,
+                как враг закончит атаки. При этом атаки можно проводить только из turret weapons.
+                Баллистический навык равен 5+. Если имеет BATTLE TANK или ARMOURED SUPERIORITY, эта
+                стратегия стоит 1 CP.
+            </div>
+        </div>
+    )
+}
+
+export const CRUSH_THEM = () => {
+    return (
+        <div className={style.strat}>
+            <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
+                <span>VENGEFUL SALUTE</span>
+                <span>1 CP / 2 CP</span>
+            </div>
+            <div className={style.strat_text}>
+                <span className={style.strat_text_bold}>Фаза боя</span>.
+                Измените характеристику навыка владения оружием этой модели на 4+. Если у этой модели есть ключевое слово ARMOURED, измените ее характеристику навыка владения оружием на 3+ вместо этого.
+                При броске с неизмененными ранами, равном 6, цель получает 1 смертельную рану в дополнение к любому обычному урону.
+            </div>
+        </div>
+    )
+}
+
+export const OFFICER_CADRE = () => {
+    return (
+        <div className={style.strat}>
+            <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #ba2617 0)' }}>
+                <span>VENGEFUL SALUTE</span>
+                <span>1 CP</span>
+            </div>
+            <div className={style.strat_text}>
+                <span className={style.strat_text_bold}>Перед битвой</span>.
+                Выберите черту военачальника для этой модели.
+            </div>
+        </div>
+    )
+}
+
+export const IMPERIAL_COMMANDERS_ARMOURY = () => {
+    return (
+        <div className={style.strat}>
+            <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #ba2617 0)' }}>
+                <span>VENGEFUL SALUTE</span>
+                <span>1 CP</span>
+            </div>
+            <div className={style.strat_text}>
+                <span className={style.strat_text_bold}>Перед битвой</span>.
+                Выберите реликвию военачальника для этой модели.
+            </div>
+        </div>
+    )
+}
+
+export const SMOKE_LAUNCHERS = () => {
+    return (
+        <div className={style.strat}>
+            <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #626869 0)' }}>
+                <span>VENGEFUL SALUTE</span>
+                <span>1 CP</span>
+            </div>
+            <div className={style.strat_text}>
+                <span className={style.strat_text_bold}>Фаза стрельбы противника</span>.
+                До конца фазы, каждый раз, когда производится атака против этого юнита, вычитайте 1 из броска попадания этой атаки.
+            </div>
+        </div>
+    )
+}
+
+export const ABLATIVE_PLATING = () => {
+    return (
+        <div className={style.strat}>
+            <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #626869 0)' }}>
+                <span>VENGEFUL SALUTE</span>
+                <span>2 CP / 3 CP</span>
+            </div>
+            <div className={style.strat_text}>
+                <span className={style.strat_text_bold}>Фаза стрельбы противника</span>.
+                Если в качестве цели атаки выбран БОЕВОЙ танк или БРОНИРОВАННОЕ подразделение вашей армии.
+                До конца фазы, каждый раз, когда производится атака против этого юнита, вычитайте 1 из урона,
+                характерного для этой атаки (как минимум до 1). Если у этого юнита есть ключевое слово "СВЕРХТЯЖЕЛЫЙ БОЕВОЙ ТАНК"
+                или "РОГАЛ ДОРН", эта стратегия стоит 3 CP; в противном случае она стоит 2 CP.
+            </div>
+        </div>
+    )
+}
+
+export const RELENTLESS = () => {
+    return (
+        <div className={style.strat}>
+            <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #626869 0)' }}>
+                <span>VENGEFUL SALUTE</span>
+                <span>1 CP / 2 CP</span>
+            </div>
+            <div className={style.strat_text}>
+                <span className={style.strat_text_bold}>Фаза командования</span>.
+                Выберите одну модель автомобиля ASTRA MILITARUM из вашей армии. До
+                начала вашего следующего этапа командования считается, что у этой модели
+                остались полные настройки для целей определения того, какие характеристики
+                в ее профиле следует использовать. Если в этой модели есть ключевое слово
+                TITANIC, эта стратегия стоит 2 CP; в противном случае она стоит 1 CP.
+            </div>
+        </div>
+    )
+}

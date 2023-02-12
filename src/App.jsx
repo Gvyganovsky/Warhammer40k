@@ -29,6 +29,8 @@ import { BroadsideBattlesuits } from './Fractions/TauEmpire/TauEmpireArmy/Broads
 import { ShockTrooper } from './Fractions/AstraMilitarum/AstraMilitarumArmy/ShockTrooper';
 import { LordSolarLeontus } from './Fractions/AstraMilitarum/AstraMilitarumArmy/LordSolarLeontus';
 import { UrsulaCreed } from './Fractions/AstraMilitarum/AstraMilitarumArmy/UrsulaCreed';
+import { TankCommander } from './Fractions/AstraMilitarum/AstraMilitarumArmy/TankCommander';
+
 const App = () => {
   return (
     <Routes>
@@ -59,6 +61,7 @@ const App = () => {
         <Route path='ShockTrooper' element={<ShockTrooper />} />
         <Route path='LordSolarLeontus' element={<LordSolarLeontus />} />
         <Route path='UrsulaCreed' element={<UrsulaCreed />} />
+        <Route path='TankCommander' element={<TankCommander />} />
 
         <Route path='*' element={<NotFoundPage />} />
       </Route>
