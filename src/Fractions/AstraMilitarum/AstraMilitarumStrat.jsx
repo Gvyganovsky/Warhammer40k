@@ -389,3 +389,19 @@ export const RELENTLESS = () => {
         </div>
     )
 }
+
+export const MAVERICK_MANOEUVRES = () => {
+    return (
+        <div className={style.strat}>
+            <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #246656 0)' }}>
+                <span>MAVERICK MANOEUVRES</span>
+                <span>1 CP</span>
+            </div>
+            <div className={style.strat_text}>
+                <span className={style.strat_text_bold}>Фаза стрельбы</span>.
+                Подразделение SENTINEL может совершать перемещения до 6", после этого отряд
+                не может стрелять снова на этом этапе.
+            </div>
+        </div>
+    )
+}

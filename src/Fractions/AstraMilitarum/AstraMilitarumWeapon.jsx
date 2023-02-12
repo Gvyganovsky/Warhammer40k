@@ -1174,3 +1174,219 @@ export const Vanquisher_battle_cannon = () => {
         </div>
     )
 }
+
+export const Lascannon = () => {
+    return (
+        <div className={style.block_text_weapon}>
+            <div className={style.weapon_block}>
+                <div className={style.weapon_title}>Lascannon</div>
+                <div className={style.weapon_block_info}>
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>R</div>
+                        <div className={style.weapon_text}>48"</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>Hv</div>
+                        <div className={style.weapon_text}>1</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>S</div>
+                        <div className={style.weapon_text}>9</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>AP</div>
+                        <div className={style.weapon_text}>-3</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>D</div>
+                        <div className={style.weapon_text}>D6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export const Militarum_multi_laser = () => {
+    return (
+        <div className={style.block_text_weapon}>
+            <div className={style.weapon_block}>
+                <div className={style.weapon_title}>Militarum multilas</div>
+                <div className={style.weapon_block_info}>
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>R</div>
+                        <div className={style.weapon_text}>36"</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>Hv</div>
+                        <div className={style.weapon_text}>4</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>S</div>
+                        <div className={style.weapon_text}>6</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>AP</div>
+                        <div className={style.weapon_text}>-1</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>D</div>
+                        <div className={style.weapon_text}>1</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export const Missile_launcher_F = () => {
+    return (
+        <div className={style.block_text_weapon}>
+            <div className={style.weapon_blockTwo}>
+                <div className={style.weapon_title}>Missile launch F</div>
+                <div className={style.weapon_block_info}>
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>R</div>
+                        <div className={style.weapon_text}>48"</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>Hv</div>
+                        <div className={style.weapon_text}>D6</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>S</div>
+                        <div className={style.weapon_text}>4</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>AP</div>
+                        <div className={style.weapon_text}>0</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>D</div>
+                        <div className={style.weapon_text}>1</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export const Missile_launcher_K = () => {
+    return (
+        <div className={style.block_text_weapon}>
+            <div className={style.weapon_blockTwo}>
+                <div className={style.weapon_title}>Missile launch K</div>
+                <div className={style.weapon_block_info}>
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>R</div>
+                        <div className={style.weapon_text}>48"</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>Hv</div>
+                        <div className={style.weapon_text}>1</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>S</div>
+                        <div className={style.weapon_text}>8</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>AP</div>
+                        <div className={style.weapon_text}>-2</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>D</div>
+                        <div className={style.weapon_text}>D6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export const Sentinel_chainsaw = () => {
+    return (
+        <div className={style.block_text_weapon}>
+            <div className={style.weapon_block}>
+                <div className={style.weapon_title}>Sentinel chainsaw</div>
+                <div className={style.weapon_block_info}>
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>R</div>
+                        <div className={style.weapon_text}>-</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>Ml</div>
+                        <div className={style.weapon_text}>-</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>S</div>
+                        <div className={style.weapon_text}>-</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>AP</div>
+                        <div className={style.weapon_text}>-2</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>D</div>
+                        <div className={style.weapon_text}>2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export const Autocannon = () => {
+    return (
+        <div className={style.block_text_weapon}>
+            <div className={style.weapon_block}>
+                <div className={style.weapon_title}>Autocannon</div>
+                <div className={style.weapon_block_info}>
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>R</div>
+                        <div className={style.weapon_text}>48"</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>Hv</div>
+                        <div className={style.weapon_text}>2</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>S</div>
+                        <div className={style.weapon_text}>7</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>AP</div>
+                        <div className={style.weapon_text}>-1</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>D</div>
+                        <div className={style.weapon_text}>2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}

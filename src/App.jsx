@@ -30,6 +30,7 @@ import { ShockTrooper } from './Fractions/AstraMilitarum/AstraMilitarumArmy/Shoc
 import { LordSolarLeontus } from './Fractions/AstraMilitarum/AstraMilitarumArmy/LordSolarLeontus';
 import { UrsulaCreed } from './Fractions/AstraMilitarum/AstraMilitarumArmy/UrsulaCreed';
 import { TankCommander } from './Fractions/AstraMilitarum/AstraMilitarumArmy/TankCommander';
+import { ArmouredSentinels } from './Fractions/AstraMilitarum/AstraMilitarumArmy/ArmouredSentinels';
 
 const App = () => {
   return (
@@ -62,7 +63,8 @@ const App = () => {
         <Route path='LordSolarLeontus' element={<LordSolarLeontus />} />
         <Route path='UrsulaCreed' element={<UrsulaCreed />} />
         <Route path='TankCommander' element={<TankCommander />} />
-
+        <Route path='ArmouredSentinels' element={<ArmouredSentinels />} />
+        
         <Route path='*' element={<NotFoundPage />} />
       </Route>
     </Routes>
