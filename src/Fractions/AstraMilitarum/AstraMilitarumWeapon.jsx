@@ -1792,3 +1792,39 @@ export const Storm_eagle_rockets = () => {
         </div>
     )
 }
+
+export const Force_stave = () => {
+    return (
+        <div className={style.block_text_weapon}>
+            <div className={style.weapon_block}>
+                <div className={style.weapon_title}>Force stave</div>
+                <div className={style.weapon_block_info}>
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>R</div>
+                        <div className={style.weapon_text}>-</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>Ml</div>
+                        <div className={style.weapon_text}>-</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>S</div>
+                        <div className={style.weapon_text}>+3</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>AP</div>
+                        <div className={style.weapon_text}>-1</div>
+                    </div>
+
+                    <div className={style.weapon_info}>
+                        <div className={style.weapon_text}>D</div>
+                        <div className={style.weapon_text}>D3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
