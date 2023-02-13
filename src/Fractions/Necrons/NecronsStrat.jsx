@@ -307,3 +307,59 @@ export const RESURRECTION_PROTOCOLS = () => {
         </div>
     )
 }
+
+export const STELLAR_ALIGNMENT_PROTOCOL = () => {
+    return (
+        <div className={style.strat}>
+            <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
+                <span>STELLAR ALIGNMENT PROTOCOL</span>
+                <span>2 CP / 1 CP</span>
+            </div>
+            <div className={style.strat_text}>
+                <span className={style.strat_text_bold}>Фаза командования</span>.
+                Выберите одну модель транспортного средства, которая имеет характеристику ран, равную 10
+                или более. До начала вашего следующего этапа командования считается, что у этой модели
+                остались полные настройки для целей определения того, какие характеристики в ее профиле
+                следует использовать. Если в этой модели есть ключевое слово TITANIC, эта стратегия стоит
+                2 CP; в противном случае она стоит 1 CP.
+            </div>
+        </div>
+    )
+}
+
+export const CURSE_OF_THE_PHAERON = () => {
+    return (
+        <div className={style.strat}>
+            <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
+                <span>CURSE OF THE PHAERON</span>
+                <span>3 CP / 1 CP</span>
+            </div>
+            <div className={style.strat_text}>
+                <span className={style.strat_text_bold}>Любая фаза</span>.
+                Если модель транспортного средства НЕКРОНОВ из вашей армии будет уничтожена.
+                Не переворачивайте, чтобы увидеть, взорвется ли эта модель: это происходит
+                автоматически. Если в этой модели есть ключевое слово TITANIC, эта стратегия
+                стоит 3 CP; в противном случае она стоит 1 CP.
+            </div>
+        </div>
+    )
+}
+
+export const FRACTAL_TARGETING = () => {
+    return (
+        <div className={style.strat}>
+            <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #294a67 0)' }}>
+                <span>FRACTAL TARGETING</span>
+                <span>1 CP</span>
+            </div>
+            <div className={style.strat_text}>
+                <span className={style.strat_text_bold}>Фаза стрельбы</span>.
+                Все Rapid Fire, которым оснащены модели в этом подразделении,
+                рассматривается как оружие Assault 2.
+                Модели в этом подразделении не подвергаются штрафу за попадание в броски,
+                понесенные за стрельбу из Assault weapons в тот же ход, в котором продвинулось
+                их подразделение.
+            </div>
+        </div>
+    )
+}

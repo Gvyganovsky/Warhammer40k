@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../../../scss/CombatUnit.module.scss";
-import Necronimmortals from "../../../assets/Necrons/Necron Immortals.png";
+import Necronsoverlord from "../../../assets/Necrons/Necron Overlord.png";
 
 import {
     Staff_of_light, Tachyon_arrow, Hyperphase_glaive, Hyperphase_sword,
@@ -29,7 +29,7 @@ const NecronsOverlord = () => {
     return (
         <section>
             <section className={style.content}>
-                <img src={Necronimmortals} alt="NecronImmortals" className={style.combat_unit_img} />
+                <img src={Necronsoverlord} alt="Necron overlord" className={style.combat_unit_img} />
                 <div className={style.combat_unit_param}>
                     <div className={style.combat_unit_param_block}>
                         <img src={M} alt="M" className={style.param_img} />

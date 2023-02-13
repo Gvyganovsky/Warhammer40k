@@ -15,7 +15,7 @@ const Necrons = () => {
         </div>
       </a>
 
-      <a href="/NecronOverlord" className={style.Combat_Unit}>
+      <a href="/NecronsOverlord" className={style.Combat_Unit}>
         <img src={NecronOverlord} alt="NecronOverlord" className={style.Combat_Unit_img} style={{ margin: '-20px 0px 0px -20px'}} />
         <div className={style.Combat_Unit_text}>
           Necron Overlord
