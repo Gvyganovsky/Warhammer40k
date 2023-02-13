@@ -3,14 +3,14 @@ import style from "../../../scss/CombatUnit.module.scss";
 import Necronimmortals from "../../../assets/Necrons/Necron Immortals.png";
 
 import {
-    Gauss_blaster, Tesla_carbine
+    Staff_of_light, Tachyon_arrow, Hyperphase_glaive, Hyperphase_sword,
+    Voidblade, Voidscythe, Warscythe
 } from "../NecronsWeapon";
 
 import {
-    BLOOD_RITES, METHODICAL_DESTRUCTION, DIMENSIONAL_CORRIDOR, TECHNO_ORACULAR_TARGETING,
-    TALENT_FOR_ANNIHILATION, TRANSLOCATION_CRYPT, RECLAIM_A_LOST_EMPIRE, PRISMATIC_DIMENSIONAL_BREACH,
-    RELENTLESS_ONSLAUGHT, EMPYRIC_DAMPING, DISRUPTION_FIELDS, DISINTEGRATION_CAPACITORS, MALEVOLENT_ARCING,
-    SOLAR_PULSE
+    BLOOD_RITES, METHODICAL_DESTRUCTION, TECHNO_ORACULAR_TARGETING, RESURRECTION_PROTOCOLS,
+    HAND_OF_THE_PHAERON, DYNASTIC_HEIRLOOMS, RAREFIED_NOBILITY, TALENT_FOR_ANNIHILATION,
+    TRANSLOCATION_CRYPT, RECLAIM_A_LOST_EMPIRE, EMPYRIC_DAMPING, SOLAR_PULSE
 } from "../NecronsStrat";
 
 import M from "../../../assets/icons/M.png";
@@ -22,6 +22,8 @@ import W from "../../../assets/icons/W.png";
 import A from "../../../assets/icons/A.png";
 import Ld from "../../../assets/icons/Ld.png";
 import Sv from "../../../assets/icons/Sv.png";
+
+import general from "../../../assets/icons/general.png";
 
 const NecronsOverlord = () => {
     return (
@@ -91,24 +93,40 @@ const NecronsOverlord = () => {
                 </div>
             </section>
 
-            
+            <section className={style.content}>
+                <div className={style.line}></div>
+                <div className={style.content_title}>Другое оружие</div>
+                <div className={style.weapon_content}>
+                    <div className={style.weaponOther_block}>
+                        <div className={style.abilities_title_block}>
+                            <div className={style.abilities_title}>Resurrection Orb</div>
+                            <img src={general} alt="general" className={style.abilities_symbol} />
+                        </div>
+                        <div className={style.weaponOther_text}>
+                            Один раз за битву, на этапе вашего командования, носитель может использовать свой шар воскрешения.
+                            Если это произойдет, выберите одно дружественное подразделение в пределах 6" от носителя, которое
+                            не достигло своей начальной численности и протоколы реанимации которого не были введены в действие
+                            на этом этапе. Вводятся в действие протоколы реанимации этого подразделения, и каждая уничтоженная
+                            модель в этом подразделении начинает собираться заново.
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <section className={style.content}>
                 <div className={style.line}></div>
                 <div className={style.content_title}>Стратегемы</div>
                 <BLOOD_RITES />
                 <METHODICAL_DESTRUCTION />
-                <DIMENSIONAL_CORRIDOR />
                 <TECHNO_ORACULAR_TARGETING />
+                <RESURRECTION_PROTOCOLS />
+                <HAND_OF_THE_PHAERON />
+                <DYNASTIC_HEIRLOOMS />
+                <RAREFIED_NOBILITY />
                 <TALENT_FOR_ANNIHILATION />
                 <TRANSLOCATION_CRYPT />
                 <RECLAIM_A_LOST_EMPIRE />
-                <PRISMATIC_DIMENSIONAL_BREACH />
-                <RELENTLESS_ONSLAUGHT />
                 <EMPYRIC_DAMPING />
-                <DISRUPTION_FIELDS />
-                <DISINTEGRATION_CAPACITORS />
-                <MALEVOLENT_ARCING />
                 <SOLAR_PULSE />
             </section>
         </section >

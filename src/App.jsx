@@ -46,7 +46,7 @@ import { LieutenantinPhobosArmour } from './Fractions/SpaceMarine/SpaceMarineArm
 import { Suppressors } from './Fractions/SpaceMarine/SpaceMarineArmy/Suppressors';
 
 import { NecronImmortals } from './Fractions/Necrons/NecronsArmy/NecronImmortals';
-import { NecronOverlord } from './Fractions/Necrons/NecronsArmy/NecronsOverlord';
+import { NecronsOverlord } from './Fractions/Necrons/NecronsArmy/NecronsOverlord';
 import { NightScythe } from './Fractions/Necrons/NecronsArmy/NightScythe';
 import { TombBlades } from './Fractions/Necrons/NecronsArmy/TombBlades';
 
@@ -102,7 +102,7 @@ const App = () => {
         <Route path='LieutenantinPhobosArmour' element={<LieutenantinPhobosArmour />} />
 
         <Route path='NecronImmortals' element={<NecronImmortals />} />
-        <Route path='NecronOverlord' element={<NecronOverlord />} />
+        <Route path='NecronsOverlord' element={<NecronsOverlord />} />
         <Route path='NightScythe' element={<NightScythe />} />
         <Route path='TombBlades' element={<TombBlades />} />
         

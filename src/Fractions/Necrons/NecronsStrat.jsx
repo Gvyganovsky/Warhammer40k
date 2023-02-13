@@ -238,3 +238,72 @@ export const SOLAR_PULSE = () => {
     )
 }
 
+export const RAREFIED_NOBILITY = () => {
+    return (
+        <div className={style.strat}>
+            <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #ba2617 0)' }}>
+                <span>RAREFIED NOBILITY</span>
+                <span>1 CP</span>
+            </div>
+            <div className={style.strat_text}>
+                <span className={style.strat_text_bold}>Перед битвой</span>.
+                Выберите одну модель ПЕРСОНАЖА НЕКРОНОВ (исключая модели ОСКОЛКОВ К'ТАНА) в вашей армии и определите одну черту военачальника для этой модели.
+            </div>
+        </div>
+    )
+}
+
+export const DYNASTIC_HEIRLOOMS = () => {
+    return (
+        <div className={style.strat}>
+            <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #ba2617 0)' }}>
+                <span>DYNASTIC HEIRLOOMS</span>
+                <span>1 CP</span>
+            </div>
+            <div className={style.strat_text}>
+                <span className={style.strat_text_bold}>Перед битвой</span>.
+                Выберите одну модель ПЕРСОНАЖА НЕКРОНОВ (исключая модели ОСКОЛКОВ К'ТАНА) в вашей армии
+                и дайте им одну реликвию.
+            </div>
+        </div>
+    )
+}
+
+export const HAND_OF_THE_PHAERON = () => {
+    return (
+        <div className={style.strat}>
+            <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #ba2617 0)' }}>
+                <span>HAND OF THE PHAERON</span>
+                <span>2 CP</span>
+            </div>
+            <div className={style.strat_text}>
+                <span className={style.strat_text_bold}>Перед битвой</span>.
+                Если в вашей армии нет модели с ключевым словом PHAERON, выберите одну модель
+                NECRONS OVERLORD из вашей армии (исключая именованных персонажей). Эта модель
+                получает ключевое слово PHAERON, и на вашей командной фазе она может использовать
+                свою способность My Will Be Done еще один раз.
+            </div>
+        </div>
+    )
+}
+
+export const RESURRECTION_PROTOCOLS = () => {
+    return (
+        <div className={style.strat}>
+            <div className={style.strat_title} style={{ background: 'linear-gradient(315deg, transparent 8px, #673d29 0)' }}>
+                <span>RESURRECTION PROTOCOLS</span>
+                <span>2 CP</span>
+            </div>
+            <div className={style.strat_text}>
+                <span className={style.strat_text_bold}>Фаза боя</span>.
+                Когда модель в вашей армии будет уничтожен, вы можете выбрать бросок одного D6 в конце
+                фазы вместо использования любых правил, которые срабатывают при уничтожении этой модели
+                (например, способности суррогатных хозяев). Если вы это сделаете, то на 4+ установите
+                эту модель обратно на поле боя как можно ближе к тому месту, где она была уничтожена,
+                и на расстоянии более 1 дюйма от любых вражеских моделей, при этом останутся раны D3.
+                Эта стратегия не может быть использована для резервного копирования одной и той же
+                модели более одного раза за битву.
+            </div>
+        </div>
+    )
+}
