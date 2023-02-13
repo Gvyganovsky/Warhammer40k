@@ -1605,7 +1605,7 @@ export const Chimera_heavy_flamer = () => {
                     </div>
                 </div>
             </div>
-            <div className={style.weapon_info_text}>*Атака автоматически попадает в цель.</div>
+            <div className={style.weapon_info_text}>*Атака чески попадает в цель.</div>
         </div>
     )
 }

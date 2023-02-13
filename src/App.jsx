@@ -13,7 +13,7 @@ import { ForgotPasswordPage } from './Pages/ForgotPasswordPage';
 import { TauEmpire } from './Fractions/TauEmpire/TauEmpire';
 import { AstraMilitarum } from './Fractions/AstraMilitarum/AstraMilitarum';
 import { SpaceMarine } from './Fractions/SpaceMarine/SpaceMarine';
-import { Necrons } from './Fractions/Necrons/Nercons';
+import { Necrons } from './Fractions/Necrons/Necrons';
 
 import { TauEmpireStrat } from './Fractions/TauEmpire/TauEmpireStrat';
 import { GhostkeelBattlesuit } from './Fractions/TauEmpire/TauEmpireArmy/Ghostkeel Battlesuit';
@@ -44,6 +44,11 @@ import { Impulsor } from './Fractions/SpaceMarine/SpaceMarineArmy/Impulsor';
 import { Infiltrators } from './Fractions/SpaceMarine/SpaceMarineArmy/Infiltrators';
 import { LieutenantinPhobosArmour } from './Fractions/SpaceMarine/SpaceMarineArmy/LieutenantinPhobosArmour';
 import { Suppressors } from './Fractions/SpaceMarine/SpaceMarineArmy/Suppressors';
+
+import { NecronImmortals } from './Fractions/Necrons/NecronsArmy/NecronImmortals';
+import { NecronOverlord } from './Fractions/Necrons/NecronsArmy/NecronsOverlord';
+import { NightScythe } from './Fractions/Necrons/NecronsArmy/NightScythe';
+import { TombBlades } from './Fractions/Necrons/NecronsArmy/TombBlades';
 
 const App = () => {
   return (
@@ -90,6 +95,16 @@ const App = () => {
         <Route path='Infiltrators' element={<Infiltrators />} />
         <Route path='LieutenantinPhobosArmour' element={<LieutenantinPhobosArmour />} />
         <Route path='Suppressors' element={<Suppressors />} />
+
+        <Route path='Eliminators' element={<Eliminators />} />
+        <Route path='Impulsor' element={<Impulsor />} />
+        <Route path='Infiltrators' element={<Infiltrators />} />
+        <Route path='LieutenantinPhobosArmour' element={<LieutenantinPhobosArmour />} />
+
+        <Route path='NecronImmortals' element={<NecronImmortals />} />
+        <Route path='NecronOverlord' element={<NecronOverlord />} />
+        <Route path='NightScythe' element={<NightScythe />} />
+        <Route path='TombBlades' element={<TombBlades />} />
         
         <Route path='*' element={<NotFoundPage />} />
       </Route>
