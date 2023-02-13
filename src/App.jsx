@@ -12,6 +12,7 @@ import { ForgotPasswordPage } from './Pages/ForgotPasswordPage';
 
 import { TauEmpire } from './Fractions/TauEmpire/TauEmpire';
 import { AstraMilitarum } from './Fractions/AstraMilitarum/AstraMilitarum';
+import { SpaceMarine } from './Fractions/SpaceMarine/SpaceMarine';
 import { Necrons } from './Fractions/Necrons/Nercons';
 
 import { TauEmpireStrat } from './Fractions/TauEmpire/TauEmpireStrat';
@@ -51,6 +52,7 @@ const App = () => {
 
         <Route path='TauEmpire' element={<TauEmpire />} />
         <Route path='AstraMilitarum' element={<AstraMilitarum />} />
+        <Route path='SpaceMarine' element={<SpaceMarine />} />
         <Route path='Necrons' element={<Necrons />} />
 
         <Route path='TauEmpireStrat' element={<TauEmpireStrat />} />

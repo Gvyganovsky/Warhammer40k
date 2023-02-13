@@ -11,7 +11,6 @@ import Chimera from "../../assets/AstraMilitarum/Chimera.png";
 import Commissar from "../../assets/AstraMilitarum/Commissar.png";
 import Manticore from "../../assets/AstraMilitarum/Manticore.png";
 import PrimarisPsyker from "../../assets/AstraMilitarum/Primaris Psyker.png";
-import Taurox from "../../assets/AstraMilitarum/Taurox.png";
 
 const AstraMilitarum = () => {
   return (
@@ -90,13 +89,6 @@ const AstraMilitarum = () => {
         <img src={PrimarisPsyker} alt="PrimarisPsyker" className={style.Combat_Unit_img} style={{ margin: '-60px 0px 0px -20px' }} />
         <div className={style.Combat_Unit_text}>
           Primaris Psyker
-        </div>
-      </a>
-
-      <a href="/Taurox" className={style.Combat_Unit}>
-        <img src={Taurox} alt="Taurox" className={style.Combat_Unit_img} style={{ margin: '-45px 0px 0px -20px' }} />
-        <div className={style.Combat_Unit_text}>
-          Taurox
         </div>
       </a>
     </section>
