@@ -39,6 +39,12 @@ import { Commissar } from './Fractions/AstraMilitarum/AstraMilitarumArmy/Commiss
 import { Manticore } from './Fractions/AstraMilitarum/AstraMilitarumArmy/Manticore';
 import { PrimarisPsyker } from './Fractions/AstraMilitarum/AstraMilitarumArmy/PrimarisPsyker';
 
+import { Eliminators } from './Fractions/SpaceMarine/SpaceMarineArmy/Eliminators';
+import { Impulsor } from './Fractions/SpaceMarine/SpaceMarineArmy/Impulsor';
+import { Infiltrators } from './Fractions/SpaceMarine/SpaceMarineArmy/Infiltrators';
+import { LieutenantinPhobosArmour } from './Fractions/SpaceMarine/SpaceMarineArmy/LieutenantinPhobosArmour';
+import { Suppressors } from './Fractions/SpaceMarine/SpaceMarineArmy/Suppressors';
+
 const App = () => {
   return (
     <Routes>
@@ -78,6 +84,12 @@ const App = () => {
         <Route path='Commissar' element={<Commissar />} />
         <Route path='Manticore' element={<Manticore />} />
         <Route path='PrimarisPsyker' element={<PrimarisPsyker />} />
+
+        <Route path='Eliminators' element={<Eliminators />} />
+        <Route path='Impulsor' element={<Impulsor />} />
+        <Route path='Infiltrators' element={<Infiltrators />} />
+        <Route path='LieutenantinPhobosArmour' element={<LieutenantinPhobosArmour />} />
+        <Route path='Suppressors' element={<Suppressors />} />
         
         <Route path='*' element={<NotFoundPage />} />
       </Route>
