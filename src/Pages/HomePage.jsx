@@ -6,6 +6,7 @@ import SpaceMarineImg from '../assets/logoFractions/SpaceMarine.png';
 import BlackLegionImg from '../assets/logoFractions/BlackLegion.png';
 import NecronsImg from '../assets/logoFractions/Necrons.png';
 import TyranidsImg from '../assets/logoFractions/Tyranids.png';
+import AeldariImg from '../assets/logoFractions/Aeldari.png';
 
 const HomePage = () => {
     return (
@@ -40,7 +41,7 @@ const HomePage = () => {
 
             <a href="./Necrons">
                 <div className={styles.block_conent}>
-                    <img src={NecronsImg} alt="Necrons" className={styles.content_img} style={{ width: '50px'}}/>
+                    <img src={NecronsImg} alt="Necrons" className={styles.content_img} style={{ width: '50px' }} />
                     <div className={styles.content_title}>Некроны</div>
                 </div>
             </a>
@@ -49,6 +50,13 @@ const HomePage = () => {
                 <div className={styles.block_conent}>
                     <img src={TyranidsImg} alt="Tyranids" className={styles.content_img} />
                     <div className={styles.content_title}>Тираниды</div>
+                </div>
+            </a>
+
+            <a href="./Aeldari">
+                <div className={styles.block_conent}>
+                    <img src={AeldariImg} alt="Aeldari" className={styles.content_img} />
+                    <div className={styles.content_title}>Эльдары</div>
                 </div>
             </a>
         </section>

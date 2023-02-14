@@ -15,6 +15,7 @@ import { AstraMilitarum } from './Fractions/AstraMilitarum/AstraMilitarum';
 import { SpaceMarine } from './Fractions/SpaceMarine/SpaceMarine';
 import { Necrons } from './Fractions/Necrons/Necrons';
 import { Tyranids } from './Fractions/Tyranids/Tyranids';
+import { Aeldari } from './Fractions/Aeldari/Aeldari';
 
 import { TauEmpireStrat } from './Fractions/TauEmpire/TauEmpireStrat';
 import { GhostkeelBattlesuit } from './Fractions/TauEmpire/TauEmpireArmy/Ghostkeel Battlesuit';
@@ -56,6 +57,11 @@ import { Termagant } from './Fractions/Tyranids/TyranidsArmy/Termagant';
 import { TyranidWarriors } from './Fractions/Tyranids/TyranidsArmy/TyranidWarriors';
 import { Zoanthropes } from './Fractions/Tyranids/TyranidsArmy/Zoanthropes';
 
+import { GuardianDefenders } from './Fractions/Aeldari/AeldariArmy/GuardianDefenders';
+import { Spiritseer } from './Fractions/Aeldari/AeldariArmy/Spiritseer';
+import { Windriders } from './Fractions/Aeldari/AeldariArmy/Windriders';
+import { Wraithlord } from './Fractions/Aeldari/AeldariArmy/Wraithlord';
+
 const App = () => {
   return (
     <Routes>
@@ -72,6 +78,7 @@ const App = () => {
         <Route path='SpaceMarine' element={<SpaceMarine />} />
         <Route path='Necrons' element={<Necrons />} />
         <Route path='Tyranids' element={<Tyranids />} />
+        <Route path='Aeldari' element={<Aeldari />} />
 
         <Route path='TauEmpireStrat' element={<TauEmpireStrat />} />
         <Route path='GhostkeelBattlesuit' element={<GhostkeelBattlesuit />} />
@@ -117,6 +124,11 @@ const App = () => {
         <Route path='Termagant' element={<Termagant />} />
         <Route path='TyranidWarriors' element={<TyranidWarriors />} />
         <Route path='Zoanthropes' element={<Zoanthropes />} />
+
+        <Route path='GuardianDefenders' element={<GuardianDefenders />} />
+        <Route path='Spiritseer' element={<Spiritseer />} />
+        <Route path='Windriders' element={<Windriders />} />
+        <Route path='Wraithlord' element={<Wraithlord />} />
         
         <Route path='*' element={<NotFoundPage />} />
       </Route>
