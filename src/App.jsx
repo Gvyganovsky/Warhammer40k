@@ -16,6 +16,7 @@ import { SpaceMarine } from './Fractions/SpaceMarine/SpaceMarine';
 import { Necrons } from './Fractions/Necrons/Necrons';
 import { Tyranids } from './Fractions/Tyranids/Tyranids';
 import { Aeldari } from './Fractions/Aeldari/Aeldari';
+import { Orks } from './Fractions/Orks/Orks';
 
 import { TauEmpireStrat } from './Fractions/TauEmpire/TauEmpireStrat';
 import { GhostkeelBattlesuit } from './Fractions/TauEmpire/TauEmpireArmy/Ghostkeel Battlesuit';
@@ -62,6 +63,11 @@ import { Spiritseer } from './Fractions/Aeldari/AeldariArmy/Spiritseer';
 import { Windriders } from './Fractions/Aeldari/AeldariArmy/Windriders';
 import { Wraithlord } from './Fractions/Aeldari/AeldariArmy/Wraithlord';
 
+import { DeffDread } from './Fractions/Orks/OrksArmy/DeffDread';
+import { Deffkoptas } from './Fractions/Orks/OrksArmy/Deffkoptas';
+import { OrkBoyz } from './Fractions/Orks/OrksArmy/OrkBoyz';
+import { WarbossinMegaArmour } from './Fractions/Orks/OrksArmy/Warboss in Mega Armour';
+
 const App = () => {
   return (
     <Routes>
@@ -79,6 +85,7 @@ const App = () => {
         <Route path='Necrons' element={<Necrons />} />
         <Route path='Tyranids' element={<Tyranids />} />
         <Route path='Aeldari' element={<Aeldari />} />
+        <Route path='Orks' element={<Orks />} />
 
         <Route path='TauEmpireStrat' element={<TauEmpireStrat />} />
         <Route path='GhostkeelBattlesuit' element={<GhostkeelBattlesuit />} />
@@ -129,6 +136,11 @@ const App = () => {
         <Route path='Spiritseer' element={<Spiritseer />} />
         <Route path='Windriders' element={<Windriders />} />
         <Route path='Wraithlord' element={<Wraithlord />} />
+
+        <Route path='DeffDread' element={<DeffDread />} />
+        <Route path='Deffkoptas' element={<Deffkoptas />} />
+        <Route path='OrkBoyz' element={<OrkBoyz />} />
+        <Route path='WarbossinMegaArmour' element={<WarbossinMegaArmour />} />
         
         <Route path='*' element={<NotFoundPage />} />
       </Route>

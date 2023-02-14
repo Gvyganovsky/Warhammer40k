@@ -7,6 +7,7 @@ import BlackLegionImg from '../assets/logoFractions/BlackLegion.png';
 import NecronsImg from '../assets/logoFractions/Necrons.png';
 import TyranidsImg from '../assets/logoFractions/Tyranids.png';
 import AeldariImg from '../assets/logoFractions/Aeldari.png';
+import OrksImg from '../assets/logoFractions/Orks.png';
 
 const HomePage = () => {
     return (
@@ -57,6 +58,13 @@ const HomePage = () => {
                 <div className={styles.block_conent}>
                     <img src={AeldariImg} alt="Aeldari" className={styles.content_img} />
                     <div className={styles.content_title}>Эльдары</div>
+                </div>
+            </a>
+
+            <a href="./Orks">
+                <div className={styles.block_conent}>
+                    <img src={OrksImg} alt="Orks" className={styles.content_img} style={{ width: '60px' }}/>
+                    <div className={styles.content_title}>Орки</div>
                 </div>
             </a>
         </section>
