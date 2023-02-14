@@ -14,6 +14,7 @@ import { TauEmpire } from './Fractions/TauEmpire/TauEmpire';
 import { AstraMilitarum } from './Fractions/AstraMilitarum/AstraMilitarum';
 import { SpaceMarine } from './Fractions/SpaceMarine/SpaceMarine';
 import { Necrons } from './Fractions/Necrons/Necrons';
+import { Tyranids } from './Fractions/Tyranids/Tyranids';
 
 import { TauEmpireStrat } from './Fractions/TauEmpire/TauEmpireStrat';
 import { GhostkeelBattlesuit } from './Fractions/TauEmpire/TauEmpireArmy/Ghostkeel Battlesuit';
@@ -50,6 +51,11 @@ import { NecronsOverlord } from './Fractions/Necrons/NecronsArmy/NecronsOverlord
 import { NightScythe } from './Fractions/Necrons/NecronsArmy/NightScythe';
 import { TombBlades } from './Fractions/Necrons/NecronsArmy/TombBlades';
 
+import { HiveTyrant } from './Fractions/Tyranids/TyranidsArmy/HiveTyrant';
+import { Termagant } from './Fractions/Tyranids/TyranidsArmy/Termagant';
+import { TyranidWarriors } from './Fractions/Tyranids/TyranidsArmy/TyranidWarriors';
+import { Zoanthropes } from './Fractions/Tyranids/TyranidsArmy/Zoanthropes';
+
 const App = () => {
   return (
     <Routes>
@@ -65,6 +71,7 @@ const App = () => {
         <Route path='AstraMilitarum' element={<AstraMilitarum />} />
         <Route path='SpaceMarine' element={<SpaceMarine />} />
         <Route path='Necrons' element={<Necrons />} />
+        <Route path='Tyranids' element={<Tyranids />} />
 
         <Route path='TauEmpireStrat' element={<TauEmpireStrat />} />
         <Route path='GhostkeelBattlesuit' element={<GhostkeelBattlesuit />} />
@@ -105,6 +112,11 @@ const App = () => {
         <Route path='NecronsOverlord' element={<NecronsOverlord />} />
         <Route path='NightScythe' element={<NightScythe />} />
         <Route path='TombBlades' element={<TombBlades />} />
+
+        <Route path='HiveTyrant' element={<HiveTyrant />} />
+        <Route path='Termagant' element={<Termagant />} />
+        <Route path='TyranidWarriors' element={<TyranidWarriors />} />
+        <Route path='Zoanthropes' element={<Zoanthropes />} />
         
         <Route path='*' element={<NotFoundPage />} />
       </Route>
