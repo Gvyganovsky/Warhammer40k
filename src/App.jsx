@@ -13,6 +13,7 @@ import { ForgotPasswordPage } from './Pages/ForgotPasswordPage';
 import { TauEmpire } from './Fractions/TauEmpire/TauEmpire';
 import { AstraMilitarum } from './Fractions/AstraMilitarum/AstraMilitarum';
 import { SpaceMarine } from './Fractions/SpaceMarine/SpaceMarine';
+import { BlackLegion } from './Fractions/BlackLegion/BlackLegion';
 import { Necrons } from './Fractions/Necrons/Necrons';
 import { Tyranids } from './Fractions/Tyranids/Tyranids';
 import { Aeldari } from './Fractions/Aeldari/Aeldari';
@@ -48,6 +49,11 @@ import { Infiltrators } from './Fractions/SpaceMarine/SpaceMarineArmy/Infiltrato
 import { LieutenantinPhobosArmour } from './Fractions/SpaceMarine/SpaceMarineArmy/LieutenantinPhobosArmour';
 import { Suppressors } from './Fractions/SpaceMarine/SpaceMarineArmy/Suppressors';
 
+import { ChaosSpaceMarines } from './Fractions/BlackLegion/BlackLegionArmy/Chaos Space Marines';
+import { DarkApostle } from './Fractions/BlackLegion/BlackLegionArmy/DarkApostle';
+import { Havocs } from './Fractions/BlackLegion/BlackLegionArmy/Havocs';
+import { Helbrute } from './Fractions/BlackLegion/BlackLegionArmy/Helbrute';
+
 import { NecronImmortals } from './Fractions/Necrons/NecronsArmy/NecronImmortals';
 import { NecronsOverlord } from './Fractions/Necrons/NecronsArmy/NecronsOverlord';
 import { NightScythe } from './Fractions/Necrons/NecronsArmy/NightScythe';
@@ -82,6 +88,7 @@ const App = () => {
         <Route path='TauEmpire' element={<TauEmpire />} />
         <Route path='AstraMilitarum' element={<AstraMilitarum />} />
         <Route path='SpaceMarine' element={<SpaceMarine />} />
+        <Route path='BlackLegion' element={<BlackLegion />} />
         <Route path='Necrons' element={<Necrons />} />
         <Route path='Tyranids' element={<Tyranids />} />
         <Route path='Aeldari' element={<Aeldari />} />
@@ -117,10 +124,10 @@ const App = () => {
         <Route path='LieutenantinPhobosArmour' element={<LieutenantinPhobosArmour />} />
         <Route path='Suppressors' element={<Suppressors />} />
 
-        <Route path='Eliminators' element={<Eliminators />} />
-        <Route path='Impulsor' element={<Impulsor />} />
-        <Route path='Infiltrators' element={<Infiltrators />} />
-        <Route path='LieutenantinPhobosArmour' element={<LieutenantinPhobosArmour />} />
+        <Route path='ChaosSpaceMarines' element={<ChaosSpaceMarines />} />
+        <Route path='DarkApostle' element={<DarkApostle />} />
+        <Route path='Havocs' element={<Havocs />} />
+        <Route path='Helbrute' element={<Helbrute />} />
 
         <Route path='NecronImmortals' element={<NecronImmortals />} />
         <Route path='NecronsOverlord' element={<NecronsOverlord />} />
@@ -141,7 +148,7 @@ const App = () => {
         <Route path='Deffkoptas' element={<Deffkoptas />} />
         <Route path='OrkBoyz' element={<OrkBoyz />} />
         <Route path='WarbossinMegaArmour' element={<WarbossinMegaArmour />} />
-        
+
         <Route path='*' element={<NotFoundPage />} />
       </Route>
     </Routes>
