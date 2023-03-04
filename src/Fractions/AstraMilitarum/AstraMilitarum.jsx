@@ -1,4 +1,4 @@
-import { UnitBlock } from '../../Components/UnitBlock'
+import { UnitBlock } from '../../Components/UnitBlock';
 import style from "../../scss/Fractions.module.scss";
 import ShockTrooper from "../../assets/AstraMilitarum/ShockTrooper.png";
 import LordSolarLeontus from "../../assets/AstraMilitarum/Lord Solar Leontus.png";
