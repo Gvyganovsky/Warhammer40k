@@ -1,4 +1,4 @@
-import React from "react";
+
 import style from "../../../scss/CombatUnit.module.scss";
 import Ghostkeel_Battlesuit from "../../../assets/TauEmpire/Tau XV95 Ghostkeel Battlesuit.png";
 

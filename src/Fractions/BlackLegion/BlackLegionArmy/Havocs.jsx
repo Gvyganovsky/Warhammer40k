@@ -1,4 +1,4 @@
-import React from "react";
+
 import style from "../../../scss/CombatUnit.module.scss";
 import havocs from "../../../assets/BlackLegion/Havocs.png";
 import { ParametersBlock } from "../../../Components/ParametersBlock";

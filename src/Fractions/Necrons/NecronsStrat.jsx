@@ -1,4 +1,4 @@
-import React from "react";
+
 import style from "../../scss/CombatUnit.module.scss";
 
 export const NerconsStrat = () => {

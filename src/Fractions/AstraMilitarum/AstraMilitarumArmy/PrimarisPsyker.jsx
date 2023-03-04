@@ -1,4 +1,4 @@
-import React from "react";
+
 import style from "../../../scss/CombatUnit.module.scss";
 import Primarispsyker from "../../../assets/AstraMilitarum/Primaris Psyker.png";
 import { ParametersBlock } from "../../../Components/ParametersBlock";

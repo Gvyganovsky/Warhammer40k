@@ -1,4 +1,4 @@
-import React from "react";
+
 import style from "../../../scss/CombatUnit.module.scss";
 import Broadside from "../../../assets/TauEmpire/Broadside.png";
 

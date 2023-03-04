@@ -1,4 +1,4 @@
-import React from "react";
+
 import style from "../../../scss/CombatUnit.module.scss";
 import chimera from "../../../assets/AstraMilitarum/Chimera.png";
 import { ParametersBlock } from "../../../Components/ParametersBlock";

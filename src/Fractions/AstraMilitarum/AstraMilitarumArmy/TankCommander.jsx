@@ -1,4 +1,4 @@
-import React from "react";
+
 import style from "../../../scss/CombatUnit.module.scss";
 import Tankcommander from "../../../assets/AstraMilitarum/Tank Commander.png";
 import { ParametersBlock } from "../../../Components/ParametersBlock";

@@ -1,4 +1,4 @@
-import React from "react";
+
 import style from "../../../scss/CombatUnit.module.scss";
 import Darkapostle from "../../../assets/BlackLegion/Dark Apostle.png";
 import { ParametersBlock } from "../../../Components/ParametersBlock";

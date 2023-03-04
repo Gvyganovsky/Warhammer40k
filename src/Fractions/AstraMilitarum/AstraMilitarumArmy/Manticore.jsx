@@ -1,4 +1,4 @@
-import React from "react";
+
 import style from "../../../scss/CombatUnit.module.scss";
 import manticore from "../../../assets/AstraMilitarum/Manticore.png";
 import { ParametersBlock } from "../../../Components/ParametersBlock";

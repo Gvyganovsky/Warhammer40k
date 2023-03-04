@@ -1,4 +1,4 @@
-import React from "react";
+
 import style from "../../../scss/CombatUnit.module.scss";
 import spiritseer from "../../../assets/Aeldari/Spiritseer.png";
 import { ParametersBlock } from "../../../Components/ParametersBlock";

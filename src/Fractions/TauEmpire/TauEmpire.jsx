@@ -1,4 +1,4 @@
-import React from "react";
+
 import style from "../../scss/Fractions.module.scss";
 import Tau_XV95_Ghostkeel_Battlesuit from "../../assets/TauEmpire/Tau XV95 Ghostkeel Battlesuit.png";
 import FireWarrior from "../../assets/TauEmpire/Fire Warriors.png";

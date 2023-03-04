@@ -1,4 +1,4 @@
-import React from "react";
+
 import style from "../../../scss/CombatUnit.module.scss";
 import bullgryns from "../../../assets/AstraMilitarum/Bullgryns.png";
 import { ParametersBlock } from "../../../Components/ParametersBlock";

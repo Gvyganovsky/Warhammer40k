@@ -1,4 +1,4 @@
-import React from "react";
+
 import style from "../../../scss/CombatUnit.module.scss";
 import LordSolarLeonts from "../../../assets/AstraMilitarum/Lord Solar Leontus.png";
 import { ParametersBlock } from "../../../Components/ParametersBlock";
