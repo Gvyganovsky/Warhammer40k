@@ -4,7 +4,6 @@ import styles from '../scss/Registration.module.scss';
 
 const LoginPage = () => {
     return (
-
         <section className={styles.section_block}>
             <div className={styles.block_reg_log}>
                 <div className={styles.title_reg_log}>Вход</div>

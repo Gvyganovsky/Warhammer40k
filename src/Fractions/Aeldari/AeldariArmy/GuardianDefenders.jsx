@@ -1,4 +1,3 @@
-import React from "react";
 import style from "../../../scss/CombatUnit.module.scss";
 import Guardiandefenders from "../../../assets/Aeldari/Guardian Defenders.png";
 import { ParametersBlock } from "../../../Components/ParametersBlock";
@@ -18,7 +17,7 @@ import {
 import question from "../../../assets/icons/question.png";
 import hit from "../../../assets/icons/hit.svg";
 
-const GuardianDefenders = () => {
+export const GuardianDefenders = () => {
     return (
         <section className={style.content}>
             <ParametersBlock img={Guardiandefenders}
@@ -27,14 +26,10 @@ const GuardianDefenders = () => {
             <section className={style.Content_block}>
                 <div className={style.content_title}>Оружие</div>
                 <div className={style.weapon_content}>
-                    <Aeldari_mis_Sn />
-                    <Aeldari_mis_S />
-                    <Bright_lance />
-                    <Scatter_laser />
-                    <Shuriken_cannon />
-                    <Shuriken_catapult />
-                    <Starcannon />
-                    <Plasma_grenade />
+                    <Aeldari_mis_Sn /> <Aeldari_mis_S />
+                    <Bright_lance /> <Scatter_laser /> 
+                    <Shuriken_cannon /> <Shuriken_catapult />
+                    <Starcannon /> <Plasma_grenade />
                 </div>
             </section>
 
@@ -55,24 +50,14 @@ const GuardianDefenders = () => {
 
             <section className={style.Content_block}>
                 <div className={style.content_title}>Стратегемы</div>
-                <DISCIPLINE_OF_THE_BLACK_GUARDIANS />
-                <INEXHAUSTIBLE_HATRED />
-                <THE_GREAT_ENEMY />
-                <MATCHLESS_AGILITY />
-                <LIGHTNING_FAST_REACTIONS />
-                <BLADESTORM />
-                <MARTIAL_CITIZENRY />
-                <DEFIANT_TO_THE_LAST />
-                <FEIGNED_RETREAT />
-                <FIRE_AND_FADE />
-                <PHANTASM />
-                <WEBWAY_STRIKE />
-                <WITHERING_VOLLEYS />
-                <THRICE_LAYERED_WARDS />
-                <STARHAWK_MISSILE />
+                <DISCIPLINE_OF_THE_BLACK_GUARDIANS /> <INEXHAUSTIBLE_HATRED />
+                <THE_GREAT_ENEMY /> <MATCHLESS_AGILITY />
+                <LIGHTNING_FAST_REACTIONS /> <BLADESTORM />
+                <MARTIAL_CITIZENRY /> <DEFIANT_TO_THE_LAST />
+                <FEIGNED_RETREAT /> <FIRE_AND_FADE />
+                <PHANTASM /> <WEBWAY_STRIKE /> <WITHERING_VOLLEYS />
+                <THRICE_LAYERED_WARDS /> <STARHAWK_MISSILE />
             </section>
         </section >
     )
 }
-
-export { GuardianDefenders }

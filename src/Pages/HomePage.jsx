@@ -1,5 +1,5 @@
-import React from "react";
 import styles from '../scss/HomePage.module.scss';
+import { HomePageBlock } from '../Components/HomePageBlock'
 import TauEmpireImg from '../assets/logoFractions/TauEmpire.png';
 import AstraMilitarumImg from '../assets/logoFractions/AstraMilitarum.png';
 import SpaceMarineImg from '../assets/logoFractions/SpaceMarine.png';
@@ -9,66 +9,17 @@ import TyranidsImg from '../assets/logoFractions/Tyranids.png';
 import AeldariImg from '../assets/logoFractions/Aeldari.png';
 import OrksImg from '../assets/logoFractions/Orks.png';
 
-const HomePage = () => {
+export const HomePage = () => {
     return (
         <section className={styles.content}>
-            <a href="./TauEmpire">
-                <div className={styles.block_conent}>
-                    <img src={TauEmpireImg} alt="TauEmpire" className={styles.content_img} />
-                    <div className={styles.content_title}>Империя Тау</div>
-                </div>
-            </a>
-
-            <a href="./AstraMilitarum">
-                <div className={styles.block_conent}>
-                    <img src={AstraMilitarumImg} alt="AstraMilitarum" className={styles.content_img} style={{ width: '100px', height: '50px', margin: '15px 0' }} />
-                    <div className={styles.content_title}>Имперская Гвардия</div>
-                </div>
-            </a>
-
-            <a href="./SpaceMarine">
-                <div className={styles.block_conent}>
-                    <img src={SpaceMarineImg} alt="SpaceMarine" className={styles.content_img} />
-                    <div className={styles.content_title}>Космодесант</div>
-                </div>
-            </a>
-
-            <a href="./BlackLegion">
-                <div className={styles.block_conent}>
-                    <img src={BlackLegionImg} alt="BlackLegion" className={styles.content_img} />
-                    <div className={styles.content_title}>Черный Легион</div>
-                </div>
-            </a>
-
-            <a href="./Necrons">
-                <div className={styles.block_conent}>
-                    <img src={NecronsImg} alt="Necrons" className={styles.content_img} style={{ width: '50px' }} />
-                    <div className={styles.content_title}>Некроны</div>
-                </div>
-            </a>
-
-            <a href="./Tyranids">
-                <div className={styles.block_conent}>
-                    <img src={TyranidsImg} alt="Tyranids" className={styles.content_img} />
-                    <div className={styles.content_title}>Тираниды</div>
-                </div>
-            </a>
-
-            <a href="./Aeldari">
-                <div className={styles.block_conent}>
-                    <img src={AeldariImg} alt="Aeldari" className={styles.content_img} />
-                    <div className={styles.content_title}>Эльдары</div>
-                </div>
-            </a>
-
-            <a href="./Orks">
-                <div className={styles.block_conent}>
-                    <img src={OrksImg} alt="Orks" className={styles.content_img} style={{ width: '60px' }}/>
-                    <div className={styles.content_title}>Орки</div>
-                </div>
-            </a>
+            <HomePageBlock link='./TauEmpire' img={TauEmpireImg} title='Империя Тау' />
+            <HomePageBlock link='./AstraMilitarum' img={AstraMilitarumImg} title='Имперская Гвардия' />
+            <HomePageBlock link='./SpaceMarine' img={SpaceMarineImg} title='Космодесант' />
+            <HomePageBlock link='./BlackLegion' img={BlackLegionImg} title='Черный Легион' />
+            <HomePageBlock link='./Necrons' img={NecronsImg} title='Некроны' />
+            <HomePageBlock link='./Tyranids' img={TyranidsImg} title='Тираниды' />
+            <HomePageBlock link='./Aeldari' img={AeldariImg} title='Эльдары' />
+            <HomePageBlock link='./Orks' img={OrksImg} title='Орки' />
         </section>
     )
 }
-
-export { HomePage }
