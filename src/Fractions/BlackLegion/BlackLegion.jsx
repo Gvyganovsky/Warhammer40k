@@ -1,42 +1,17 @@
-import React from "react";
+import { UnitBlock } from '../../Components/UnitBlock'
 import style from "../../scss/Fractions.module.scss";
 import DarkApostle from "../../assets/BlackLegion/Dark Apostle.png";
 import Helbrute from "../../assets/BlackLegion/Helbrute.png";
 import Havocs from "../../assets/BlackLegion/Havocs.png";
 import ChaosSpaceMarines from "../../assets/BlackLegion/Chaos Space Marines.png";
 
-const BlackLegion = () => {
+export const BlackLegion = () => {
     return (
         <section className={style.content}>
-            <a href="/DarkApostle" className={style.Combat_Unit}>
-                <img src={DarkApostle} alt="DarkApostle" className={style.Combat_Unit_img} style={{ margin: '-50px 0px 0px -20px' }} />
-                <div className={style.Combat_Unit_text}>
-                    Dark Apostle
-                </div>
-            </a>
-
-            <a href="/Helbrute" className={style.Combat_Unit}>
-                <img src={Helbrute} alt="Helbrute" className={style.Combat_Unit_img} style={{ margin: '-35px 0px 0px -20px' }} />
-                <div className={style.Combat_Unit_text}>
-                    Helbrute
-                </div>
-            </a>
-
-            <a href="/Havocs" className={style.Combat_Unit}>
-                <img src={Havocs} alt="Havocs" className={style.Combat_Unit_img} style={{ margin: '-40px 0px 0px -20px' }} />
-                <div className={style.Combat_Unit_text}>
-                    Havocs
-                </div>
-            </a>
-
-            <a href="/ChaosSpaceMarines" className={style.Combat_Unit}>
-                <img src={ChaosSpaceMarines} alt="ChaosSpaceMarines" className={style.Combat_Unit_img} style={{ margin: '-30px 0px 0px -20px' }} />
-                <div className={style.Combat_Unit_text}>
-                    Chaos Space Marines
-                </div>
-            </a>
+            <UnitBlock link='/DarkApostle' img={DarkApostle} title='Dark Apostle' />
+            <UnitBlock link='/Helbrute' img={Helbrute} title='Helbrute' />
+            <UnitBlock link='/Havocs' img={Havocs} title='Havocs' />
+            <UnitBlock link='/ChaosSpaceMarines' img={ChaosSpaceMarines} title='Chaos Space Marines' />
         </section>
     )
 }
-
-export { BlackLegion }
