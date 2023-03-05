@@ -3,7 +3,7 @@ import style from "../../scss/Fractions.module.scss";
 import Tau_XV95_Ghostkeel_Battlesuit from "../../assets/TauEmpire/Tau XV95 Ghostkeel Battlesuit.png";
 import FireWarrior from "../../assets/TauEmpire/Fire Warriors.png";
 import CrisisBattlesuits from "../../assets/TauEmpire/Crisis Battlesuits.png";
-import Etheral from "../../assets/TauEmpire/Etheral.jpg";
+import Etheral from "../../assets/TauEmpire/Etheral.png";
 import SupportTurret from "../../assets/TauEmpire/Support Turret.png";
 import Drone from "../../assets/TauEmpire/Drone.png";
 import CadreFireblade from "../../assets/TauEmpire/Cadre Fireblade.png";

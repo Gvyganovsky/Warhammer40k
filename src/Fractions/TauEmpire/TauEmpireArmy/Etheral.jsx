@@ -1,5 +1,5 @@
 import style from "../../../scss/CombatUnit.module.scss";
-import Ether from "../../../assets/TauEmpire/Etheral.jpg";
+import Ether from "../../../assets/TauEmpire/Etheral.png";
 import { ParametersBlock } from "../../../Components/ParametersBlock";
 import { AbilitiesBlock } from "../../../Components/AbilitiesBlock";
 

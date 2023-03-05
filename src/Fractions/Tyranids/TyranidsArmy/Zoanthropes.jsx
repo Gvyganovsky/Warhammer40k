@@ -19,7 +19,7 @@ import morale from "../../../assets/icons/morale.png";
 export const Zoanthropes = () => {
     return (
         <section className={style.content}>
-            <ParametersBlock img={Zoanthropes}
+            <ParametersBlock img={zoanthropes}
                 M='6"' WS='5+' BS='3+' S='5' T='5' W='4' A='2' Ld='9' Sv='5+' />
 
             <section className={style.Content_block}>
