@@ -1,703 +1,122 @@
-
-import style from "../../scss/CombatUnit.module.scss";
-
-export const SpaceMarineWeapon = () => {
-    return (
-        <div>
-        </div>
-    )
-}
+import { WeaponBlock, WeaponBlockBlue } from '../../Components/WeaponBlock';
 
 export const Bolt_pistol = () => {
-    return (
-        <div className={style.block_text_weapon}>
-            <div className={style.weapon_block}>
-                <div className={style.weapon_title}>Bolt pistol</div>
-                <div className={style.weapon_block_info}>
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>R</div>
-                        <div className={style.weapon_text}>12"</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>Ps</div>
-                        <div className={style.weapon_text}>1</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>S</div>
-                        <div className={style.weapon_text}>4</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>AP</div>
-                        <div className={style.weapon_text}>0</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>D</div>
-                        <div className={style.weapon_text}>1</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    return (<WeaponBlock title='Bolt pistol'
+        R='12"' Type='Ps' Type_num='1' S='4' AP='0' D='1' />
     )
 }
 
 export const Bolt_sniper_E = () => {
-    return (
-        <div className={style.block_text_weapon}>
-            <div className={style.weapon_blockTwo}>
-                <div className={style.weapon_title}>Bolt sniper E</div>
-                <div className={style.weapon_block_info}>
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>R</div>
-                        <div className={style.weapon_text}>36"</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>Hv</div>
-                        <div className={style.weapon_text}>1</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>S</div>
-                        <div className={style.weapon_text}>5</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>AP</div>
-                        <div className={style.weapon_text}>-1</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>D</div>
-                        <div className={style.weapon_text}>1</div>
-                    </div>
-                </div>
-            </div>
-            <div className={style.weapon_info_text}>*Добавляйте 1 к броску попадания этой атаки. Цели не получают преимуществ укрытия.</div>
-        </div>
-
+    return (<WeaponBlockBlue title='Bolt sniper E'
+        R='36"' Type='Hv' Type_num='1' S='5' AP='-1' D='1'
+        Text='*Добавляйте 1 к броску попадания этой атаки. Цели не получают преимуществ укрытия.' />
     )
 }
 
 export const Bolt_sniper_H = () => {
-    return (
-        <div className={style.block_text_weapon}>
-            <div className={style.weapon_blockTwo}>
-                <div className={style.weapon_title}>Bolt sniper E</div>
-                <div className={style.weapon_block_info}>
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>R</div>
-                        <div className={style.weapon_text}>36"</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>Hv</div>
-                        <div className={style.weapon_text}>D3</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>S</div>
-                        <div className={style.weapon_text}>5</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>AP</div>
-                        <div className={style.weapon_text}>0</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>D</div>
-                        <div className={style.weapon_text}>1</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    return (<WeaponBlockBlue title='Bolt sniper H'
+        R='36"' Type='Hv' Type_num='D3' S='5' AP='0' D='1'
+        Text='*Добавляйте 1 к броску попадания этой атаки. Цели не получают преимуществ укрытия.' />
     )
 }
 
 export const Bolt_sniper_M = () => {
-    return (
-        <div className={style.block_text_weapon}>
-            <div className={style.weapon_blockTwo}>
-                <div className={style.weapon_title}>Bolt sniper M</div>
-                <div className={style.weapon_block_info}>
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>R</div>
-                        <div className={style.weapon_text}>36"</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>Hv</div>
-                        <div className={style.weapon_text}>1</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>S</div>
-                        <div className={style.weapon_text}>5</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>AP</div>
-                        <div className={style.weapon_text}>-2</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>D</div>
-                        <div className={style.weapon_text}>2</div>
-                    </div>
-                </div>
-            </div>
-            <div className={style.weapon_info_text}>*Бросок раны 6 наносит цели 1 смертельную рану в дополнение к любому обычному урону.</div>
-        </div>
+    return (<WeaponBlockBlue title='Bolt sniper M'
+        R='36"' Type='Hv' Type_num='1' S='5' AP='-2' D='2'
+        Text='*Бросок раны 6 наносит цели 1 смертельную рану в дополнение к любому обычному урону.' />
     )
 }
 
 export const Instigator_bolt_carbine = () => {
-    return (
-        <div className={style.block_text_weapon}>
-            <div className={style.weapon_block}>
-                <div className={style.weapon_title}>Instigator bolt</div>
-                <div className={style.weapon_block_info}>
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>R</div>
-                        <div className={style.weapon_text}>24"</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>As</div>
-                        <div className={style.weapon_text}>1</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>S</div>
-                        <div className={style.weapon_text}>4</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>AP</div>
-                        <div className={style.weapon_text}>-1</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>D</div>
-                        <div className={style.weapon_text}>2</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    return (<WeaponBlock title='Instigator bolt'
+        R='24"' Type='As' Type_num='1' S='4' AP='-1' D='2' />
     )
 }
 
 export const Las_fusil = () => {
-    return (
-        <div className={style.block_text_weapon}>
-            <div className={style.weapon_block}>
-                <div className={style.weapon_title}>Las fusil</div>
-                <div className={style.weapon_block_info}>
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>R</div>
-                        <div className={style.weapon_text}>36"</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>Hv</div>
-                        <div className={style.weapon_text}>1</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>S</div>
-                        <div className={style.weapon_text}>8</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>AP</div>
-                        <div className={style.weapon_text}>-3</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>D</div>
-                        <div className={style.weapon_text}>3</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    return (<WeaponBlock title='Las fusil'
+        R='36"' Type='Hv' Type_num='1' S='8' AP='-3' D='3' />
     )
 }
 
 export const Frag_grenades = () => {
-    return (
-        <div className={style.block_text_weapon}>
-            <div className={style.weapon_block}>
-                <div className={style.weapon_title}>Frag grenades</div>
-                <div className={style.weapon_block_info}>
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>R</div>
-                        <div className={style.weapon_text}>6"</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>Gr</div>
-                        <div className={style.weapon_text}>D6</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>S</div>
-                        <div className={style.weapon_text}>3</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>AP</div>
-                        <div className={style.weapon_text}>0</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>D</div>
-                        <div className={style.weapon_text}>1</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    return (<WeaponBlock title='Frag grenades'
+        R='6"' Type='Gr' Type_num='D6' S='3' AP='0' D='1' />
     )
 }
 
 export const Krak_grenades = () => {
-    return (
-        <div className={style.block_text_weapon}>
-            <div className={style.weapon_block}>
-                <div className={style.weapon_title}>Krak grenades</div>
-                <div className={style.weapon_block_info}>
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>R</div>
-                        <div className={style.weapon_text}>6"</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>Gr</div>
-                        <div className={style.weapon_text}>1</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>S</div>
-                        <div className={style.weapon_text}>6</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>AP</div>
-                        <div className={style.weapon_text}>-1</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>D</div>
-                        <div className={style.weapon_text}>D3</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    return (<WeaponBlock title='Krak grenades'
+        R='6"' Type='Gr' Type_num='1' S='6' AP='-1' D='D3' />
     )
 }
 
 export const Krak_missiles = () => {
-    return (
-        <div className={style.block_text_weapon}>
-            <div className={style.weapon_blockTwo}>
-                <div className={style.weapon_title}>Krak missiles</div>
-                <div className={style.weapon_block_info}>
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>R</div>
-                        <div className={style.weapon_text}>48"</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>Hv</div>
-                        <div className={style.weapon_text}>1</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>S</div>
-                        <div className={style.weapon_text}>8</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>AP</div>
-                        <div className={style.weapon_text}>-2</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>D</div>
-                        <div className={style.weapon_text}>D6</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    return (<WeaponBlockBlue title='Krak missiles'
+        R='48"' Type='Hv' Type_num='1' S='8' AP='-2' D='D6' />
     )
 }
 
 export const Frag_missiles = () => {
-    return (
-        <div className={style.block_text_weapon}>
-            <div className={style.weapon_blockTwo}>
-                <div className={style.weapon_title}>Krak missiles</div>
-                <div className={style.weapon_block_info}>
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>R</div>
-                        <div className={style.weapon_text}>48"</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>Hv</div>
-                        <div className={style.weapon_text}>D6</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>S</div>
-                        <div className={style.weapon_text}>4</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>AP</div>
-                        <div className={style.weapon_text}>0</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>D</div>
-                        <div className={style.weapon_text}>1</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    return (<WeaponBlockBlue title='Krak missiles'
+        R='48"' Type='Hv' Type_num='D6' S='4' AP='0' D='1' />
     )
 }
 
 export const Icarus_missiles = () => {
-    return (
-        <div className={style.block_text_weapon}>
-            <div className={style.weapon_blockTwo}>
-                <div className={style.weapon_title}>Icarus missiles</div>
-                <div className={style.weapon_block_info}>
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>R</div>
-                        <div className={style.weapon_text}>48"</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>Hv</div>
-                        <div className={style.weapon_text}>D3</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>S</div>
-                        <div className={style.weapon_text}>7</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>AP</div>
-                        <div className={style.weapon_text}>-1</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>D</div>
-                        <div className={style.weapon_text}>2</div>
-                    </div>
-                </div>
-            </div>
-            <div className={style.weapon_info_text}>*Против авиации добавляйте 1 к броску попадания этой атаки.</div>
-        </div>
+    return (<WeaponBlockBlue title='Icarus missiles'
+        R='48"' Type='Hv' Type_num='D3' S='7' AP='-1' D='2'
+        Text='*Против авиации добавляйте 1 к броску попадания этой атаки.' />
     )
 }
 
 export const Fragstorm_grenade_launcher = () => {
-    return (
-        <div className={style.block_text_weapon}>
-            <div className={style.weapon_block}>
-                <div className={style.weapon_title}>Fragstorm grenade</div>
-                <div className={style.weapon_block_info}>
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>R</div>
-                        <div className={style.weapon_text}>18"</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>As</div>
-                        <div className={style.weapon_text}>D6</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>S</div>
-                        <div className={style.weapon_text}>4</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>AP</div>
-                        <div className={style.weapon_text}>0</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>D</div>
-                        <div className={style.weapon_text}>1</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    return (<WeaponBlockBlue title='Fragstorm grenade'
+        R='18"' Type='As' Type_num='D6' S='4' AP='0' D='1' />
     )
 }
 
 export const Ironhail_heavy_stubber = () => {
-    return (
-        <div className={style.block_text_weapon}>
-            <div className={style.weapon_block}>
-                <div className={style.weapon_title}>Ironhail hv stub</div>
-                <div className={style.weapon_block_info}>
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>R</div>
-                        <div className={style.weapon_text}>36"</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>Hv</div>
-                        <div className={style.weapon_text}>4</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>S</div>
-                        <div className={style.weapon_text}>4</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>AP</div>
-                        <div className={style.weapon_text}>-1</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>D</div>
-                        <div className={style.weapon_text}>1</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    return (<WeaponBlockBlue title='Ironhail hv stub'
+        R='36"' Type='Hv' Type_num='4' S='4' AP='-1' D='1' />
     )
 }
 
 export const Ironhail_skytalon_array = () => {
-    return (
-        <div className={style.block_text_weapon}>
-            <div className={style.weapon_block}>
-                <div className={style.weapon_title}>Ironhail skytalon</div>
-                <div className={style.weapon_block_info}>
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>R</div>
-                        <div className={style.weapon_text}>36"</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>Hv</div>
-                        <div className={style.weapon_text}>8</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>S</div>
-                        <div className={style.weapon_text}>4</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>AP</div>
-                        <div className={style.weapon_text}>-1</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>D</div>
-                        <div className={style.weapon_text}>1</div>
-                    </div>
-                </div>
-            </div>
-            <div className={style.weapon_info_text}>*Против авиации добавляйте 1 к броску попадания этой атаки.</div>
-        </div>
+    return (<WeaponBlockBlue title='Ironhail skytalon'
+        R='36"' Type='Hv' Type_num='8' S='4' AP='-1' D='1'
+        Text='*Против авиации добавляйте 1 к броску попадания этой атаки.' />
     )
 }
 
 export const Storm_bolter = () => {
-    return (
-        <div className={style.block_text_weapon}>
-            <div className={style.weapon_block}>
-                <div className={style.weapon_title}>Storm bolter</div>
-                <div className={style.weapon_block_info}>
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>R</div>
-                        <div className={style.weapon_text}>24"</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>Rf</div>
-                        <div className={style.weapon_text}>2</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>S</div>
-                        <div className={style.weapon_text}>4</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>AP</div>
-                        <div className={style.weapon_text}>0</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>D</div>
-                        <div className={style.weapon_text}>1</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    return (<WeaponBlockBlue title='Storm bolter'
+        R='24"' Type='Rf' Type_num='2' S='4' AP='0' D='1' />
     )
 }
 
 export const Marksman_bolt_carbine = () => {
-    return (
-        <div className={style.block_text_weapon}>
-            <div className={style.weapon_block}>
-                <div className={style.weapon_title}>Marksman bolt</div>
-                <div className={style.weapon_block_info}>
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>R</div>
-                        <div className={style.weapon_text}>24"</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>Rf</div>
-                        <div className={style.weapon_text}>1</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>S</div>
-                        <div className={style.weapon_text}>4</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>AP</div>
-                        <div className={style.weapon_text}>0</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>D</div>
-                        <div className={style.weapon_text}>1</div>
-                    </div>
-                </div>
-            </div>
-            <div className={style.weapon_info_text}>*Неизмененный бросок попадания 6 автоматически ранит цель.</div>
-        </div>
+    return (<WeaponBlockBlue title='Marksman bolt'
+        R='24"' Type='Rf' Type_num='1' S='4' AP='0' D='1'
+        Text='*Неизмененный бросок попадания 6 автоматически ранит цель.' />
     )
 }
 
 export const Master_crafted_occulus_bolt_carbine = () => {
-    return (
-        <div className={style.block_text_weapon}>
-            <div className={style.weapon_block}>
-                <div className={style.weapon_title}>M/c bolt</div>
-                <div className={style.weapon_block_info}>
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>R</div>
-                        <div className={style.weapon_text}>24"</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>Rf</div>
-                        <div className={style.weapon_text}>1</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>S</div>
-                        <div className={style.weapon_text}>4</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>AP</div>
-                        <div className={style.weapon_text}>0</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>D</div>
-                        <div className={style.weapon_text}>2</div>
-                    </div>
-                </div>
-            </div>
-            <div className={style.weapon_info_text}>*Цель не получает преимуществ укрытия от этой атаки.</div>
-        </div>
+    return (<WeaponBlockBlue title='M/c bolt'
+        R='24"' Type='Rf' Type_num='1' S='4' AP='0' D='2'
+        Text='*Цель не получает преимуществ укрытия от этой атаки.' />
     )
 }
 
 export const Paired_combat_blades = () => {
-    return (
-        <div className={style.block_text_weapon}>
-            <div className={style.weapon_block}>
-                <div className={style.weapon_title}>Paired blades</div>
-                <div className={style.weapon_block_info}>
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>R</div>
-                        <div className={style.weapon_text}>-</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>Ml</div>
-                        <div className={style.weapon_text}>-</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>S</div>
-                        <div className={style.weapon_text}>-</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>AP</div>
-                        <div className={style.weapon_text}>-1</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>D</div>
-                        <div className={style.weapon_text}>1</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    return (<WeaponBlockBlue title='Paired blades'
+        R='-' Type='Ml' Type_num='-' S='4' AP='-1' D='1' />
     )
 }
 
 export const Accelerator_autocannon = () => {
-    return (
-        <div className={style.block_text_weapon}>
-            <div className={style.weapon_block}>
-                <div className={style.weapon_title}>Accelerator auto</div>
-                <div className={style.weapon_block_info}>
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>R</div>
-                        <div className={style.weapon_text}>48"</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>Hv</div>
-                        <div className={style.weapon_text}>3</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>S</div>
-                        <div className={style.weapon_text}>7</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>AP</div>
-                        <div className={style.weapon_text}>-1</div>
-                    </div>
-
-                    <div className={style.weapon_info}>
-                        <div className={style.weapon_text}>D</div>
-                        <div className={style.weapon_text}>2</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    return (<WeaponBlockBlue title='Accelerator auto'
+        R='48"' Type='Hv' Type_num='3' S='7' AP='-1' D='2' />
     )
 }
-
-
