@@ -1,203 +1,37 @@
-
 import style from "../../../scss/CombatUnit.module.scss";
 import FireWarrior from "../../../assets/TauEmpire/Fire Warriors.png";
+import { ParametersBlock } from "../../../Components/ParametersBlock";
 
 import {
-  FOCUSED_FIRE,
-  RELENTLESS_FUSILLADE,
-  PULSE_ONSLAUGHT,
-  POINT_BLANK_VOLLEY,
-  EXPERIMENTAL_WEAPONRY,
-  SAVIOUR_PROTOCOLS,
-  OUTFLANK,
-  ORBITAL_UPLINK,
-  COORDINATED_ENGAGEMENT,
-  DESIGNATED_TASKING,
-  PHOTON_GRENADES
+  Pulse_rifle, Pulse_carbine, Pulse_pistol
+} from "../TauEmpireWeapon";
+
+import {
+  FOCUSED_FIRE, RELENTLESS_FUSILLADE, PULSE_ONSLAUGHT, POINT_BLANK_VOLLEY, EXPERIMENTAL_WEAPONRY,
+  SAVIOUR_PROTOCOLS, OUTFLANK, ORBITAL_UPLINK, COORDINATED_ENGAGEMENT, DESIGNATED_TASKING, PHOTON_GRENADES
 } from "../TauEmpireStrat";
 
-import M from "../../../assets/icons/M.png";
-import WS from "../../../assets/icons/WS.png";
-import BS from "../../../assets/icons/BS.png";
-import S from "../../../assets/icons/S.png";
-import T from "../../../assets/icons/T.png";
-import W from "../../../assets/icons/W.png";
-import A from "../../../assets/icons/A.png";
-import Ld from "../../../assets/icons/Ld.png";
-import Sv from "../../../assets/icons/Sv.png";
-
-const FireWarriors = () => {
+export const FireWarriors = () => {
   return (
-    <section>
-      <section className={style.content}>
-        <img src={FireWarrior} alt="FireWarriors" className={style.combat_unit_img} />
-        <div className={style.combat_unit_param}>
-          <div className={style.combat_unit_param_block}>
-            <img src={M} alt="M" className={style.param_img} />
-            <div className={style.param_number}>6"</div>
-          </div>
+    <section className={style.content}>
+      <ParametersBlock img={FireWarrior}
+        M='6"' WS='5+' BS='4+' S='3' T='3' W='1' A='1' Ld='7' Sv='4+' />
 
-          <div className={style.combat_unit_param_block}>
-            <img src={WS} alt="WS" className={style.param_img} />
-            <div className={style.param_number}>5+</div>
-          </div>
-
-          <div className={style.combat_unit_param_block}>
-            <img src={BS} alt="BS" className={style.param_img} />
-            <div className={style.param_number}>4+</div>
-          </div>
-
-          <div className={style.combat_unit_param_block}>
-            <img src={S} alt="S" className={style.param_img} />
-            <div className={style.param_number}>3</div>
-          </div>
-
-          <div className={style.combat_unit_param_block}>
-            <img src={T} alt="T" className={style.param_img} />
-            <div className={style.param_number}>3</div>
-          </div>
-
-          <div className={style.combat_unit_param_block}>
-            <img src={W} alt="W" className={style.param_img} />
-            <div className={style.param_number}>1</div>
-          </div>
-
-          <div className={style.combat_unit_param_block}>
-            <img src={A} alt="A" className={style.param_img} />
-            <div className={style.param_number}>1</div>
-          </div>
-
-          <div className={style.combat_unit_param_block}>
-            <img src={Ld} alt="Ld" className={style.param_img} />
-            <div className={style.param_number}>7</div>
-          </div>
-
-          <div className={style.combat_unit_param_block}>
-            <img src={Sv} alt="Sv" className={style.param_img} />
-            <div className={style.param_number}>4+</div>
-          </div>
-        </div>
-      </section >
-
-      <section className={style.content}>
-        <div className={style.line}></div>
+      <section className={style.Content_block}>
         <div className={style.content_title}>Оружие</div>
         <div className={style.weapon_content}>
-          <div className={style.block_text_weapon}>
-            <div className={style.weapon_block}>
-              <div className={style.weapon_title}>Pulse rifle</div>
-              <div className={style.weapon_block_info}>
-                <div className={style.weapon_info}>
-                  <div className={style.weapon_text}>R</div>
-                  <div className={style.weapon_text}>36"</div>
-                </div>
-
-                <div className={style.weapon_info}>
-                  <div className={style.weapon_text}>Rf</div>
-                  <div className={style.weapon_text}>1</div>
-                </div>
-
-                <div className={style.weapon_info}>
-                  <div className={style.weapon_text}>S</div>
-                  <div className={style.weapon_text}>5</div>
-                </div>
-
-                <div className={style.weapon_info}>
-                  <div className={style.weapon_text}>AP</div>
-                  <div className={style.weapon_text}>-1</div>
-                </div>
-
-                <div className={style.weapon_info}>
-                  <div className={style.weapon_text}>D</div>
-                  <div className={style.weapon_text}>1</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className={style.block_text_weapon}>
-            <div className={style.weapon_block}>
-              <div className={style.weapon_title}>Pulse carbine</div>
-              <div className={style.weapon_block_info}>
-                <div className={style.weapon_info}>
-                  <div className={style.weapon_text}>R</div>
-                  <div className={style.weapon_text}>24"</div>
-                </div>
-
-                <div className={style.weapon_info}>
-                  <div className={style.weapon_text}>As</div>
-                  <div className={style.weapon_text}>2</div>
-                </div>
-
-                <div className={style.weapon_info}>
-                  <div className={style.weapon_text}>S</div>
-                  <div className={style.weapon_text}>5</div>
-                </div>
-
-                <div className={style.weapon_info}>
-                  <div className={style.weapon_text}>AP</div>
-                  <div className={style.weapon_text}>0</div>
-                </div>
-
-                <div className={style.weapon_info}>
-                  <div className={style.weapon_text}>D</div>
-                  <div className={style.weapon_text}>1</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className={style.block_text_weapon}>
-            <div className={style.weapon_block}>
-              <div className={style.weapon_title}>Pulse pistol</div>
-              <div className={style.weapon_block_info}>
-                <div className={style.weapon_info}>
-                  <div className={style.weapon_text}>R</div>
-                  <div className={style.weapon_text}>12"</div>
-                </div>
-
-                <div className={style.weapon_info}>
-                  <div className={style.weapon_text}>Ps</div>
-                  <div className={style.weapon_text}>1</div>
-                </div>
-
-                <div className={style.weapon_info}>
-                  <div className={style.weapon_text}>S</div>
-                  <div className={style.weapon_text}>5</div>
-                </div>
-
-                <div className={style.weapon_info}>
-                  <div className={style.weapon_text}>AP</div>
-                  <div className={style.weapon_text}>-1</div>
-                </div>
-
-                <div className={style.weapon_info}>
-                  <div className={style.weapon_text}>D</div>
-                  <div className={style.weapon_text}>1</div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Pulse_rifle /> <Pulse_carbine /> <Pulse_pistol />
         </div>
       </section>
 
-      <section className={style.content}>
-        <div className={style.line}></div>
+      <section className={style.Content_block}>
         <div className={style.content_title}>Стратегемы</div>
-        <FOCUSED_FIRE />
-        <RELENTLESS_FUSILLADE />
-        <PULSE_ONSLAUGHT />
-        <POINT_BLANK_VOLLEY />
-        <EXPERIMENTAL_WEAPONRY />
-        <SAVIOUR_PROTOCOLS />
-        <OUTFLANK />
-        <ORBITAL_UPLINK />
-        <COORDINATED_ENGAGEMENT />
-        <DESIGNATED_TASKING />
-        <PHOTON_GRENADES />
+        <FOCUSED_FIRE /> <RELENTLESS_FUSILLADE />
+        <PULSE_ONSLAUGHT />  <POINT_BLANK_VOLLEY />
+        <EXPERIMENTAL_WEAPONRY /> <SAVIOUR_PROTOCOLS />
+        <OUTFLANK /> <ORBITAL_UPLINK />
+        <COORDINATED_ENGAGEMENT /> <DESIGNATED_TASKING /> <PHOTON_GRENADES />
       </section>
     </section >
   )
 }
-
-export { FireWarriors }
