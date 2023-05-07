@@ -50,8 +50,8 @@ export const Air_frag_proj = () => {
 }
 
 export const Burst_cannon = () => {
-    return (<WeaponBlock title='Crushing bulk'
-        R='18"' Type='As' Type_num='6' S='5' AP='0' D='1' />
+    return (<WeaponBlock title='Burst cannon'
+        R='18"' Type='As' Type_num='4' S='5' AP='0' D='1' />
     )
 }
 
@@ -62,7 +62,7 @@ export const Cyclic_ion_bl_S = () => {
 }
 
 export const Cyclic_ion_bl_O = () => {
-    return (<WeaponBlockBlue title='Cyclic ion bl. S'
+    return (<WeaponBlockBlue title='Cyclic ion bl. O'
         R='18"' Type='As' Type_num='3' S='8' AP='-2' D='2'
         Text='*Если выпала 1 на попадание, юнит получает урон.' />
     )
@@ -82,7 +82,7 @@ export const Missile_pod = () => {
 }
 
 export const Plasma_rifle = () => {
-    return (<WeaponBlock title='Missile pod'
+    return (<WeaponBlock title='Plasma rifle'
         R='30"' Type='As' Type_num='1' S='8' AP='-4' D='3' />
     )
 }
