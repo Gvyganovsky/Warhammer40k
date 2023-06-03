@@ -33,15 +33,15 @@ export const Etheral = () => {
       <section className={style.Content_block}>
         <div className={style.content_title}>Способности</div>
         <AbilitiesBlock AbTitle='Embodiments of the Empire' AbNum='' AbIcon={question}
-          AbText='Эта модель не может быть взята в FARSIGHT ENCLAVES.' />
+          AbText='Модель не может быть взята в Farsight.' />
 
         <AbilitiesBlock AbTitle='Failure Is Not An Option (Aura)' AbNum='' AbIcon={morale}
-          AbText='Если отряд находится в пределах 6" от эфирного, модели этого отряда могут 
-          использовать лидерские характеристики этой модели вместо своих.' />
+          AbText='Отряд, находящийся в пределах 6", может использовать лидерские характеристики 
+          этой модели вместо своих.' />
 
         <AbilitiesBlock AbTitle='Etheral' AbNum='' AbIcon={limitation}
-          AbText='Эфирный может знать только 2 заклинания. При броске D6: на 3+ заклинание 
-          срабатывает и действует до начала следующей командной фазы.' />
+          AbText='Эфирный может знать только 2 заклинания. 
+          При броске D6: на 3+ заклинание срабатывает и действует до начала следующей командной фазы.' />
       </section>
 
       <section className={style.Content_block}>
@@ -67,7 +67,7 @@ export const Etheral = () => {
           морального духа. Добавьте 1 к тестам на боевое истощение.' />
 
         <AbilitiesBlock AbTitle='WISDOM OF THE GUIDES' AbNum='+1' AbIcon={question}
-          AbText='Если этот призыв вдохновляет, вы получаете 1 CP.' />
+          AbText='Вы получаете 1 CP.' />
       </section>
 
       <section className={style.Content_block}>
